@@ -1,0 +1,13 @@
+---
+comments: false
+date: 2012-01-06T00:00:00Z
+title: Welcome
+url: /2012/01/06/welcome/
+---
+
+Welcome to my personal blog! I had an idea of creating personal blog for a very long time. However, I was always lazy to do so.
+
+When I was looking for some blogging engine, I realized that none of the major ones suited me. So I started to experiment with various setups and then I discovered [jekyll](https://github.com/mojombo/jekyll), which is static blog generator. I like the idea of having a blog completely stored in version control of my choice and served as static pages.
+Later I found [Octopress](http://octopress.org/), which can be described as ``jekyll on steroids''. It is much easier to deploy, it integrates many 3rd party plugins for Twitter, Disquis comments, Google Analytics and other services. It uses HTML 5 template and interface is optimized for viewing on mobile phones. It has everything modern blogging platform should have.
+
+So again welcome to my blog and happy reading.
