@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://blog.xenol.eu/</loc>
+    <lastmod>2016-07-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.xenol.eu/about</loc>
+    <lastmod>2016-07-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.xenol.eu/2012/12/31/29c3-finale/</loc>
+    <lastmod>2012-12-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.xenol.eu/2012/12/30/29c3-day-three/</loc>
+    <lastmod>2012-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.xenol.eu/2012/12/29/29c3-day-two/</loc>
+    <lastmod>2012-12-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.xenol.eu/2012/12/28/29c3-day-one/</loc>
+    <lastmod>2012-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.xenol.eu/2012/10/29/dnssec-automatization-with-opendnssec/</loc>
+    <lastmod>2012-10-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.xenol.eu/2012/06/01/passed-rhce-exam/</loc>
+    <lastmod>2012-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.xenol.eu/2012/02/11/openindiana-involvement/</loc>
+    <lastmod>2012-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.xenol.eu/2012/02/04/easy-freebsd-jail-management-with-zfs-and-pkgng/</loc>
+    <lastmod>2012-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.xenol.eu/2012/01/06/welcome/</loc>
+    <lastmod>2012-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.xenol.eu/archives</loc>
+  </url>
+  
+</urlset>

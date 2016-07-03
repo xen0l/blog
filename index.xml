@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xenol&#39;s blog</title>
+    <link>http://blog.xenol.eu/</link>
+    <description>Recent content on xenol&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Jul 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://blog.xenol.eu/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About</title>
+      <link>http://blog.xenol.eu/about</link>
+      <pubDate>Sun, 03 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.xenol.eu/about</guid>
+      <description>&lt;p&gt;My name is Adam and I enjoy playing with technology. I studied computer networks at the Faculty of Informatics and Information Technologies at Slovak University of Technology in Bratislava.&lt;/p&gt;
+
+&lt;p&gt;When I was 14, I started playing with UNIX-like operating systems and never stopped since then. In my free time, I try to contribute to various open source projects or experiment with technology. Whenever I have to code, I do all my projects in Python. When I am not playing with technology or coding, I can be found listening to music, hanging out on IRC, drinking a beer or studying history.&lt;/p&gt;
+
+&lt;p&gt;I am interested in the following areas:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;operating system internals,&lt;/li&gt;
+&lt;li&gt;computer networks &amp;amp; protocols,&lt;/li&gt;
+&lt;li&gt;security, especially cryprography,&lt;/li&gt;
+&lt;li&gt;scalability &amp;amp; distributed systems.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you enjoy chatting about the technology, feel free to contact me.p I am also actively looking for new challenges!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>29c3: Finale</title>
+      <link>http://blog.xenol.eu/2012/12/31/29c3-finale/</link>
+      <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.xenol.eu/2012/12/31/29c3-finale/</guid>
+      <description>&lt;p&gt;I arrived at CCH in the afternoon and headed directly for &lt;strong&gt;NOC Review&lt;/strong&gt; talk. Guys did really wonderful job, although the Wifi was a problem. I really liked some network facts:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;~70 access points, great signal coverage&lt;/li&gt;
+&lt;li&gt;3059 concurrent wireless clients connected during peaks&lt;/li&gt;
+&lt;li&gt;traffic usage of 8.2 Gbps&lt;/li&gt;
+&lt;li&gt;40% of traffic being IPv6&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Video can be found &lt;a href=&#34;http://ftp.uni-kl.de/CCC/29C3/mp4-h264-HQ/29c3-5404-en-noc_review_h264.mp4&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The 29C3 was really nice experience and I will definitely return back to 30C3. Another nice thing was that event of this size was run entirely by the volunteers. I would like to take part in helping as a Chaos Angel or directly as a speaker next year. We will see what will 2013 bring.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>29c3: Day Three</title>
+      <link>http://blog.xenol.eu/2012/12/30/29c3-day-three/</link>
+      <pubDate>Sun, 30 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.xenol.eu/2012/12/30/29c3-day-three/</guid>
+      <description>&lt;p&gt;Third day of the Congress was filled with some number of interesting talks I visited. I started with a talk, in which I was interested the most - &lt;strong&gt;An Overview of Secure Name Resolution - DNSSEC, DNSCurve and Namecoin&lt;/strong&gt;. Speaker gave great introduction into DNSSEC and also talked about its deployment rate. He also spoke DNSSEC&amp;rsquo;s use in amplification attacks and suitable countermeasures. DNSCurve and Namecoin was discussed as well. From this talk, it is clear that DNSSEC is the way forward. Video will be available shortly.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Security Evaluation of Russian GOST Cipher&lt;/strong&gt; gave nice overview of Russian GOST cipher and it&amp;rsquo;s history. In theory, GOST should be secure for 200 more years. I am a bit sceptic as in the last two years there were found around 20+ possible attacks on GOST. Speaker talked about them and described the steps how to attack. Video will be available shortly.&lt;/p&gt;
+
+&lt;p&gt;Another great talk by Daniel J. Bernstein was titled &lt;strong&gt;Hash-flooding DoS reloaded: attacks and defenses&lt;/strong&gt;. Dan explained hash tables and described anatomy of the hash flooding attacks in detail. Martin Boßlet demonstrated vulnerability on languages using MurmurHash as a hashing function. He used Ruby and Java for demonstrating purposes. Martin spoke about better alternatives - &lt;a href=&#34;https://code.google.com/p/cityhash/&#34;&gt;CityHash&lt;/a&gt; by Google. However, he demonstrated that it is worse than MurmurHash family of hash functions. &lt;a href=&#34;https://131002.net/siphash/&#34;&gt;SipHash&lt;/a&gt; was introduced as a simple, yet secure alternative. Video will be available shortly.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>29c3: Day Two</title>
+      <link>http://blog.xenol.eu/2012/12/29/29c3-day-two/</link>
+      <pubDate>Sat, 29 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.xenol.eu/2012/12/29/29c3-day-two/</guid>
+      <description>&lt;p&gt;I started this day with visiting talk by Axel Arnbak titled &lt;strong&gt;Certificate Authority Collapse&lt;/strong&gt;. Axel talked about the current model being completely broken (nothing new in the security community) and that the change is needed. He described the DigiNotar incident. The European Union wants to address this issue by &lt;a href=&#34;http://ec.europa.eu/information_society/policy/esignature/eu_legislation/regulation/index_en.htm&#34;&gt;regulations&lt;/a&gt;, which do more harm than good. If the CA model is broken, it should be fixed technically and not by law. Video can be found &lt;a href=&#34;http://ftp.uni-kl.de/CCC/29C3/mp4-h264-HQ/29c3-5319-en-certificate_authority_collapse_h264.mp4&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After lunch, I went and saw &lt;strong&gt;Lightning talks&lt;/strong&gt; block. I liked the talk about a &lt;a href=&#34;rhizomatica.org&#34;&gt;project&lt;/a&gt; building community GSM and mesh networks in remote areas in Mexico.&lt;/p&gt;
+
+&lt;p&gt;Another great talk of the day was &lt;strong&gt;FactHacks - RSA factorization in the real world&lt;/strong&gt; by Daniel J. Bernstein, Nadia Heninger and Tanja Lange. Speakers gave a quick introduction to RSA cryptosystem and some facts about its factorization. Dan also showed several &lt;a href=&#34;facthacks.cr.yp.to&#34;&gt;algorithms&lt;/a&gt; for factoring primes. There was practical example on how  we can search for private keys on the Internet, complete missing parts of it and speakers generally advised to &lt;strong&gt;stop using 1024-bits RSA keys&lt;/strong&gt;. I switched to ECDSA few months ago and you should do it as well. If your SSH server doesn&amp;rsquo;t support ECDSA (OpenSSH &amp;lt;5.7), then stick to 2048 bit or 4096 bit private key size. Video can be found &lt;a href=&#34;http://ftp.uni-kl.de/CCC/29C3/mp4-h264-HQ/29c3-5275-en-facthacks_h264.mp4&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The final talk I visited was about &lt;strong&gt;Stylometry and Online Underground Markets&lt;/strong&gt;, which was about the usage of stylometry to identify and gaining a better understanding of how do underground market work. Video should be available shortly.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>29c3: Day One</title>
+      <link>http://blog.xenol.eu/2012/12/28/29c3-day-one/</link>
+      <pubDate>Fri, 28 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.xenol.eu/2012/12/28/29c3-day-one/</guid>
+      <description>&lt;p&gt;29c3 is my first Congress I visited. It returned to Hamburg after 8 years of being held in Berlin and is located at the Conference Center Hamburg (CCH). First day&amp;rsquo;s talk were mostly non-technical ones.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Not my department&lt;/strong&gt; by Jacob Appelbaum proposed that people should develop more software like Tor or similiar tools.&lt;/p&gt;
+
+&lt;p&gt;The second talk titled &lt;strong&gt;Enemies of the State: What Happens When Telling the Truth about Secret US Government Power Becomes a Crime&lt;/strong&gt; was about breaking the US constitution by the US goverment and the rise of spying practices after 11th September 2001 covered as the fight against the terrorism. Speakers talked about ways how NSA wants to monitor people and store everything they can about them. They also suggested that people should care more about their privacy. After all, anonymity and privacy are the basic right of the every human being on the planet. This talk was given by ex-employees of NSA and US DoJ.&lt;/p&gt;
+
+&lt;p&gt;The last talk I visited was about the mitigation of timing side channels by Sebastian Schinzel. He proposed several new countermeasures and wrote set of tools, which should detect timing side channels vulnerabilities. More info can be found on his &lt;a href=&#34;http://www.seecurity.org/29c3/&#34;&gt;website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After the last talk, I returned to the hostel and drunk mate with Juraj. Rest of the group joined us later and several polish hackers came as well. Discussions were mostly security-related.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DNSSEC automatization with OpenDNSSEC</title>
+      <link>http://blog.xenol.eu/2012/10/29/dnssec-automatization-with-opendnssec/</link>
+      <pubDate>Mon, 29 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.xenol.eu/2012/10/29/dnssec-automatization-with-opendnssec/</guid>
+      <description>&lt;p&gt;DNSSEC is an amazing piece of technology. DNSSEC data is digitally signed. The validating DNS server can check if the data it receives is identical to those on the authoritative DNS server. This helps us mitigate DNS cache poisoning.&lt;/p&gt;
+
+&lt;p&gt;I have signed my domain back in January 2012, signing my zone by hand. However, I forgot to resign my zone and the zone signature expired making it unresolvable. This made me wonder how could I automatize the whole process. I read about &lt;a href=&#34;https://www.opendnssec.org&#34;&gt;OpenDNSSEC&lt;/a&gt;. OpenDNSSEC is a wonderful piece of software, which automates the DNSSEC zone managements. OpenDNSSEC is used by several NICs around the world to manage their TLD zones. I didn&amp;rsquo;t try OpenDNSSEC at first as I found it to be too complex and not suitable for a single zone. I tried BIND 9.9 DNSSEC inline-signing, instead. It worked, but I was unhappy with it. Inline signing in BIND converts manually maintained zone into a dynamic one and signs it. All DNSSEC changes are made to the journal file format, which I dislike working with. As I wasn&amp;rsquo;t satisfied with this solution, I gave OpenDNSSEC a try.&lt;/p&gt;
+
+&lt;p&gt;I deployed OpenDNSSEC on my personal FreeBSD server. The configuration didn&amp;rsquo;t take more than 15 minutes thanks to the excellent official &lt;a href=&#34;https://wiki.opendnssec.org/display/DOCS/OpenDNSSEC+Documentation+Home&#34;&gt;documentation&lt;/a&gt;. Once, I started the OpenDNSSEC service, it generated both KSK and ZSK for my zone. I published &lt;a href=&#34;https://tools.ietf.org/rfc/rfc3658.txt&#34;&gt;DS record&lt;/a&gt; via my registrar&amp;rsquo;s web management portal. I am using RSASHA256 cipher for both KSK and ZSK. I wanted to use ECDSA, but my registrar doesn&amp;rsquo;t support it yet. I hope this will change in the near future. Any DNSSEC-related operations are now made automatically without any manual intervertion. Whenever I add new DNS records into my zone, I just call ods-signer to resign my zone. The zone resigning will be scheduled and the new records will be published alongside with their signatures. I love automatic things!&lt;/p&gt;
+
+&lt;p&gt;My zone also contains &lt;a href=&#34;https://tools.ietf.org/html/rfc4255&#34;&gt;SSHFP&lt;/a&gt; records with my SSH server fingerprints and I am now able to finally make use of OpenSSH client&amp;rsquo;s VerifyHostKeyDNS feature. I tried out &lt;a href=&#34;https://tools.ietf.org/html/rfc4025&#34;&gt;IPSECKEY&lt;/a&gt; record. It worked with racoon. More on how to configure racoon to get IPSec peer&amp;rsquo;s certificate from the DNS can be found in racoon.conf(5). Lastly, I am very interested in &lt;a href=&#34;https://tools.ietf.org/html/rfc6698&#34;&gt;DANE&lt;/a&gt; and TLSA resource record. I think that this will be the biggest feature of DNSSEC in the upcoming years because DANE makes commercial CAs obsolete. Why should I pay for certificates, when I can generate one and just publish it in the DNS? This is very nice feature, but it&amp;rsquo;s dependent on a wider DNSSEC adoption, which isn&amp;rsquo;t happening massively. I hope this will change pretty soon.&lt;/p&gt;
+
+&lt;p&gt;I wrote simple howto about running OpenDNSSEC with BIND on FreeBSD. I published it on my &lt;a href=&#34;http://wiki.xenol.eu/doku.php?id=freebsd_bind_opendnssec&#34;&gt;wiki&lt;/a&gt; and I hope it will help somebody. Feedback is welcome. I am also planning to package both SoftHSM and OpenDNSSEC for &lt;a href=&#34;http://www.openindiana.org&#34;&gt;OpenIndiana&lt;/a&gt;, once I am done with other tasks I am working on. However, I do not expect this to happen during this month. More realistic date is December.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Passed RHCE exam</title>
+      <link>http://blog.xenol.eu/2012/06/01/passed-rhce-exam/</link>
+      <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.xenol.eu/2012/06/01/passed-rhce-exam/</guid>
+      <description>
+
+&lt;p&gt;I took and passed both Red Hat Certified System Administrator (RHCSA) and Red Hat Certified Engineer (RHCE) exams. The certification is valid for 3 years. After that you have to either retake RHCE exam or pass other higher level Red Hat certification in order to prolong certification validity. RHCSA exam took 2.5 hours and RHCE 2 hours. I was nearly done after 1 hour and used the remaining time for checking.&lt;/p&gt;
+
+&lt;h3 id=&#34;my-tips-for-examination-pass&#34;&gt;My tips for examination pass:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;No STRESS&lt;/strong&gt;. There is no need for it as topics covered in both exams are pretty basic and anyone with Linux systems administration experience will pass it.&lt;/li&gt;
+&lt;li&gt;Use &lt;strong&gt;GUI tools&lt;/strong&gt; everytime possible. They &lt;strong&gt;save time&lt;/strong&gt;, which you might need for checking other stuff.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reboot&lt;/strong&gt; the virtual machine at least once to check if every needed service will autostart.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I was told that results would be known in 3 US business days&amp;rsquo; time. However, I received email with results in several hours after I took the exam and even examiner was suprised how fast the results arrived. The whole process was a very good experience.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>OpenIndiana involvement</title>
+      <link>http://blog.xenol.eu/2012/02/11/openindiana-involvement/</link>
+      <pubDate>Sat, 11 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.xenol.eu/2012/02/11/openindiana-involvement/</guid>
+      <description>&lt;p&gt;I have been watching OpenSolaris development for a long time. As a technology fan, I really like all the cool features OpenSolaris offers: ZFS filesystem capabilities, service management with SMF, dynamic tracing and application debugging with DTrace, container-based virtualization with Solaris zones, network virtualization with Crossbow, safe system upgrades and downtime minimalization via Boot Environments and integratiom of all these features together makes it perfect operating system for a server. However, OpenSolaris is dead and it continues to live as &lt;a href=&#34;http://www.openindiana.org&#34;&gt;OpenIndiana&lt;/a&gt;, which is a &lt;a href=&#34;http://www.illumos.org&#34;&gt;Illumos&lt;/a&gt;-based derivate. Illumos is an open source project providing Solaris and OpenSolaris kernel and driver source code. OpenIndiana aims to be a direct continuation of the OpenSolaris operating system.&lt;/p&gt;
+
+&lt;p&gt;As a fan and satisfied user of &lt;a href=&#34;http://www.zabbix.com&#34;&gt;Zabbix&lt;/a&gt; monitoring software, I decided to port, package and maintain Zabbix monitoring suite for OpenIndiana. Zabbix agent already made it to the package repository. Zabbix server and possibly proxy will follow in upcoming months. I am also planning to maintain other software I am actively using e.g tor, php-fpm and DNS related software.&lt;/p&gt;
+
+&lt;p&gt;In January I have set up first Slovak OpenIndiana mirror, which is running at &lt;a href=&#34;http://dlc-1.sk.openindiana.org/&#34;&gt;dlc-1.sk.openindiana.org&lt;/a&gt; and is reachable via both IPv4 and IPv6. Big thanks goes to my employer, &lt;a href=&#34;http://www.digmia.com&#34;&gt;Digmia&lt;/a&gt;, which provided hardware and network bandwidth.&lt;/p&gt;
+
+&lt;p&gt;In the future, I would like to get more involved in helping with OpenIndiana infrastructure tasks, maintaining some software and possibly OpenIndiana documentation project and helping with OpenIndiana handbook, which should be a complete user guide to the OpenIndiana operating system.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Easy FreeBSD jail management with ZFS and pkgng</title>
+      <link>http://blog.xenol.eu/2012/02/04/easy-freebsd-jail-management-with-zfs-and-pkgng/</link>
+      <pubDate>Sat, 04 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.xenol.eu/2012/02/04/easy-freebsd-jail-management-with-zfs-and-pkgng/</guid>
+      <description>&lt;p&gt;I have been using FreeBSD jails ever since I started using FreeBSD on my servers. Jail can be described as a chroot on steroids with own users, process namespace and lately own virtualized network stack.&lt;/p&gt;
+
+&lt;p&gt;I am using FreeBSD jails for mainly for securing and separating services. Each service runs in its own separated container on its own ZFS dataset. Each dataset is a ZFS clone from the snapshot of the template jail, which is adapted to have software I need in every jail installed (zsh, git, vim&amp;hellip;) and configured. Running FreeBSD jails on separate ZFS datasets is very flexible because we can setup different per-jail mount options, use compression and snapshot each jail separately. Software updates are fine for small amount of jails, while updating software in hundreds of jails can be a scaring experience. This is past with &lt;a href=&#34;https://github.com/pkgng/pkgng&#34;&gt;pkgng&lt;/a&gt;. pkgng is a new project, which brings new binary package manager. It is very easy to build packages from ports, create and serving package repository and updating.&lt;/p&gt;
+
+&lt;p&gt;With this setup, I can deploy new jail under 2 minutes as all I have to do is a ZFS snapshot cloning and adding jail configuration into host /etc/rc.conf and thanks to ZFS cloning capabilties we are saving some disk space, too. I wrote a simple &lt;a href=&#34;http://wiki.xenol.eu/doku.php?id=zfs_pkgng_jail&#34;&gt;howto&lt;/a&gt; on my personal wiki. I have also setup package repository for my needs at &lt;a href=&#34;http://pkg.xenol.eu&#34;&gt;pkg.xenol.eu&lt;/a&gt;. Feel free to use it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Welcome</title>
+      <link>http://blog.xenol.eu/2012/01/06/welcome/</link>
+      <pubDate>Fri, 06 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.xenol.eu/2012/01/06/welcome/</guid>
+      <description>&lt;p&gt;Welcome to my personal blog! I had an idea of creating personal blog for a very long time. However, I was always lazy to do so.&lt;/p&gt;
+
+&lt;p&gt;When I was looking for some blogging engine, I realized that none of the major ones suited me. So I started to experiment with various setups and then I discovered &lt;a href=&#34;https://github.com/mojombo/jekyll&#34;&gt;jekyll&lt;/a&gt;, which is static blog generator. I like the idea of having a blog completely stored in version control of my choice and served as static pages.
+Later I found &lt;a href=&#34;http://octopress.org/&#34;&gt;Octopress&lt;/a&gt;, which can be described as ``jekyll on steroids&amp;rdquo;. It is much easier to deploy, it integrates many 3rd party plugins for Twitter, Disquis comments, Google Analytics and other services. It uses HTML 5 template and interface is optimized for viewing on mobile phones. It has everything modern blogging platform should have.&lt;/p&gt;
+
+&lt;p&gt;So again welcome to my blog and happy reading.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Archives</title>
+      <link>http://blog.xenol.eu/archives</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.xenol.eu/archives</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

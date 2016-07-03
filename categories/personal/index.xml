@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personal on xenol&#39;s blog</title>
+    <link>http://blog.xenol.eu/categories/personal/</link>
+    <description>Recent content in Personal on xenol&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jun 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://blog.xenol.eu/categories/personal/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Passed RHCE exam</title>
+      <link>http://blog.xenol.eu/2012/06/01/passed-rhce-exam/</link>
+      <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.xenol.eu/2012/06/01/passed-rhce-exam/</guid>
+      <description>
+
+&lt;p&gt;I took and passed both Red Hat Certified System Administrator (RHCSA) and Red Hat Certified Engineer (RHCE) exams. The certification is valid for 3 years. After that you have to either retake RHCE exam or pass other higher level Red Hat certification in order to prolong certification validity. RHCSA exam took 2.5 hours and RHCE 2 hours. I was nearly done after 1 hour and used the remaining time for checking.&lt;/p&gt;
+
+&lt;h3 id=&#34;my-tips-for-examination-pass&#34;&gt;My tips for examination pass:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;No STRESS&lt;/strong&gt;. There is no need for it as topics covered in both exams are pretty basic and anyone with Linux systems administration experience will pass it.&lt;/li&gt;
+&lt;li&gt;Use &lt;strong&gt;GUI tools&lt;/strong&gt; everytime possible. They &lt;strong&gt;save time&lt;/strong&gt;, which you might need for checking other stuff.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reboot&lt;/strong&gt; the virtual machine at least once to check if every needed service will autostart.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I was told that results would be known in 3 US business days&amp;rsquo; time. However, I received email with results in several hours after I took the exam and even examiner was suprised how fast the results arrived. The whole process was a very good experience.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
