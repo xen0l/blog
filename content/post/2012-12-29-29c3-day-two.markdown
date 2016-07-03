@@ -1,0 +1,19 @@
+---
+categories:
+- 29C3
+- CCC
+tags:
+- CCC
+comments: true
+date: 2012-12-29T00:00:00Z
+title: '29c3: Day Two'
+url: /2012/12/29/29c3-day-two/
+---
+
+I started this day with visiting talk by Axel Arnbak titled **Certificate Authority Collapse**. Axel talked about the current model being completely broken (nothing new in the security community) and that the change is needed. He described the DigiNotar incident. The European Union wants to address this issue by [regulations](http://ec.europa.eu/information_society/policy/esignature/eu_legislation/regulation/index_en.htm), which do more harm than good. If the CA model is broken, it should be fixed technically and not by law. Video can be found [here](http://ftp.uni-kl.de/CCC/29C3/mp4-h264-HQ/29c3-5319-en-certificate_authority_collapse_h264.mp4).
+
+After lunch, I went and saw **Lightning talks** block. I liked the talk about a [project](rhizomatica.org) building community GSM and mesh networks in remote areas in Mexico.
+
+Another great talk of the day was **FactHacks - RSA factorization in the real world** by Daniel J. Bernstein, Nadia Heninger and Tanja Lange. Speakers gave a quick introduction to RSA cryptosystem and some facts about its factorization. Dan also showed several [algorithms](facthacks.cr.yp.to) for factoring primes. There was practical example on how  we can search for private keys on the Internet, complete missing parts of it and speakers generally advised to **stop using 1024-bits RSA keys**. I switched to ECDSA few months ago and you should do it as well. If your SSH server doesn't support ECDSA (OpenSSH <5.7), then stick to 2048 bit or 4096 bit private key size. Video can be found [here](http://ftp.uni-kl.de/CCC/29C3/mp4-h264-HQ/29c3-5275-en-facthacks_h264.mp4).
+
+The final talk I visited was about **Stylometry and Online Underground Markets**, which was about the usage of stylometry to identify and gaining a better understanding of how do underground market work. Video should be available shortly.
