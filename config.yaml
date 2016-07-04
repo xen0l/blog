@@ -4,7 +4,6 @@ languageCode: en-us
 title: xenol's blog
 metadataformat: yaml
 
-
 theme: octopress
 
 paginate: 6
