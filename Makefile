@@ -1,5 +1,7 @@
 all: clean build deploy
 
+HUGO_THEME?= octopress
+
 build:
 	./bin/build.sh
 
@@ -9,3 +11,5 @@ deploy:
 clean:
 	@rm -rf ./public
 
+serve:
+	@hugo server --buildDrafts --theme=$(HUGO_THEME) -v
