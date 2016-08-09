@@ -10,3 +10,5 @@ cd ${ROOT}
 hugo -d ./public
 
 echo "${SITE_NAME}" > ${ROOT}/public/CNAME
+
+touch ${ROOT}/public/.nojekyll
