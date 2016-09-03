@@ -16,4 +16,4 @@ I am interested in the following areas:
 * security, especially cryprography,
 * scalability & distributed systems.
 
-If you enjoy chatting about the technology, feel free to contact me.p I am also actively looking for new challenges!
+If you enjoy chatting about the technology, feel free to contact me. I am also actively looking for new challenges!
