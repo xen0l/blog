@@ -16,7 +16,7 @@
   
 
   
-  <title>29c3: Day Three</title>
+  <title>Managing illumos networking with Ansible</title>
 
   
   
@@ -102,16 +102,16 @@
 
 <header>
     <h1 class="entry-title">
-         29c3: Day Three 
+         Managing illumos networking with Ansible 
     </h1>
-    <p class="meta">Dec 30, 2012
-         - 2 minute read 
-         - <a href="http://blog.xenol.eu/2012/12/30/29c3-day-three/#disqus_thread">Comments</a>
+    <p class="meta">Sep 3, 2016
+         - 1 minute read 
+         - <a href="http://blog.xenol.eu/blog/2016/09/03/Managing-illumos-networking-with-Ansible/#disqus_thread">Comments</a>
 
         
         
         
-            - <a class="label" href="http://blog.xenol.eu/categories/29c3/">29C3</a><a class="label" href="http://blog.xenol.eu/categories/ccc/">CCC</a>
+            - <a class="label" href="http://blog.xenol.eu/categories/sysadmin/">sysadmin</a><a class="label" href="http://blog.xenol.eu/categories/openindiana/">OpenIndiana</a><a class="label" href="http://blog.xenol.eu/categories/illumos/">illumos</a><a class="label" href="http://blog.xenol.eu/categories/ansible/">ansible</a>
         
     </p>
 </header>
@@ -121,11 +121,19 @@
           
           
           
-          <p>Third day of the Congress was filled with some number of interesting talks I visited. I started with a talk, in which I was interested the most - <strong>An Overview of Secure Name Resolution - DNSSEC, DNSCurve and Namecoin</strong>. Speaker gave great introduction into DNSSEC and also talked about its deployment rate. He also spoke DNSSEC&rsquo;s use in amplification attacks and suitable countermeasures. DNSCurve and Namecoin was discussed as well. From this talk, it is clear that DNSSEC is the way forward. Video will be available shortly.</p>
+          <p>On August 30th, my work on Ansible modules for managing Solaris/illumos networking was merged into <a href="https://github.com/ansible/ansible-modules-extras/commits/devel">ansible-modules-extras</a> repository. This functionality will be available in the next release of Ansible. Following modules were contributed:</p>
 
-<p><strong>Security Evaluation of Russian GOST Cipher</strong> gave nice overview of Russian GOST cipher and it&rsquo;s history. In theory, GOST should be secure for 200 more years. I am a bit sceptic as in the last two years there were found around 20+ possible attacks on GOST. Speaker talked about them and described the steps how to attack. Video will be available shortly.</p>
+<ul>
+<li><a href="https://docs.ansible.com/ansible/dladm_etherstub_module.html">dladm_etherstub</a></li>
+<li><a href="https://docs.ansible.com/ansible/dladm_vnic_module.html">dladm_vnic</a></li>
+<li><a href="https://docs.ansible.com/ansible/ipadm_if_module.html">ipadm_if</a></li>
+<li><a href="https://docs.ansible.com/ansible/ipadm_prop_module.html">ipadm_prop</a></li>
+<li><a href="https://docs.ansible.com/ansible/flowadm_module.html">flowadm</a></li>
+</ul>
 
-<p>Another great talk by Daniel J. Bernstein was titled <strong>Hash-flooding DoS reloaded: attacks and defenses</strong>. Dan explained hash tables and described anatomy of the hash flooding attacks in detail. Martin Boßlet demonstrated vulnerability on languages using MurmurHash as a hashing function. He used Ruby and Java for demonstrating purposes. Martin spoke about better alternatives - <a href="https://code.google.com/p/cityhash/">CityHash</a> by Google. However, he demonstrated that it is worse than MurmurHash family of hash functions. <a href="https://131002.net/siphash/">SipHash</a> was introduced as a simple, yet secure alternative. Video will be available shortly.</p>
+<p>This also marks a major milestone for automating the deployment of Solaris/illumos zones with Ansible. There already was a module for creating/deleting zones and manipulating their state - <a href="https://docs.ansible.com/ansible/solaris_zone_module.html">solaris_zone</a>. However, there was not a way to manage the networking aspect of zones until now.</p>
+
+<p>In the future, I have plans to contribute more modules for Solaris/illumos networking management and also other aspects of these systems. I have collected some module ideas in the <a href="https://github.com/xen0l/ansible-illumos-modules">Github repository</a>. If you have any module ideas, be sure to create an issue of send a PR to the repository.</p>
 
         </div>
         
@@ -134,12 +142,12 @@
   <p class="meta">
     <span class="byline author vcard">Posted by <span class="fn">xenol</span></span>
     
-    <time>Dec 30, 2012</time>
+    <time>Sep 3, 2016</time>
     
       <span class="categories">
         Tags:
         
-          <a class="category" href="http://blog.xenol.eu/tags/ccc">CCC</a>  
+          <a class="category" href="http://blog.xenol.eu/tags/openindiana">OpenIndiana</a>  <a class="category" href="http://blog.xenol.eu/tags/ansible">ansible</a>  <a class="category" href="http://blog.xenol.eu/tags/networking">networking</a>  
     
     </span>
   </p>
@@ -151,11 +159,9 @@
 
   <p class="meta">
     
-        <a class="basic-alignment left" href="http://blog.xenol.eu/2012/12/29/29c3-day-two/" title="29c3: Day Two">29c3: Day Two</a>
+        <a class="basic-alignment left" href="http://blog.xenol.eu/blog/2016/08/09/Mirroring-OpenIndiana-IPS-repositories---part-1/" title="Mirroring OpenIndiana IPS repositories - part 1">Mirroring OpenIndiana IPS repositories - part 1</a>
     
 
-    
-      <a class="basic-alignment right" href="http://blog.xenol.eu/2012/12/31/29c3-finale/" title="29c3: Finale">29c3: Finale</a>
     
   </p>
   
