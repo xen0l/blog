@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ips on xenol&#39;s blog</title>
-    <link>http://blog.xenol.eu/tags/ips/</link>
+    <link>https://blog.xenol.eu/tags/ips/</link>
     <description>Recent content in Ips on xenol&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 09 Aug 2016 00:09:28 +0200</lastBuildDate>
-    <atom:link href="http://blog.xenol.eu/tags/ips/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.xenol.eu/tags/ips/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Mirroring OpenIndiana IPS repositories - part 1</title>
-      <link>http://blog.xenol.eu/blog/2016/08/09/Mirroring-OpenIndiana-IPS-repositories---part-1/</link>
+      <link>https://blog.xenol.eu/blog/2016/08/09/Mirroring-OpenIndiana-IPS-repositories---part-1/</link>
       <pubDate>Tue, 09 Aug 2016 00:09:28 +0200</pubDate>
       
-      <guid>http://blog.xenol.eu/blog/2016/08/09/Mirroring-OpenIndiana-IPS-repositories---part-1/</guid>
+      <guid>https://blog.xenol.eu/blog/2016/08/09/Mirroring-OpenIndiana-IPS-repositories---part-1/</guid>
       <description>
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ansible on xenol&#39;s blog</title>
-    <link>http://blog.xenol.eu/tags/ansible/</link>
+    <link>https://blog.xenol.eu/tags/ansible/</link>
     <description>Recent content in Ansible on xenol&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 03 Sep 2016 12:10:21 +0200</lastBuildDate>
-    <atom:link href="http://blog.xenol.eu/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.xenol.eu/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Managing illumos networking with Ansible</title>
-      <link>http://blog.xenol.eu/blog/2016/09/03/Managing-illumos-networking-with-Ansible/</link>
+      <link>https://blog.xenol.eu/blog/2016/09/03/Managing-illumos-networking-with-Ansible/</link>
       <pubDate>Sat, 03 Sep 2016 12:10:21 +0200</pubDate>
       
-      <guid>http://blog.xenol.eu/blog/2016/09/03/Managing-illumos-networking-with-Ansible/</guid>
+      <guid>https://blog.xenol.eu/blog/2016/09/03/Managing-illumos-networking-with-Ansible/</guid>
       <description>&lt;p&gt;On August 30th, my work on Ansible modules for managing Solaris/illumos networking was merged into &lt;a href=&#34;https://github.com/ansible/ansible-modules-extras/commits/devel&#34;&gt;ansible-modules-extras&lt;/a&gt; repository. This functionality will be available in the next release of Ansible. Following modules were contributed:&lt;/p&gt;
 
 &lt;ul&gt;

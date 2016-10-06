@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Personal on xenol&#39;s blog</title>
-    <link>http://blog.xenol.eu/categories/personal/</link>
+    <link>https://blog.xenol.eu/categories/personal/</link>
     <description>Recent content in Personal on xenol&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 Jun 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.xenol.eu/categories/personal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.xenol.eu/categories/personal/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Passed RHCE exam</title>
-      <link>http://blog.xenol.eu/2012/06/01/passed-rhce-exam/</link>
+      <link>https://blog.xenol.eu/2012/06/01/passed-rhce-exam/</link>
       <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.xenol.eu/2012/06/01/passed-rhce-exam/</guid>
+      <guid>https://blog.xenol.eu/2012/06/01/passed-rhce-exam/</guid>
       <description>
 
 &lt;p&gt;I took and passed both Red Hat Certified System Administrator (RHCSA) and Red Hat Certified Engineer (RHCE) exams. The certification is valid for 3 years. After that you have to either retake RHCE exam or pass other higher level Red Hat certification in order to prolong certification validity. RHCSA exam took 2.5 hours and RHCE 2 hours. I was nearly done after 1 hour and used the remaining time for checking.&lt;/p&gt;

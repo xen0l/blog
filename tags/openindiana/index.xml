@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Openindiana on xenol&#39;s blog</title>
-    <link>http://blog.xenol.eu/tags/openindiana/</link>
+    <link>https://blog.xenol.eu/tags/openindiana/</link>
     <description>Recent content in Openindiana on xenol&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 03 Sep 2016 12:10:21 +0200</lastBuildDate>
-    <atom:link href="http://blog.xenol.eu/tags/openindiana/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.xenol.eu/tags/openindiana/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Managing illumos networking with Ansible</title>
-      <link>http://blog.xenol.eu/blog/2016/09/03/Managing-illumos-networking-with-Ansible/</link>
+      <link>https://blog.xenol.eu/blog/2016/09/03/Managing-illumos-networking-with-Ansible/</link>
       <pubDate>Sat, 03 Sep 2016 12:10:21 +0200</pubDate>
       
-      <guid>http://blog.xenol.eu/blog/2016/09/03/Managing-illumos-networking-with-Ansible/</guid>
+      <guid>https://blog.xenol.eu/blog/2016/09/03/Managing-illumos-networking-with-Ansible/</guid>
       <description>&lt;p&gt;On August 30th, my work on Ansible modules for managing Solaris/illumos networking was merged into &lt;a href=&#34;https://github.com/ansible/ansible-modules-extras/commits/devel&#34;&gt;ansible-modules-extras&lt;/a&gt; repository. This functionality will be available in the next release of Ansible. Following modules were contributed:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -33,10 +33,10 @@
     
     <item>
       <title>Mirroring OpenIndiana IPS repositories - part 1</title>
-      <link>http://blog.xenol.eu/blog/2016/08/09/Mirroring-OpenIndiana-IPS-repositories---part-1/</link>
+      <link>https://blog.xenol.eu/blog/2016/08/09/Mirroring-OpenIndiana-IPS-repositories---part-1/</link>
       <pubDate>Tue, 09 Aug 2016 00:09:28 +0200</pubDate>
       
-      <guid>http://blog.xenol.eu/blog/2016/08/09/Mirroring-OpenIndiana-IPS-repositories---part-1/</guid>
+      <guid>https://blog.xenol.eu/blog/2016/08/09/Mirroring-OpenIndiana-IPS-repositories---part-1/</guid>
       <description>
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
@@ -338,10 +338,10 @@ to get maximum out of nginx capabilities.&lt;/p&gt;
     
     <item>
       <title>OpenIndiana involvement</title>
-      <link>http://blog.xenol.eu/2012/02/11/openindiana-involvement/</link>
+      <link>https://blog.xenol.eu/2012/02/11/openindiana-involvement/</link>
       <pubDate>Sat, 11 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.xenol.eu/2012/02/11/openindiana-involvement/</guid>
+      <guid>https://blog.xenol.eu/2012/02/11/openindiana-involvement/</guid>
       <description>&lt;p&gt;I have been watching OpenSolaris development for a long time. As a technology fan, I really like all the cool features OpenSolaris offers: ZFS filesystem capabilities, service management with SMF, dynamic tracing and application debugging with DTrace, container-based virtualization with Solaris zones, network virtualization with Crossbow, safe system upgrades and downtime minimalization via Boot Environments and integratiom of all these features together makes it perfect operating system for a server. However, OpenSolaris is dead and it continues to live as &lt;a href=&#34;http://www.openindiana.org&#34;&gt;OpenIndiana&lt;/a&gt;, which is a &lt;a href=&#34;http://www.illumos.org&#34;&gt;Illumos&lt;/a&gt;-based derivate. Illumos is an open source project providing Solaris and OpenSolaris kernel and driver source code. OpenIndiana aims to be a direct continuation of the OpenSolaris operating system.&lt;/p&gt;
 
 &lt;p&gt;As a fan and satisfied user of &lt;a href=&#34;http://www.zabbix.com&#34;&gt;Zabbix&lt;/a&gt; monitoring software, I decided to port, package and maintain Zabbix monitoring suite for OpenIndiana. Zabbix agent already made it to the package repository. Zabbix server and possibly proxy will follow in upcoming months. I am also planning to maintain other software I am actively using e.g tor, php-fpm and DNS related software.&lt;/p&gt;

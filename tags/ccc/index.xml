@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ccc on xenol&#39;s blog</title>
-    <link>http://blog.xenol.eu/tags/ccc/</link>
+    <link>https://blog.xenol.eu/tags/ccc/</link>
     <description>Recent content in Ccc on xenol&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 31 Dec 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.xenol.eu/tags/ccc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.xenol.eu/tags/ccc/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>29c3: Finale</title>
-      <link>http://blog.xenol.eu/2012/12/31/29c3-finale/</link>
+      <link>https://blog.xenol.eu/2012/12/31/29c3-finale/</link>
       <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.xenol.eu/2012/12/31/29c3-finale/</guid>
+      <guid>https://blog.xenol.eu/2012/12/31/29c3-finale/</guid>
       <description>&lt;p&gt;I arrived at CCH in the afternoon and headed directly for &lt;strong&gt;NOC Review&lt;/strong&gt; talk. Guys did really wonderful job, although the Wifi was a problem. I really liked some network facts:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -32,10 +32,10 @@
     
     <item>
       <title>29c3: Day Three</title>
-      <link>http://blog.xenol.eu/2012/12/30/29c3-day-three/</link>
+      <link>https://blog.xenol.eu/2012/12/30/29c3-day-three/</link>
       <pubDate>Sun, 30 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.xenol.eu/2012/12/30/29c3-day-three/</guid>
+      <guid>https://blog.xenol.eu/2012/12/30/29c3-day-three/</guid>
       <description>&lt;p&gt;Third day of the Congress was filled with some number of interesting talks I visited. I started with a talk, in which I was interested the most - &lt;strong&gt;An Overview of Secure Name Resolution - DNSSEC, DNSCurve and Namecoin&lt;/strong&gt;. Speaker gave great introduction into DNSSEC and also talked about its deployment rate. He also spoke DNSSEC&amp;rsquo;s use in amplification attacks and suitable countermeasures. DNSCurve and Namecoin was discussed as well. From this talk, it is clear that DNSSEC is the way forward. Video will be available shortly.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Security Evaluation of Russian GOST Cipher&lt;/strong&gt; gave nice overview of Russian GOST cipher and it&amp;rsquo;s history. In theory, GOST should be secure for 200 more years. I am a bit sceptic as in the last two years there were found around 20+ possible attacks on GOST. Speaker talked about them and described the steps how to attack. Video will be available shortly.&lt;/p&gt;
@@ -46,10 +46,10 @@
     
     <item>
       <title>29c3: Day Two</title>
-      <link>http://blog.xenol.eu/2012/12/29/29c3-day-two/</link>
+      <link>https://blog.xenol.eu/2012/12/29/29c3-day-two/</link>
       <pubDate>Sat, 29 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.xenol.eu/2012/12/29/29c3-day-two/</guid>
+      <guid>https://blog.xenol.eu/2012/12/29/29c3-day-two/</guid>
       <description>&lt;p&gt;I started this day with visiting talk by Axel Arnbak titled &lt;strong&gt;Certificate Authority Collapse&lt;/strong&gt;. Axel talked about the current model being completely broken (nothing new in the security community) and that the change is needed. He described the DigiNotar incident. The European Union wants to address this issue by &lt;a href=&#34;http://ec.europa.eu/information_society/policy/esignature/eu_legislation/regulation/index_en.htm&#34;&gt;regulations&lt;/a&gt;, which do more harm than good. If the CA model is broken, it should be fixed technically and not by law. Video can be found &lt;a href=&#34;http://ftp.uni-kl.de/CCC/29C3/mp4-h264-HQ/29c3-5319-en-certificate_authority_collapse_h264.mp4&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;After lunch, I went and saw &lt;strong&gt;Lightning talks&lt;/strong&gt; block. I liked the talk about a &lt;a href=&#34;rhizomatica.org&#34;&gt;project&lt;/a&gt; building community GSM and mesh networks in remote areas in Mexico.&lt;/p&gt;
@@ -62,10 +62,10 @@
     
     <item>
       <title>29c3: Day One</title>
-      <link>http://blog.xenol.eu/2012/12/28/29c3-day-one/</link>
+      <link>https://blog.xenol.eu/2012/12/28/29c3-day-one/</link>
       <pubDate>Fri, 28 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.xenol.eu/2012/12/28/29c3-day-one/</guid>
+      <guid>https://blog.xenol.eu/2012/12/28/29c3-day-one/</guid>
       <description>&lt;p&gt;29c3 is my first Congress I visited. It returned to Hamburg after 8 years of being held in Berlin and is located at the Conference Center Hamburg (CCH). First day&amp;rsquo;s talk were mostly non-technical ones.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Not my department&lt;/strong&gt; by Jacob Appelbaum proposed that people should develop more software like Tor or similiar tools.&lt;/p&gt;
