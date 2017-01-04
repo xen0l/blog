@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.xenol.eu/blog/2017/01/03/33C3-Works-for-me/</loc>
-    <lastmod>2017-01-03T20:39:50+01:00</lastmod>
+    <loc>https://blog.xenol.eu/blog/2017/01/02/33C3-Works-for-me/</loc>
+    <lastmod>2017-01-02T20:39:50+01:00</lastmod>
   </url>
   
   <url>
@@ -79,7 +79,7 @@
   
   <url>
     <loc>https://blog.xenol.eu/categories/33c3/</loc>
-    <lastmod>2017-01-03T20:39:50+01:00</lastmod>
+    <lastmod>2017-01-02T20:39:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -90,13 +90,13 @@
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/categories/ansible/</loc>
+    <loc>https://blog.xenol.eu/tags/ansible/</loc>
     <lastmod>2016-09-03T12:10:21+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/tags/ansible/</loc>
+    <loc>https://blog.xenol.eu/categories/ansible/</loc>
     <lastmod>2016-09-03T12:10:21+02:00</lastmod>
     <priority>0</priority>
   </url>
@@ -111,20 +111,14 @@
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/categories/ccc/</loc>
-    <lastmod>2017-01-03T20:39:50+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.xenol.eu/tags/ccc/</loc>
-    <lastmod>2017-01-03T20:39:50+01:00</lastmod>
+    <lastmod>2017-01-02T20:39:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/categories/dns/</loc>
-    <lastmod>2012-10-29T00:00:00+00:00</lastmod>
+    <loc>https://blog.xenol.eu/categories/ccc/</loc>
+    <lastmod>2017-01-02T20:39:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -135,13 +129,19 @@
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/categories/freebsd/</loc>
+    <loc>https://blog.xenol.eu/categories/dns/</loc>
     <lastmod>2012-10-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.xenol.eu/tags/freebsd/</loc>
+    <lastmod>2012-10-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.xenol.eu/categories/freebsd/</loc>
     <lastmod>2012-10-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -177,13 +177,13 @@
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/categories/openindiana/</loc>
+    <loc>https://blog.xenol.eu/tags/openindiana/</loc>
     <lastmod>2016-09-03T12:10:21+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/tags/openindiana/</loc>
+    <loc>https://blog.xenol.eu/categories/openindiana/</loc>
     <lastmod>2016-09-03T12:10:21+02:00</lastmod>
     <priority>0</priority>
   </url>
@@ -196,7 +196,7 @@
   
   <url>
     <loc>https://blog.xenol.eu/post/</loc>
-    <lastmod>2017-01-03T20:39:50+01:00</lastmod>
+    <lastmod>2017-01-02T20:39:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -225,7 +225,7 @@
   
   <url>
     <loc>https://blog.xenol.eu/</loc>
-    <lastmod>2017-01-03T20:39:50+01:00</lastmod>
+    <lastmod>2017-01-02T20:39:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
