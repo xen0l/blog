@@ -2,11 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ips on xenol&#39;s blog</title>
-    <link>https://blog.xenol.eu/tags/ips/</link>
+    <link>https://blog.xenol.eu/tags/ips/index.xml</link>
     <description>Recent content in Ips on xenol&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Aug 2016 00:09:28 +0200</lastBuildDate>
     <atom:link href="https://blog.xenol.eu/tags/ips/index.xml" rel="self" type="application/rss+xml" />
     
     <item>

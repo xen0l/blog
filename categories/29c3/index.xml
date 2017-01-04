@@ -2,15 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>29c3 on xenol&#39;s blog</title>
-    <link>https://blog.xenol.eu/categories/29c3/</link>
+    <link>https://blog.xenol.eu/categories/29c3/index.xml</link>
     <description>Recent content in 29c3 on xenol&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Dec 2012 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.xenol.eu/categories/29c3/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>29c3: Finale</title>
+      <title>29C3: Finale</title>
       <link>https://blog.xenol.eu/2012/12/31/29c3-finale/</link>
       <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
       

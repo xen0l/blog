@@ -43,10 +43,17 @@
   <meta name="author" content="xenol">
 
   
-  <meta name="generator" content="Hugo 0.16" />
+  <meta name="generator" content="Hugo 0.18.1" />
 
   
   
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-32163480-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
 
 </head>
 <body>
@@ -103,6 +110,41 @@
         
 
 <header>
+    <p class="meta">Dec 29, 2012
+         - 2 minute read 
+         - <a href="https://blog.xenol.eu/2012/12/29/29c3-day-two/#disqus_thread">Comments</a>
+
+        
+        
+        
+            - <a class="label" href="https://blog.xenol.eu/categories/29c3/">29C3 </a><a class="label" href="https://blog.xenol.eu/categories/ccc/">CCC </a>
+        
+    </p>
+    <h1 class="entry-title">
+        <a href="https://blog.xenol.eu/2012/12/29/29c3-day-two/">29c3: Day Two</a>
+    </h1>
+</header>
+
+
+        
+          <p>I started this day with visiting talk by Axel Arnbak titled Certificate Authority Collapse. Axel talked about the current model being completely broken (nothing new in the security community) and that the change is needed. He described the DigiNotar incident. The European Union wants to address this issue by regulations, which do more harm than good. If the CA model is broken, it should be fixed technically and not by law.</p>
+
+          
+              <footer>
+                  <a href="https://blog.xenol.eu/2012/12/29/29c3-day-two/" rel="full-article">Read On &rarr;</a>
+              </footer>
+          
+
+        
+
+    </article>
+    
+    <article>
+
+        
+        
+
+<header>
     <p class="meta">Dec 28, 2012
          - 2 minute read 
          - <a href="https://blog.xenol.eu/2012/12/28/29c3-day-one/#disqus_thread">Comments</a>
@@ -120,7 +162,9 @@
 
 
         
-          <p>29c3 is my first Congress I visited. It returned to Hamburg after 8 years of being held in Berlin and is located at the Conference Center Hamburg (CCH). First day&rsquo;s talk were mostly non-technical ones. Not my department by Jacob Appelbaum proposed that people should develop more software like Tor or similiar tools. The second talk titled Enemies of the State: What Happens When Telling the Truth about Secret US Government Power Becomes a Crime was about breaking the US constitution by the US goverment and the rise of spying practices after 11th September 2001 covered as the fight against the terrorism.</p>
+          <p>29c3 is my first Congress I visited. It returned to Hamburg after 8 years of being held in Berlin and is located at the Conference Center Hamburg (CCH). First day&rsquo;s talk were mostly non-technical ones.
+Not my department by Jacob Appelbaum proposed that people should develop more software like Tor or similiar tools.
+The second talk titled Enemies of the State: What Happens When Telling the Truth about Secret US Government Power Becomes a Crime was about breaking the US constitution by the US goverment and the rise of spying practices after 11th September 2001 covered as the fight against the terrorism.</p>
 
           
               <footer>
@@ -155,7 +199,8 @@
 
 
         
-          <p>DNSSEC is an amazing piece of technology. DNSSEC data is digitally signed. The validating DNS server can check if the data it receives is identical to those on the authoritative DNS server. This helps us mitigate DNS cache poisoning. I have signed my domain back in January 2012, signing my zone by hand. However, I forgot to resign my zone and the zone signature expired making it unresolvable. This made me wonder how could I automatize the whole process.</p>
+          <p>DNSSEC is an amazing piece of technology. DNSSEC data is digitally signed. The validating DNS server can check if the data it receives is identical to those on the authoritative DNS server. This helps us mitigate DNS cache poisoning.
+I have signed my domain back in January 2012, signing my zone by hand. However, I forgot to resign my zone and the zone signature expired making it unresolvable. This made me wonder how could I automatize the whole process.</p>
 
           
               <footer>
@@ -260,42 +305,12 @@
 
 
         
-          <p>I have been using FreeBSD jails ever since I started using FreeBSD on my servers. Jail can be described as a chroot on steroids with own users, process namespace and lately own virtualized network stack. I am using FreeBSD jails for mainly for securing and separating services. Each service runs in its own separated container on its own ZFS dataset. Each dataset is a ZFS clone from the snapshot of the template jail, which is adapted to have software I need in every jail installed (zsh, git, vim&hellip;) and configured.</p>
+          <p>I have been using FreeBSD jails ever since I started using FreeBSD on my servers. Jail can be described as a chroot on steroids with own users, process namespace and lately own virtualized network stack.
+I am using FreeBSD jails for mainly for securing and separating services. Each service runs in its own separated container on its own ZFS dataset. Each dataset is a ZFS clone from the snapshot of the template jail, which is adapted to have software I need in every jail installed (zsh, git, vim&hellip;) and configured.</p>
 
           
               <footer>
                   <a href="https://blog.xenol.eu/2012/02/04/easy-freebsd-jail-management-with-zfs-and-pkgng/" rel="full-article">Read On &rarr;</a>
-              </footer>
-          
-
-        
-
-    </article>
-    
-    <article>
-
-        
-        
-
-<header>
-    <p class="meta">Jan 6, 2012
-         - 1 minute read 
-         - <a href="https://blog.xenol.eu/2012/01/06/welcome/#disqus_thread">Comments</a>
-
-        
-    </p>
-    <h1 class="entry-title">
-        <a href="https://blog.xenol.eu/2012/01/06/welcome/">Welcome</a>
-    </h1>
-</header>
-
-
-        
-          <p>Welcome to my personal blog! I had an idea of creating personal blog for a very long time. However, I was always lazy to do so. When I was looking for some blogging engine, I realized that none of the major ones suited me. So I started to experiment with various setups and then I discovered jekyll, which is static blog generator. I like the idea of having a blog completely stored in version control of my choice and served as static pages.</p>
-
-          
-              <footer>
-                  <a href="https://blog.xenol.eu/2012/01/06/welcome/" rel="full-article">Read On &rarr;</a>
               </footer>
           
 
@@ -328,12 +343,17 @@
     
         <a href="/page/2/" class="label-pagination">2</a>
     
-
+        <a href="/page/3/" class="label-pagination">3</a>
     
 
     
     
-        <a href="/page/2/" aria-label="Last"><i class="fa fa-angle-double-right fa-lg"></i></a>
+        <a href="/page/3/" aria-label="Next" class="label-pagination"><i class="fa fa-angle-right fa-lg"></i></a>
+    
+
+    
+    
+        <a href="/page/3/" aria-label="Last"><i class="fa fa-angle-double-right fa-lg"></i></a>
     
 
 </div>
@@ -387,6 +407,10 @@
         <ul id="recent_posts">
           
             <li class="post">
+              <a href="/blog/2017/01/03/33C3-Works-for-me/">33C3: Works for me</a>
+            </li>
+          
+            <li class="post">
               <a href="/blog/2016/09/03/Managing-illumos-networking-with-Ansible/">Managing illumos networking with Ansible</a>
             </li>
           
@@ -399,11 +423,7 @@
             </li>
           
             <li class="post">
-              <a href="/2012/12/31/29c3-finale/">29c3: Finale</a>
-            </li>
-          
-            <li class="post">
-              <a href="/2012/12/30/29c3-day-three/">29c3: Day Three</a>
+              <a href="/2012/12/31/29c3-finale/">29C3: Finale</a>
             </li>
           
         </ul>
@@ -417,7 +437,7 @@
 </div>
 
 <footer role="contentinfo">
-  <p>Copyright &copy; 2016 xenol - <a href="https://blog.xenol.eu/license/">License</a> -
+  <p>Copyright &copy; 2017 xenol - <a href="https://blog.xenol.eu/license/">License</a> -
   <span class="credit">Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> and <a target="_blank" href="https://github.com/parsiya/hugo-octopress/">Hugo-Octopress</a> theme.
 </p>
 

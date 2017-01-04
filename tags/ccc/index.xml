@@ -2,15 +2,114 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ccc on xenol&#39;s blog</title>
-    <link>https://blog.xenol.eu/tags/ccc/</link>
+    <link>https://blog.xenol.eu/tags/ccc/index.xml</link>
     <description>Recent content in Ccc on xenol&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Dec 2012 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.xenol.eu/tags/ccc/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>29c3: Finale</title>
+      <title>33C3: Works for me</title>
+      <link>https://blog.xenol.eu/blog/2017/01/03/33C3-Works-for-me/</link>
+      <pubDate>Tue, 03 Jan 2017 20:39:50 +0100</pubDate>
+      
+      <guid>https://blog.xenol.eu/blog/2017/01/03/33C3-Works-for-me/</guid>
+      <description>&lt;p&gt;I visited 33rd Chaos Communication Congress, which took place between 27th and 30th December 2016 in (CCH)[&lt;a href=&#34;https://en.wikipedia.org/wiki/Congress_Center_Hamburg&#34;&gt;https://en.wikipedia.org/wiki/Congress_Center_Hamburg&lt;/a&gt;] in Hamburg. The motto of last year&amp;rsquo;s congress was &lt;strong&gt;Works for me&lt;/strong&gt;. This was my fifth attendance of the Chaos Communication Congress.&lt;/p&gt;
+
+&lt;p&gt;The overall atmosphere on the Congress and organization was excellent as always. However, I have to admit that the quallity of talks was worse when compared to previous years. During previous Congresses I had problems with choosing which talk to attend as there were too many of them I wanted to visit at the same time. 33C3 was different. I was kind of bored on 3rd and 4th day. Also, there were a huge problems with tickets as I was able to get a ticket only in the last sale round. With such a huge interest in the Congress I thought there is going be a lot more people when compared to previous years, but this wasn&amp;rsquo;t the case. 32C3 was much more crowded than 33C3 was (I am not complaining, but I expected a lot more people)!&lt;/p&gt;
+
+&lt;p&gt;I have visited the following talks:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Day 1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;The Figth for Encryption in 2016&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8295-the_fight_for_encryption_in_2016&#34;&gt;Video&lt;/a&gt;) - Kurt Opsahl from &lt;a href=&#34;https://www.eff.org/&#34;&gt;EFF&lt;/a&gt; gave the summary of 2016 development in the crypto ecosystem. 2016 was a year, in which end-to-end encryption was deployed in all major messengers as well as attempts to weaken crypto by governments.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Bootstrapping a slightly more secure laptop&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8314-bootstraping_a_slightly_more_secure_laptop&#34;&gt;Video&lt;/a&gt;) - &lt;a href=&#34;https://trmm.net/&#34;&gt;Trammel Hudson&lt;/a&gt; spoke about his work on &lt;a href=&#34;https://trmm.net/Heads&#34;&gt;Heads&lt;/a&gt;, which is a custom secure opensource firmware for laptops and servers that want to provide a much better physical security. It is based on the Linux Kernel and Coreboot. I liked this talk very much.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Law Enforcement Are Hacking the Planet&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8018-law_enforcement_are_hacking_the_planet&#34;&gt;Video&lt;/a&gt;) - this talk was about how FBI uses exploits and spoke about Operation PACIFIER and Torpedo. The operation covered the takedown of child pornography Tor hidden service and how FBI uses malware to discover site&amp;rsquo;s visitors.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Shut up and Take My Money!&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-7969-shut_up_and_take_my_money&#34;&gt;Video&lt;/a&gt;) - this talk was hillarious one! It describes &lt;a href=&#34;https://n26.com/&#34;&gt;N26&lt;/a&gt; Internet bank security issues. It is really worth watching this video. If you are a software develoepr and you want to learn how to write secure applications, it is a must watch.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Geolocation methods in mobile networks&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-7966-geolocation_methods_in_mobile_networks&#34;&gt;Video&lt;/a&gt; &lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/system/event_attachments/attachments/000/003/113/original/Slides_Geolocation_methods_in_mobile_networks.pdf&#34;&gt;Slides&lt;/a&gt;) - a good overview of various geolocation techniques of mobile device in mobile devices. The talk might look like a little boring, but there are few new ideas presented as well.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Untrusting the CPU&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8014-untrusting_the_cpu&#34;&gt;Video&lt;/a&gt;) - this talk describes a proposal for a more secure CPU architecture. The idea is to move as much sensitive data as possible out of present-day CPUs. I left this talk after some for late lunch.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Deploying TLS 1.3: the great, the good and the bad&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8348-deploying_tls_1_3_the_great_the_good_and_the_bad&#34;&gt;Video&lt;/a&gt;) - a talk by &lt;a href=&#34;https://blog.filippo.io/&#34;&gt;Filippo Valsorda&lt;/a&gt; and &lt;a href=&#34;https://crypto.dance/&#34;&gt;Nick Sullivan&lt;/a&gt; (both from Cloudflare) about the next generation of TLS. TLS 1.3 removes insecure ciphers and broken parts of older TLS versions (e.g. TLS compression), introduces new cryptographic ciphers (ChaCha20-Poly1305), digital signature algorithms (Ed25519 and Ed448), key exchange protocols (x25519 and x448), integrates use of session hash and increases performance (1-RTT handshake and initial suport for 0-RTT). TLS 1.3 is still a draft and should be ready around February 2017. This talk is a must watch for everybody who deals with web application infrastructure!&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;You can -j REJECT but you can not hide: Global scanning of the IPv6 Internet&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8061-you_can_-j_reject_but_you_can_not_hide_global_scanning_of_the_ipv6_internet&#34;&gt;Video&lt;/a&gt;) - summarizes and shows how to use various scanning techniques to discover live hosts in IPv6 networks. Speaker also showed visulization of big IPv6 networks e.g. .mil. I liked this talk and it is definitely a must watch for people for people intrested in networking and security.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Day 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Syrian Archive&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-7909-syrian_archive&#34;&gt;Video&lt;/a&gt;) - a group of people who try to document and validate what is happening in Syrian Civil War conflict zones. THey developed a tool, which preserves video evidence and a workflow to verify video footage.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Gone in 60 Milliseconds&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-7865-gone_in_60_milliseconds&#34;&gt;Video&lt;/a&gt;) - one of the best talk on 33c3. The speaker talked about attacking AWS Lambda-based applications, which don&amp;rsquo;t run longer than few milliseconds. Even though the application runs for few milliseconds, it can still be attacked by using and leveraing cloud provider&amp;rsquo;s other technologies. I especially liked the way how he presented the talk. This is a must was for anyone working with AWS Lambda!&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Recount 2016: An Uninvited Security Audit of the U. S. Presidential Election&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8074-recount_2016_an_uninvited_security_audit_of_the_u_s_presidential_election&#34;&gt;Video&lt;/a&gt;) - &lt;a href=&#34;https://twitter.com/umbernhard&#34;&gt;Matt Bernhard&lt;/a&gt; and &lt;a href=&#34;https://jhalderm.com/&#34;&gt;J. Alex Halderman&lt;/a&gt; talked about events after the U. S. presidential elections. They showed that the voting machines are very easy to hack and that somebody could manipulate the vote easily. They also described what happened to the presidential election recounts, how they ended and what should be changed so that future U. S. elections are secure. They also showcased how crazy voting recount laws in some U.S. states are. If you are interested, if the elections were hacked, check out this video.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;The Untold Story of Edward Snowden&amp;rsquo;s Escape from Hong Kong&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8416-the_untold_story_of_edward_snowden_s_escape_from_hong_kong&#34;&gt;Video&lt;/a&gt;) - this talk sheds light on what happened during 2 weeks between the moment Edward Snowden left the hotel in Hong Kong and his landing in Moscow. This talk also tells the stories of people who helped Edward Snowden and what can we do for them. In the beginning of this talk, there were some technical problems, so it you can skip first 10 or 15 minutes.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;State of Internet Censorship 2016&lt;/strong&gt; (&lt;a href=&#34;https://wills.co.tt/33c3-censorship/#/&#34;&gt;Slides&lt;/a&gt;) - this talk summarizes year 2016 in Internet censorship landscape. It contains information about threats and trends in this area as well.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Intercoms Hacking&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8027-intercoms_hacking&#34;&gt;Video&lt;/a&gt;) - ever wondered how to hack intercoms? In the past, Intercoms were connected by wires, but trends are changing and so is the technology. This talk will give a nice intro to the topic and how to approach the problem. This talk was wonderful and I enjoyed it.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;ATMs how to break them to stop the fraud&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8273-atms_how_to_break_them_to_stop_the_fraud&#34;&gt;Video&lt;/a&gt;) - various way how ATMs can be hacked, what can be done to prevent ATM hacking and nice overview of the problematic.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Day 3&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Dissecting modern (3G/4G) celluar modems&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8151-dissecting_modern_3g_4g_cellular_modems&#34;&gt;Video&lt;/a&gt; &lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/system/event_attachments/attachments/000/003/151/original/Dissecting_modern_%283G_4G%29_cellular_modems.pdf&#34;&gt;Slides&lt;/a&gt;) - this talk provides a detailed look at some modern 3G/4G cellular modems and what can be found out about their internals using debug interfaces and various hackign techniques. Speakers were also talking about how they reverse engineered cellular modems and showed what they were able to achieve with hacked cellular modems.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;The Moon and European Space Exploration&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8406-the_moon_and_european_space_exploration&#34;&gt;Video&lt;/a&gt;) - The second talk in &lt;em&gt;Space&lt;/em&gt; track. Jan Wörner spoke about the European Space Agency, it&amp;rsquo;s purpose, how they work and what are they working on. He also gave details about &lt;a href=&#34;http://www.esa.int/About_Us/Ministerial_Council_2016/Moon_Village&#34;&gt;The Moon Village&lt;/a&gt;. I enjoyed this talk very much.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Interplanetary Colonization&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-7942-interplanetary_colonization&#34;&gt;Video&lt;/a&gt;) - Liz George and Peter Buschkamp spoke about travelling in space, colonization of other planets and gave more insight into the problems we as the species are facing on this front.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Lasers in the sky (with asteroids)&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-7927-lasers_in_the_sky_with_asteroids&#34;&gt;Video&lt;/a&gt;) - Peter Buschkamp spoke about space and airborne lasers and their practical uses.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Day 4&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Retail Surveillance / Retail Countersurveillance&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8238-retail_surveillance_retail_countersurveillance&#34;&gt;Video&lt;/a&gt;) - this talk surveys current and emerging trends and technologies used in retail surveilannce. &lt;a href=&#34;https://ahprojects.com/&#34;&gt;Adam Harvey&lt;/a&gt; also spoke about face recognition and what can be gather from such analysis.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Understanding the Snooper’s Charter&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8287-understanding_the_snooper_s_charter&#34;&gt;Video&lt;/a&gt; &lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/system/event_attachments/attachments/000/003/153/original/Presentation_-_Understanding_the_Snooper&#39;s_Charter.odp&#34;&gt;Slides&lt;/a&gt;) - the talk analyzes the &lt;a href=&#34;http://www.legislation.gov.uk/ukpga/2016/25/contents/enacted/data.htm&#34;&gt;Investigatory Powers Act&lt;/a&gt; aka Snooper&amp;rsquo;s Charter in the UK, what does it mean for everybody and how it affects everyday life. With this law in place, the UK became unnoticable surveillance state.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;33C3 Infrastructure Review&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/32c3-7555-32c3_infrastructure_review&#34;&gt;Video&lt;/a&gt;) - the most awaited and the most interesting talk of the day. This talks gives an overview of metrics, numbers and other aspects of the Congress. The most interesting facts were related to networking and they are shown on the picture below:&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;https://blog.xenol.eu/images/33c3_networking_stats.jpg&#34; title=&#34;33C3 networking statistics&#34;  /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Talks I haven&amp;rsquo;t visited, but are interesting:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/events/8044.html&#34;&gt;&lt;strong&gt;What could possibly go wrong with &amp;lt;insert x86 instruction here&amp;gt;?&lt;/strong&gt;&lt;/a&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8044-what_could_possibly_go_wrong_with_insert_x86_instruction_here&#34;&gt;Video&lt;/a&gt; &lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/system/event_attachments/attachments/000/003/156/original/slides.pdf&#34;&gt;Slides&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/events/8127.html&#34;&gt;&lt;strong&gt;How Do I Crack Satellite and Cable Pay TV?&lt;/strong&gt;&lt;/a&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8127-how_do_i_crack_satellite_and_cable_pay_tv&#34;&gt;Video&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://media.ccc.de/v/33c3-8117-3_years_after_snowden_is_germany_fighting_state_surveillance&#34;&gt;&lt;strong&gt;3 Years After Snowden: Is Germany fighting State Surveillance?&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/events/8272.html&#34;&gt;&lt;strong&gt;On Smart Cities, Smart Energy, And Dumb Security&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/events/8069.html&#34;&gt;&lt;strong&gt;Tapping into the core&lt;/strong&gt;&lt;/a&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8069-tapping_into_the_core&#34;&gt;Video&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/events/7827.html&#34;&gt;&lt;strong&gt;On the Security and Privacy of Modern Single Sign-On in the Web&lt;/strong&gt;&lt;/a&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-7827-on_the_security_and_privacy_of_modern_single_sign-on_in_the_web&#34;&gt;Video&lt;/a&gt; &lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/system/event_attachments/attachments/000/003/132/original/on-the-security-and-privacy-of-modern-sso.pdf&#34;&gt;Slides&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/events/8142.html&#34;&gt;&lt;strong&gt;Virtual Secure Boot&lt;/strong&gt;&lt;/a&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8142-virtual_secure_boot&#34;&gt;Video&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Other interesting links:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/&#34;&gt;Fahrplan (33C3 schedule)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://media.ccc.de/c/33c3&#34;&gt;33C3 videos on media.ccc.de&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLOcrXzpA0W82Z49Pj0v-cehuvA9qCDuX9&#34;&gt;33C3 video playlist on YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To conclude, I enjoyed 33C3 very much and I am looking forward for 34C3. See you there!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>29C3: Finale</title>
       <link>https://blog.xenol.eu/2012/12/31/29c3-finale/</link>
       <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
       
