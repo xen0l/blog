@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.xenol.eu/blog/2017/02/12/Ansible-modules-and-OpenIndiana/</loc>
+    <lastmod>2017-02-12T21:41:17+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.xenol.eu/blog/2017/02/11/Managing-more-illumos-networking-with-Ansible/</loc>
+    <lastmod>2017-02-11T21:35:37+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.xenol.eu/blog/2017/01/02/33C3-Works-for-me/</loc>
     <lastmod>2017-01-02T20:39:50+01:00</lastmod>
   </url>
@@ -91,13 +101,13 @@
   
   <url>
     <loc>https://blog.xenol.eu/tags/ansible/</loc>
-    <lastmod>2016-09-03T12:10:21+02:00</lastmod>
+    <lastmod>2017-02-12T21:41:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.xenol.eu/categories/ansible/</loc>
-    <lastmod>2016-09-03T12:10:21+02:00</lastmod>
+    <lastmod>2017-02-12T21:41:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -153,8 +163,14 @@
   </url>
   
   <url>
+    <loc>https://blog.xenol.eu/tags/illumos/</loc>
+    <lastmod>2017-02-12T21:41:17+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.xenol.eu/categories/illumos/</loc>
-    <lastmod>2016-09-03T12:10:21+02:00</lastmod>
+    <lastmod>2017-02-12T21:41:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -172,19 +188,19 @@
   
   <url>
     <loc>https://blog.xenol.eu/tags/networking/</loc>
-    <lastmod>2016-09-03T12:10:21+02:00</lastmod>
+    <lastmod>2017-02-11T21:35:37+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.xenol.eu/tags/openindiana/</loc>
-    <lastmod>2016-09-03T12:10:21+02:00</lastmod>
+    <lastmod>2017-02-12T21:41:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.xenol.eu/categories/openindiana/</loc>
-    <lastmod>2016-09-03T12:10:21+02:00</lastmod>
+    <lastmod>2017-02-12T21:41:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -196,7 +212,7 @@
   
   <url>
     <loc>https://blog.xenol.eu/post/</loc>
-    <lastmod>2017-01-02T20:39:50+01:00</lastmod>
+    <lastmod>2017-02-12T21:41:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -208,7 +224,7 @@
   
   <url>
     <loc>https://blog.xenol.eu/categories/sysadmin/</loc>
-    <lastmod>2016-09-03T12:10:21+02:00</lastmod>
+    <lastmod>2017-02-12T21:41:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -225,7 +241,7 @@
   
   <url>
     <loc>https://blog.xenol.eu/</loc>
-    <lastmod>2017-01-02T20:39:50+01:00</lastmod>
+    <lastmod>2017-02-12T21:41:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   

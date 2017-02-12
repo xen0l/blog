@@ -16,7 +16,7 @@
   
 
   
-  <title>Easy FreeBSD jail management with ZFS and pkgng</title>
+  <title>Managing more illumos networking with Ansible</title>
 
   
   
@@ -108,18 +108,18 @@ ga('send', 'pageview');
         
 
 <header>
-    <p class="meta">Feb 4, 2012
-         - 2 minute read 
-         - <a href="https://blog.xenol.eu/2012/02/04/easy-freebsd-jail-management-with-zfs-and-pkgng/#disqus_thread">Comments</a>
+    <p class="meta">Feb 11, 2017
+         - 1 minute read 
+         - <a href="https://blog.xenol.eu/blog/2017/02/11/Managing-more-illumos-networking-with-Ansible/#disqus_thread">Comments</a>
 
         
         
         
-            - <a class="label" href="https://blog.xenol.eu/categories/sysadmin/">sysadmin </a><a class="label" href="https://blog.xenol.eu/categories/freebsd/">FreeBSD </a>
+            - <a class="label" href="https://blog.xenol.eu/categories/sysadmin/">sysadmin </a><a class="label" href="https://blog.xenol.eu/categories/openindiana/">OpenIndiana </a><a class="label" href="https://blog.xenol.eu/categories/illumos/">illumos </a><a class="label" href="https://blog.xenol.eu/categories/ansible/">ansible </a>
         
     </p>
     <h1 class="entry-title">
-         Easy FreeBSD jail management with ZFS and pkgng 
+         Managing more illumos networking with Ansible 
     </h1>
 </header>
 
@@ -128,11 +128,18 @@ ga('send', 'pageview');
           
           
           
-          <p>I have been using FreeBSD jails ever since I started using FreeBSD on my servers. Jail can be described as a chroot on steroids with own users, process namespace and lately own virtualized network stack.</p>
+          <p>On January 9th, the rest of my work on Ansible modules for managing Solaris/illumos networking was accepted into Ansible and this work will be a part of the next release. With this batch of modules almost every aspect of Solaris/illumos networking (apart from link aggregations and bridges) can be configured and managed by Ansible. The following new modules are available in Ansible:</p>
 
-<p>I am using FreeBSD jails for mainly for securing and separating services. Each service runs in its own separated container on its own ZFS dataset. Each dataset is a ZFS clone from the snapshot of the template jail, which is adapted to have software I need in every jail installed (zsh, git, vim&hellip;) and configured. Running FreeBSD jails on separate ZFS datasets is very flexible because we can setup different per-jail mount options, use compression and snapshot each jail separately. Software updates are fine for small amount of jails, while updating software in hundreds of jails can be a scaring experience. This is past with <a href="https://github.com/pkgng/pkgng">pkgng</a>. pkgng is a new project, which brings new binary package manager. It is very easy to build packages from ports, create and serving package repository and updating.</p>
+<ul>
+<li><a href="https://docs.ansible.com/ansible/dladm_vlan_module.html">dladm_vlan</a></li>
+<li><a href="https://docs.ansible.com/ansible/dladm_linkprop_module.html">dladm_linkprop</a></li>
+<li><a href="https://docs.ansible.com/ansible/dladm_iptun_module.html">dladm_iptun</a></li>
+<li><a href="https://docs.ansible.com/ansible/ipadm_addr_module.html">ipadm_addr</a></li>
+<li><a href="https://docs.ansible.com/ansible/ipadm_addrprop_module.html">ipadm_addrprop</a></li>
+<li><a href="https://docs.ansible.com/ansible/ipadm_addrprop_module.html">ipadm_ifprop</a></li>
+</ul>
 
-<p>With this setup, I can deploy new jail under 2 minutes as all I have to do is a ZFS snapshot cloning and adding jail configuration into host /etc/rc.conf and thanks to ZFS cloning capabilties we are saving some disk space, too. I wrote a simple <a href="http://wiki.xenol.eu/doku.php?id=zfs_pkgng_jail">howto</a> on my personal wiki. I have also setup package repository for my needs at <a href="http://pkg.xenol.eu">pkg.xenol.eu</a>. Feel free to use it.</p>
+<p>In the next blog post I will show some real examples how to accomplish useful work with these modules.</p>
 
         </div>
         
@@ -141,12 +148,12 @@ ga('send', 'pageview');
   <p class="meta">
     <span class="byline author vcard">Posted by <span class="fn">xenol</span></span>
     
-    <time>Feb 4, 2012</time>
+    <time>Feb 11, 2017</time>
     
       <span class="categories">
         Tags:
         
-          <a class="category" href="https://blog.xenol.eu/tags/freebsd">FreeBSD</a>  <a class="category" href="https://blog.xenol.eu/tags/jail">jail</a>  <a class="category" href="https://blog.xenol.eu/tags/zfs">ZFS</a>  
+          <a class="category" href="https://blog.xenol.eu/tags/openindiana">OpenIndiana</a>  <a class="category" href="https://blog.xenol.eu/tags/ansible">ansible</a>  <a class="category" href="https://blog.xenol.eu/tags/networking">networking</a>  
     
     </span>
   </p>
@@ -158,11 +165,11 @@ ga('send', 'pageview');
 
   <p class="meta">
     
-        <a class="basic-alignment left" href="https://blog.xenol.eu/2012/01/06/welcome/" title="Welcome">Welcome</a>
+        <a class="basic-alignment left" href="https://blog.xenol.eu/blog/2017/01/02/33C3-Works-for-me/" title="33C3: Works for me">33C3: Works for me</a>
     
 
     
-      <a class="basic-alignment right" href="https://blog.xenol.eu/2012/02/11/openindiana-involvement/" title="OpenIndiana involvement">OpenIndiana involvement</a>
+      <a class="basic-alignment right" href="https://blog.xenol.eu/blog/2017/02/12/Ansible-modules-and-OpenIndiana/" title="Ansible modules and OpenIndiana">Ansible modules and OpenIndiana</a>
     
   </p>
   

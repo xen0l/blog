@@ -9,6 +9,27 @@
     <atom:link href="https://blog.xenol.eu/tags/networking/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Managing more illumos networking with Ansible</title>
+      <link>https://blog.xenol.eu/blog/2017/02/11/Managing-more-illumos-networking-with-Ansible/</link>
+      <pubDate>Sat, 11 Feb 2017 21:35:37 +0100</pubDate>
+      
+      <guid>https://blog.xenol.eu/blog/2017/02/11/Managing-more-illumos-networking-with-Ansible/</guid>
+      <description>&lt;p&gt;On January 9th, the rest of my work on Ansible modules for managing Solaris/illumos networking was accepted into Ansible and this work will be a part of the next release. With this batch of modules almost every aspect of Solaris/illumos networking (apart from link aggregations and bridges) can be configured and managed by Ansible. The following new modules are available in Ansible:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/dladm_vlan_module.html&#34;&gt;dladm_vlan&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/dladm_linkprop_module.html&#34;&gt;dladm_linkprop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/dladm_iptun_module.html&#34;&gt;dladm_iptun&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/ipadm_addr_module.html&#34;&gt;ipadm_addr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/ipadm_addrprop_module.html&#34;&gt;ipadm_addrprop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/ipadm_addrprop_module.html&#34;&gt;ipadm_ifprop&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In the next blog post I will show some real examples how to accomplish useful work with these modules.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Managing illumos networking with Ansible</title>
       <link>https://blog.xenol.eu/blog/2016/09/03/Managing-illumos-networking-with-Ansible/</link>
       <pubDate>Sat, 03 Sep 2016 12:10:21 +0200</pubDate>

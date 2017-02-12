@@ -110,6 +110,78 @@ ga('send', 'pageview');
         
 
 <header>
+    <p class="meta">Feb 12, 2017
+         - 2 minute read 
+         - <a href="https://blog.xenol.eu/blog/2017/02/12/Ansible-modules-and-OpenIndiana/#disqus_thread">Comments</a>
+
+        
+        
+        
+            - <a class="label" href="https://blog.xenol.eu/categories/sysadmin/">sysadmin </a><a class="label" href="https://blog.xenol.eu/categories/openindiana/">OpenIndiana </a><a class="label" href="https://blog.xenol.eu/categories/illumos/">illumos </a><a class="label" href="https://blog.xenol.eu/categories/ansible/">ansible </a>
+        
+    </p>
+    <h1 class="entry-title">
+        <a href="https://blog.xenol.eu/blog/2017/02/12/Ansible-modules-and-OpenIndiana/">Ansible modules and OpenIndiana</a>
+    </h1>
+</header>
+
+
+        
+          <p>Preface Ansible is a great software for automating and managing systems. In this blog post I will post some examples how to use Ansible modules for accomplishing various tasks on OpenIndiana.
+Package and package repository management Install IPS packages - name: Install common packages pkg5: name: - tcpdump - tmux - shells/zsh state=present  Remove IPS packages - name: Remove tcpdump pkg5: name=tcpdump state=absent  Remove IPS publisher - name: Remove openindiana.</p>
+
+          
+              <footer>
+                  <a href="https://blog.xenol.eu/blog/2017/02/12/Ansible-modules-and-OpenIndiana/" rel="full-article">Read On &rarr;</a>
+              </footer>
+          
+
+        
+
+    </article>
+    
+    <article>
+
+        
+        
+
+<header>
+    <p class="meta">Feb 11, 2017
+         - 1 minute read 
+         - <a href="https://blog.xenol.eu/blog/2017/02/11/Managing-more-illumos-networking-with-Ansible/#disqus_thread">Comments</a>
+
+        
+        
+        
+            - <a class="label" href="https://blog.xenol.eu/categories/sysadmin/">sysadmin </a><a class="label" href="https://blog.xenol.eu/categories/openindiana/">OpenIndiana </a><a class="label" href="https://blog.xenol.eu/categories/illumos/">illumos </a><a class="label" href="https://blog.xenol.eu/categories/ansible/">ansible </a>
+        
+    </p>
+    <h1 class="entry-title">
+        <a href="https://blog.xenol.eu/blog/2017/02/11/Managing-more-illumos-networking-with-Ansible/">Managing more illumos networking with Ansible</a>
+    </h1>
+</header>
+
+
+        
+          <p>On January 9th, the rest of my work on Ansible modules for managing Solaris/illumos networking was accepted into Ansible and this work will be a part of the next release. With this batch of modules almost every aspect of Solaris/illumos networking (apart from link aggregations and bridges) can be configured and managed by Ansible. The following new modules are available in Ansible:
+ dladm_vlan dladm_linkprop dladm_iptun ipadm_addr ipadm_addrprop ipadm_ifprop  In the next blog post I will show some real examples how to accomplish useful work with these modules.</p>
+
+          
+              <footer>
+                  <a href="https://blog.xenol.eu/blog/2017/02/11/Managing-more-illumos-networking-with-Ansible/" rel="full-article">Read On &rarr;</a>
+              </footer>
+          
+
+        
+
+    </article>
+    
+    <article>
+
+        
+        
+
+<header>
     <p class="meta">Jan 2, 2017
          - 7 minute read 
          - <a href="https://blog.xenol.eu/blog/2017/01/02/33C3-Works-for-me/#disqus_thread">Comments</a>
@@ -242,78 +314,6 @@ The overall atmosphere on the Congress and organization was excellent as always.
 
     </article>
     
-    <article>
-
-        
-        
-
-<header>
-    <p class="meta">Dec 31, 2012
-         - 1 minute read 
-         - <a href="https://blog.xenol.eu/2012/12/31/29c3-finale/#disqus_thread">Comments</a>
-
-        
-        
-        
-            - <a class="label" href="https://blog.xenol.eu/categories/29c3/">29C3 </a><a class="label" href="https://blog.xenol.eu/categories/ccc/">CCC </a>
-        
-    </p>
-    <h1 class="entry-title">
-        <a href="https://blog.xenol.eu/2012/12/31/29c3-finale/">29c3: Finale</a>
-    </h1>
-</header>
-
-
-        
-          <p>I arrived at CCH in the afternoon and headed directly for NOC Review talk. Guys did really wonderful job, although the Wifi was a problem. I really liked some network facts:
- ~70 access points, great signal coverage 3059 concurrent wireless clients connected during peaks traffic usage of 8.2 Gbps 40% of traffic being IPv6  Video can be found here.
-The 29C3 was really nice experience and I will definitely return back to 30C3.</p>
-
-          
-              <footer>
-                  <a href="https://blog.xenol.eu/2012/12/31/29c3-finale/" rel="full-article">Read On &rarr;</a>
-              </footer>
-          
-
-        
-
-    </article>
-    
-    <article>
-
-        
-        
-
-<header>
-    <p class="meta">Dec 30, 2012
-         - 2 minute read 
-         - <a href="https://blog.xenol.eu/2012/12/30/29c3-day-three/#disqus_thread">Comments</a>
-
-        
-        
-        
-            - <a class="label" href="https://blog.xenol.eu/categories/29c3/">29C3 </a><a class="label" href="https://blog.xenol.eu/categories/ccc/">CCC </a>
-        
-    </p>
-    <h1 class="entry-title">
-        <a href="https://blog.xenol.eu/2012/12/30/29c3-day-three/">29c3: Day Three</a>
-    </h1>
-</header>
-
-
-        
-          <p>Third day of the Congress was filled with some number of interesting talks I visited. I started with a talk, in which I was interested the most - An Overview of Secure Name Resolution - DNSSEC, DNSCurve and Namecoin. Speaker gave great introduction into DNSSEC and also talked about its deployment rate. He also spoke DNSSEC&rsquo;s use in amplification attacks and suitable countermeasures. DNSCurve and Namecoin was discussed as well. From this talk, it is clear that DNSSEC is the way forward.</p>
-
-          
-              <footer>
-                  <a href="https://blog.xenol.eu/2012/12/30/29c3-day-three/" rel="full-article">Read On &rarr;</a>
-              </footer>
-          
-
-        
-
-    </article>
-    
     
     
 
@@ -400,6 +400,14 @@ The 29C3 was really nice experience and I will definitely return back to 30C3.</
         <ul id="recent_posts">
           
             <li class="post">
+              <a href="/blog/2017/02/12/Ansible-modules-and-OpenIndiana/">Ansible modules and OpenIndiana</a>
+            </li>
+          
+            <li class="post">
+              <a href="/blog/2017/02/11/Managing-more-illumos-networking-with-Ansible/">Managing more illumos networking with Ansible</a>
+            </li>
+          
+            <li class="post">
               <a href="/blog/2017/01/02/33C3-Works-for-me/">33C3: Works for me</a>
             </li>
           
@@ -409,14 +417,6 @@ The 29C3 was really nice experience and I will definitely return back to 30C3.</
           
             <li class="post">
               <a href="/blog/2016/08/09/Mirroring-OpenIndiana-IPS-repositories---part-1/">Mirroring OpenIndiana IPS repositories - part 1</a>
-            </li>
-          
-            <li class="post">
-              <a href="/blog/2016/07/04/Migration-from-Octopress-to-Hugo/">Migration from Octopress to Hugo</a>
-            </li>
-          
-            <li class="post">
-              <a href="/2012/12/31/29c3-finale/">29c3: Finale</a>
             </li>
           
         </ul>
