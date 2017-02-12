@@ -6,171 +6,8 @@
     <description>Recent content on xenol&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Feb 2017 21:41:17 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 11 Feb 2017 21:35:37 +0100</lastBuildDate>
     <atom:link href="https://blog.xenol.eu/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Ansible modules and OpenIndiana</title>
-      <link>https://blog.xenol.eu/blog/2017/02/12/Ansible-modules-and-OpenIndiana/</link>
-      <pubDate>Sun, 12 Feb 2017 21:41:17 +0100</pubDate>
-      
-      <guid>https://blog.xenol.eu/blog/2017/02/12/Ansible-modules-and-OpenIndiana/</guid>
-      <description>
-
-&lt;h1 id=&#34;preface&#34;&gt;Preface&lt;/h1&gt;
-
-&lt;p&gt;Ansible is a great software for automating and managing systems. In this blog post I will post some examples
-how to use Ansible modules for accomplishing various tasks on OpenIndiana.&lt;/p&gt;
-
-&lt;h1 id=&#34;package-and-package-repository-management&#34;&gt;Package and package repository management&lt;/h1&gt;
-
-&lt;h2 id=&#34;install-ips-packages&#34;&gt;Install IPS packages&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;- name: Install common packages
-  pkg5: name:
-          - tcpdump
-          - tmux
-          - shells/zsh
-        state=present
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;remove-ips-packages&#34;&gt;Remove IPS packages&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;- name: Remove tcpdump
-  pkg5: name=tcpdump
-        state=absent
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;remove-ips-publisher&#34;&gt;Remove IPS publisher&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;- name: Remove openindiana.org IPS publisher
-  pkg5_publisher: name=openindiana.org
-                  state=absent
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;configure-new-ips-publisher&#34;&gt;Configure new IPS publisher&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;- name: Enable hipster-encumbered IPS publisher
-  pkg5_publisher: name=hipster-encumbered
-                  origin=https://pkg.openindiana.org/hipster-encumbered
-                  sticky=True
-
-- name: Add local IPS repository
-  pkg5_publisher: name=userland
-                  origin=file:///ws/oi-userland/i386/repo
-                  sticky=True
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;update-ips-publisher-configuration&#34;&gt;Update IPS publisher configuration&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;- name: Switch from http to https for openindiana.org IPS publisher
-  pkg5_publisher: name=openindiana.org
-                  origin=https://pkg.openindiana.org/hipster
-                  sticky=True
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;networking&#34;&gt;Networking&lt;/h1&gt;
-
-&lt;h3 id=&#34;configure-static-ip-address-on-vnic&#34;&gt;Configure static IP address on VNIC&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;- name: Create VNIC on physical network interface
-  dladm_vnic: name=vnic0
-              link=bge0
-              state=present
-
-- name: Create IP interface on top of VNIC
-  ipadm_if: name=vnic0
-            state=present
-
-- name: Configure IP address on VNIC
-  ipadm_addr: addrobj=vnic0/v4
-              address=172.17.0.1/24
-              state=present
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;enable-jumbo-frames-on-physical-interface&#34;&gt;Enable jumbo frames on physical interface&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;- name: Enable jumbo frames on NIC
-  dladm_linkprop: name=e1000g1
-                  property=mtu
-                  value=9000
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;reset-mtu-to-the-default-value&#34;&gt;Reset MTU to the default value&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;- name: Reset MTU on e1000g1
-  dladm_linkprop: name=e1000g1
-                  property=mtu
-                  state=reset
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;configure-dhcp-on-vnic&#34;&gt;Configure DHCP on VNIC&lt;/h2&gt;
-
-&lt;h1 id=&#34;zones&#34;&gt;Zones&lt;/h1&gt;
-
-&lt;p&gt;Ansible provides &lt;strong&gt;solaris_zone&lt;/strong&gt; module for zone management, but not all features are supported as this module
-expects Solaris. However, this module is fully usable on OpenIndiana and other illumos distributions.&lt;/p&gt;
-
-&lt;h2 id=&#34;create-a-zone-on-openindiana-and-do-basic-configuration&#34;&gt;Create a zone on OpenIndiana and do basic configuration&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;- name: Install nlipkg brand package
-  pkg5: name=system/zones/brand/nlipkg
-        state=present
-
-- name: Create zone &#39;www&#39;
-  solaris_zone: name=&#39;www&#39;
-                path=/zones/www
-                config=&#39;set brand=nlipkg, set ip-type=exclusive; set autoboot=true; add net; set physical=zone0; end&#39;
-                state=installed
-
-- name: Create sysding configuration file
-  lineinfile: line=&#39;{{ item }}&#39;
-              dest=/zones/www/root/etc/sysding.conf
-              mode=0400
-              owner=root
-              group=root
-  with_items:
-    - &#39;setup_timezone UTC&#39;
-    - &#39;setup_locale C&#39;
-    - &#39;setup_user_password root &amp;quot;$5$CLl7tjdz$aAan/ZZKy74Lytf4/RQ.hdsrCVYAJKlgVSlDQWosC5B&amp;quot;&#39;
-    - &#39;setup_interface &amp;quot;zone0&amp;quot; &amp;quot;v4&amp;quot; &amp;quot;172.17.0.11/24&amp;quot;
-    - &#39;setup_route &amp;quot;default&amp;quot; &amp;quot;172.17.0.1&amp;quot;&#39;
-
-- name: Start template build zone
-  solaris_zone: name=www
-                state=running
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;boot-a-zone&#34;&gt;Boot a zone&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;- name: Boot zone &#39;www&#39;
-  solaris_zone:
-    name: zone1
-    state: running
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;halt-a-zone&#34;&gt;Halt a zone&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;- name: Halt zone &#39;www&#39;
-  solaris_zone: name=&#39;www&#39;
-                state=stopped
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;delete-a-zone&#34;&gt;Delete a zone&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;- name: Delete zone &#39;www&#39;
-  solaris_zone: name=&#39;www&#39;
-                state=absent
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;detach-zone&#34;&gt;Detach zone&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;- name: Detach zone &#39;www&#39;
-  solaris_zone: name=&#39;www&#39;
-                state=detached
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
     
     <item>
       <title>Managing more illumos networking with Ansible</title>
@@ -795,6 +632,21 @@ on blogging. Happy reading!&lt;/p&gt;
 &lt;p&gt;I am using FreeBSD jails for mainly for securing and separating services. Each service runs in its own separated container on its own ZFS dataset. Each dataset is a ZFS clone from the snapshot of the template jail, which is adapted to have software I need in every jail installed (zsh, git, vim&amp;hellip;) and configured. Running FreeBSD jails on separate ZFS datasets is very flexible because we can setup different per-jail mount options, use compression and snapshot each jail separately. Software updates are fine for small amount of jails, while updating software in hundreds of jails can be a scaring experience. This is past with &lt;a href=&#34;https://github.com/pkgng/pkgng&#34;&gt;pkgng&lt;/a&gt;. pkgng is a new project, which brings new binary package manager. It is very easy to build packages from ports, create and serving package repository and updating.&lt;/p&gt;
 
 &lt;p&gt;With this setup, I can deploy new jail under 2 minutes as all I have to do is a ZFS snapshot cloning and adding jail configuration into host /etc/rc.conf and thanks to ZFS cloning capabilties we are saving some disk space, too. I wrote a simple &lt;a href=&#34;http://wiki.xenol.eu/doku.php?id=zfs_pkgng_jail&#34;&gt;howto&lt;/a&gt; on my personal wiki. I have also setup package repository for my needs at &lt;a href=&#34;http://pkg.xenol.eu&#34;&gt;pkg.xenol.eu&lt;/a&gt;. Feel free to use it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Welcome</title>
+      <link>https://blog.xenol.eu/2012/01/06/welcome/</link>
+      <pubDate>Fri, 06 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.xenol.eu/2012/01/06/welcome/</guid>
+      <description>&lt;p&gt;Welcome to my personal blog! I had an idea of creating personal blog for a very long time. However, I was always lazy to do so.&lt;/p&gt;
+
+&lt;p&gt;When I was looking for some blogging engine, I realized that none of the major ones suited me. So I started to experiment with various setups and then I discovered &lt;a href=&#34;https://github.com/mojombo/jekyll&#34;&gt;jekyll&lt;/a&gt;, which is static blog generator. I like the idea of having a blog completely stored in version control of my choice and served as static pages.
+Later I found &lt;a href=&#34;http://octopress.org/&#34;&gt;Octopress&lt;/a&gt;, which can be described as ``jekyll on steroids&amp;rdquo;. It is much easier to deploy, it integrates many 3rd party plugins for Twitter, Disquis comments, Google Analytics and other services. It uses HTML 5 template and interface is optimized for viewing on mobile phones. It has everything modern blogging platform should have.&lt;/p&gt;
+
+&lt;p&gt;So again welcome to my blog and happy reading.&lt;/p&gt;
 </description>
     </item>
     
