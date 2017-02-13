@@ -95,13 +95,13 @@
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/tags/ansible/</loc>
+    <loc>https://blog.xenol.eu/categories/ansible/</loc>
     <lastmod>2017-02-11T21:35:37+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/categories/ansible/</loc>
+    <loc>https://blog.xenol.eu/tags/ansible/</loc>
     <lastmod>2017-02-11T21:35:37+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -116,20 +116,14 @@
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/tags/ccc/</loc>
-    <lastmod>2017-01-02T20:39:50+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.xenol.eu/categories/ccc/</loc>
     <lastmod>2017-01-02T20:39:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/tags/dns/</loc>
-    <lastmod>2012-10-29T00:00:00+00:00</lastmod>
+    <loc>https://blog.xenol.eu/tags/ccc/</loc>
+    <lastmod>2017-01-02T20:39:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -140,13 +134,19 @@
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/tags/freebsd/</loc>
+    <loc>https://blog.xenol.eu/tags/dns/</loc>
     <lastmod>2012-10-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.xenol.eu/categories/freebsd/</loc>
+    <lastmod>2012-10-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.xenol.eu/tags/freebsd/</loc>
     <lastmod>2012-10-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -182,13 +182,13 @@
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/tags/openindiana/</loc>
+    <loc>https://blog.xenol.eu/categories/openindiana/</loc>
     <lastmod>2017-02-11T21:35:37+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/categories/openindiana/</loc>
+    <loc>https://blog.xenol.eu/tags/openindiana/</loc>
     <lastmod>2017-02-11T21:35:37+01:00</lastmod>
     <priority>0</priority>
   </url>
