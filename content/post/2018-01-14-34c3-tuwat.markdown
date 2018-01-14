@@ -1,0 +1,114 @@
+---
+categories:
+- 34C3
+- CCC
+tags:
+- CCC
+toc: true
+title: "34C3: Tuwat!"
+date: 2018-01-14T15:39:09+01:00
+---
+
+# New location AKA Willkommen in Leipzig
+
+My first visit to 29C3 in 2012 was the year when Congress moved from Berlin to Hamburg. Bigger auditoriums, more room for more people. After the last year's problems with almost 2000 people not getting to 33C3 because of the congress hall capacity limits, CCC organizers decided to look for a new venue. They found one in the city of Leipzig and [Congress Hall Leipzig](http://www.ccl-leipzig.com/).
+
+<figure>
+    <img src="/images/34c3_rocket.jpg" title="34C3 rocket"  />
+    <figcaption>Picture by @C3Lounge</figcaption>
+</figure>
+
+The venue is way bigger than CCH was. It even felt way bigger. It was extremely spacious, it takes around 5 minut to move between auditoriums. When compared to CCH, assembly space was 3 times bigger. However, one downside when compared to CCH is the CCL's location - on the outskirts of Leipzig. It took me around 20 minutes to reach the venue from my hotel. However, the transportation was planned quite well as CCC organizers were able to give out special Zone 101 tickets for the public transport. There was also a special tram line going every 5-10 minutes between CCL and the city centre.
+
+<figure>
+    <img src="/images/34c3_saal_b_1.jpg" title="34C3 Saal B"  />
+</figure>
+
+<figure>
+    <img src="/images/34c3_saal_b_2.jpg" title="34C3 Saal B"  />
+</figure>
+
+34C3 motto was **tuwat** ("do something"). More on the context can be found in this [video](https://www.youtube.com/watch?v=1yb2y0UJ-P8).
+
+
+# Talks
+
+34C3 was focused on plethora of topics covering IT security, technology, privacy as well as politics. I have visited the following talks:
+
+
+## Day 1
+
+* **Demystifying networks cards** ([Video](https://media.ccc.de/v/34c3-9159-demystifying_network_cards) [Slides](https://mirror-1.server.selfnet.de/CCC/congress/2017/slides-pdf/34c3-9159-demystifying_network_cards.pdf)) - this talk gave a brief overview of how do network cards and operating systems interacts together as well as various new approaches for boosting performance.
+
+* **Uncovering British spies’ web of sockpuppet social media personas** ([Video](https://media.ccc.de/v/34c3-9233-uncovering_british_spies_web_of_sockpuppet_social_media_personas)) - overview of GCHQ activies on social media creating fake content and focus on how GCHQ tried to infiltrate activist groups around the world.
+
+
+* **Squeezing a key through a carry bit** ([Video](https://media.ccc.de/v/34c3-9021-squeezing_a_key_through_a_carry_bit) [Slides](https://mirror-1.server.selfnet.de/CCC/congress/2017/slides-pdf/34c3-9021-squeezing_a_key_through_a_carry_bit.pdf)) - [Filippo Valsorda](https://blog.filippo.io/) talked and explained a security vulnerability in Go implementation of P-256 due to misplaced carry bit. He also showed us a Holywood-ready tooling he worked on. I enjoyed this talk a lot.
+
+* **Unleash your smart-home devices: Vacuum Cleaning Robot Hacking** ([Video](https://media.ccc.de/v/34c3-9147-unleash_your_smart-home_devices_vacuum_cleaning_robot_hacking) [Slides](https://mirror-1.server.selfnet.de/CCC/congress/2017/slides-pdf/34c3-9147-unleash_your_smart-home_devices_vacuum_cleaning_robot_hacking.pdf)) - a talk about a design, inner working and how to rooting robotic vacuum cleaners. Very funny topic indeed.
+
+* **Inside Intel Management Engine** ([Video](https://media.ccc.de/v/34c3-8762-inside_intel_management_engine)) - overview of Intel Management Engine and a vulnerability, which allows ME debugging.
+
+* **Defeating (Not)Petya's Cryptography** ([Video](https://media.ccc.de/v/34c3-8724-defeating_not_petya_s_cryptography)) - this talk gives information about Petya cryptography flaws and how the speaker was able to them and decrypt infected computers.
+
+* **KRACKing WPA2 by Forcing Nonce Reuse** ([Video](https://media.ccc.de/v/34c3-9273-kracking_wpa2_by_forcing_nonce_reuse) [Slides](https://mirror-1.server.selfnet.de/CCC/congress/2017/slides-pdf/34c3-9273-kracking_wpa2_by_forcing_nonce_reuse.pdf)) - very detailed look at [KRACK](https://en.wikipedia.org/wiki/KRACK) attack on WPA2 wireless networks.
+
+## Day 2
+* **Mobile Data Interception from the Interconnection Link** ([Video](https://media.ccc.de/v/34c3-8879-mobile_data_interception_from_the_interconnection_link)) - overview of Diameter and LTE networks as well as how data interception can be achieved via the Diameter-based interconnection link.
+
+* **Spy vs. Spy: A Modern Study Of Microphone Bugs Operation And Detection** ([Video](https://media.ccc.de/v/34c3-8735-spy_vs_spy_a_modern_study_of_microphone_bugs_operation_and_detection) [Slides](https://mirror-1.server.selfnet.de/CCC/congress/2017/slides-pdf/34c3-8735-spy_vs_spy_a_modern_study_of_microphone_bugs_operation_and_detection.pdf)) - overview of various microphone bugs, their way of operation and detection. I expected more from this talk.
+
+* **Intel ME: Myths and reality** ([Video](https://media.ccc.de/v/34c3-8782-intel_me_myths_and_reality) [Slides](https://mirror-1.server.selfnet.de/CCC/congress/2017/slides-pdf/34c3-8782-intel_me_myths_and_reality.pdf)) - speaker gives a detailed look at Intel ME, it's functionality, myths and things they discovered while reverse engineering Intel ME firmware. One of the best talks in the whole Congress, I enjoyed it quite a lot.
+
+* **LatticeHacks** ([Video](https://media.ccc.de/v/34c3-9075-latticehacks)) - a talk describing what Lattices are, how they affect cryptography and cryptanalysis. This was a joint presentation by Daniel J. Bernstein, Nadia Heninger, and Tanja Lange. I liked this talk a lot as well.
+
+## Day 3
+* **Taxation** ([Video](https://media.ccc.de/v/34c3-9047-taxation)) - overview of how tax evasion works and what can be done with it.
+
+* **Bringing Linux back to server boot ROMs with NERF and Heads** ([Video](https://media.ccc.de/v/34c3-9056-bringing_linux_back_to_server_boot_roms_with_nerf_and_heads)) - [Trammel Hudson](https://trmm.net/) spoke about his NERF and HEADS project, how to replace propietary BIOS on server motherboards with Linux and the general concept.
+
+* **Internet censorship in the Catalan referendum** ([Video](https://media.ccc.de/v/34c3-9028-internet_censorship_in_the_catalan_referendum) [Slides](https://mirror-1.server.selfnet.de/CCC/congress/2017/slides-pdf/34c3-9028-internet_censorship_in_the_catalan_referendum.pdf)) - this talk describes the events and actions taken by Spain in the days before the Catalan referendum on independence, points out how the censorship happened and what activists did to bypass it.
+
+* **Protecting Your Privacy at the Border** ([Video](https://media.ccc.de/v/34c3-9086-protecting_your_privacy_at_the_border)) - talk by EFF on how to protect your privacy when carrying your laptop or mobile device through the border crossing.
+
+## Day 4
+
+I skipped Day 4 as my flight was scheduled in the morning. However, some talks I was interested in:
+
+* [**TrustZone is not enough**](https://events.ccc.de/congress/2017/Fahrplan/events/8831.html) ([Video](https://media.ccc.de/v/34c3-8831-trustzone_is_not_enough))
+* [**34C4 Infrastructure Review**](https://events.ccc.de/congress/2017/Fahrplan/events/8911.html)([Video](https://media.ccc.de/v/34c3-8911-34c3_infrastructure_review) [Slides](https://mirror-1.server.selfnet.de/CCC/congress/2017/slides-pdf/34c3-8911-34c3_infrastructure_review.pdf))
+
+
+
+Talks I haven't visited, but I found interesting:
+
+* **iOS kernel exploitation archaeology** ([Video](https://media.ccc.de/v/34c3-8720-ios_kernel_exploitation_archaeology))
+* **Lets break modern binary code obfuscation** ([Video][https://media.ccc.de/v/34c3-8789-lets_break_modern_binary_code_obfuscation] [Slides](https://mirror-1.server.selfnet.de/CCC/congress/2017/slides-pdf/34c3-8789-lets_break_modern_binary_code_obfuscation.pdf))
+* **BootStomp: On the Security of Bootloaders in Mobile Devices** ([Video](https://media.ccc.de/v/34c3-9205-bootstomp_on_the_security_of_bootloaders_in_mobile_devices))
+* **Microarchitectural Attacks on Trusted Execution Environments** ([Video](https://media.ccc.de/v/34c3-8950-microarchitectural_attacks_on_trusted_execution_environments))
+* **DPRK Consumer Technology** ([Video](https://media.ccc.de/v/34c3-9279-dprk_consumer_technology))
+* **Doping your Fitbit** ([Video](https://media.ccc.de/v/34c3-8908-doping_your_fitbit) [Slides](https://mirror-1.server.selfnet.de/CCC/congress/2017/slides-pdf/34c3-8908-doping_your_fitbit.pdf))
+* **BGP and the Rule of Custom** ([Video](https://media.ccc.de/v/34c3-9072-bgp_and_the_rule_of_custom) [Slides](https://mirror-1.server.selfnet.de/CCC/congress/2017/slides-pdf/34c3-9072-bgp_and_the_rule_of_custom.pdf))
+* **Practical Mix Network Design**  ([Video](https://media.ccc.de/v/34c3-8974-practical_mix_network_design) [Slides](https://mirror-1.server.selfnet.de/CCC/congress/2017/slides-pdf/34c3-8974-practical_mix_network_design.pdf))
+* **We should share our secrets** ([Video](https://media.ccc.de/v/34c3-8885-we_should_share_our_secrets) [Slides](https://mirror-1.server.selfnet.de/CCC/congress/2017/slides-pdf/34c3-8885-we_should_share_our_secrets.pdf))
+* **Deep Learning Blindspots** ([Video](https://media.ccc.de/v/34c3-8860-deep_learning_blindspots))
+* **Reverse engineering FPGAs** ([Video](https://media.ccc.de/v/34c3-9237-reverse_engineering_fpgas))
+* **May contain DTraces of FreeBSD** ([Video](https://media.ccc.de/v/34c3-9196-may_contain_dtraces_of_freebsd))
+* **Internet of Fails** ([Video](https://media.ccc.de/v/34c3-9193-internet_of_fails) [Slides](https://mirror-1.server.selfnet.de/CCC/congress/2017/slides-pdf/34c3-9193-internet_of_fails.pdf))
+* **Everything you want to know about x86 microcode, but might have been afraid to ask** ([Video](https://media.ccc.de/v/34c3-9058-everything_you_want_to_know_about_x86_microcode_but_might_have_been_afraid_to_ask) [Slides](https://mirror-1.server.selfnet.de/CCC/congress/2017/slides-pdf/34c3-9058-everything_you_want_to_know_about_x86_microcode_but_might_have_been_afraid_to_ask.pdf))
+* **ASLR on the line** ([Video](https://media.ccc.de/v/34c3-9135-aslr_on_the_line) [Slides](https://mirror-1.server.selfnet.de/CCC/congress/2017/slides-pdf/34c3-9135-aslr_on_the_line.pdf))
+* **History and implications of DRM** ([Video](https://media.ccc.de/v/34c3-9110-history_and_implications_of_drm))
+* **OONI: Let's Fight Internet Censorship, Together!** ([Video](https://media.ccc.de/v/34c3-8923-ooni_let_s_fight_internet_censorship_together))
+* **avatar²** ([Video](https://media.ccc.de/v/34c3-9195-avatar) [Slides](https://mirror-1.server.selfnet.de/CCC/congress/2017/slides-pdf/34c3-9195-avatar.pdf))
+* **Decoding Contactless (Card) Payments** ([Video](https://media.ccc.de/v/34c3-8965-decoding_contactless_card_payments))
+* **Hardening Open Source Development** ([Video](https://media.ccc.de/v/34c3-9249-hardening_open_source_development))
+
+Other interesting links:
+
+* [Fahrplan (3333 schedule)](https://fahrplan.events.ccc.de/congress/2017/Fahrplan/)
+* [34C3 videos on media.ccc.de](https://media.ccc.de/c/34c3)
+* [34C3 EN video playlist on YouTube](https://www.youtube.com/playlist?list=PL_IxoDz1Nq2Z8UVLTVO1HECuAfbzwaCbE)
+* [34C3 DE video playlist on Youtube](https://www.youtube.com/playlist?list=PL_IxoDz1Nq2bU4DE7leoXHVLQQo3JAIgR)
+* [34C3 ES video playlist on Youtube](https://www.youtube.com/playlist?list=PL_IxoDz1Nq2ZNpApg669HZVfN7Z8EUS-g)
+
+To conclude, I enjoyed 34C3 very much and I am looking forward for 35C3. See you there!
