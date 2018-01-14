@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zfs on xenol&#39;s blog</title>
-    <link>https://blog.xenol.eu/tags/zfs/index.xml</link>
+    <link>https://blog.xenol.eu/tags/zfs/</link>
     <description>Recent content in Zfs on xenol&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://blog.xenol.eu/tags/zfs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Feb 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.xenol.eu/tags/zfs/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Easy FreeBSD jail management with ZFS and pkgng</title>
@@ -14,12 +17,8 @@
       <pubDate>Sat, 04 Feb 2012 00:00:00 +0000</pubDate>
       
       <guid>https://blog.xenol.eu/2012/02/04/easy-freebsd-jail-management-with-zfs-and-pkgng/</guid>
-      <description>&lt;p&gt;I have been using FreeBSD jails ever since I started using FreeBSD on my servers. Jail can be described as a chroot on steroids with own users, process namespace and lately own virtualized network stack.&lt;/p&gt;
-
-&lt;p&gt;I am using FreeBSD jails for mainly for securing and separating services. Each service runs in its own separated container on its own ZFS dataset. Each dataset is a ZFS clone from the snapshot of the template jail, which is adapted to have software I need in every jail installed (zsh, git, vim&amp;hellip;) and configured. Running FreeBSD jails on separate ZFS datasets is very flexible because we can setup different per-jail mount options, use compression and snapshot each jail separately. Software updates are fine for small amount of jails, while updating software in hundreds of jails can be a scaring experience. This is past with &lt;a href=&#34;https://github.com/pkgng/pkgng&#34;&gt;pkgng&lt;/a&gt;. pkgng is a new project, which brings new binary package manager. It is very easy to build packages from ports, create and serving package repository and updating.&lt;/p&gt;
-
-&lt;p&gt;With this setup, I can deploy new jail under 2 minutes as all I have to do is a ZFS snapshot cloning and adding jail configuration into host /etc/rc.conf and thanks to ZFS cloning capabilties we are saving some disk space, too. I wrote a simple &lt;a href=&#34;http://wiki.xenol.eu/doku.php?id=zfs_pkgng_jail&#34;&gt;howto&lt;/a&gt; on my personal wiki. I have also setup package repository for my needs at &lt;a href=&#34;http://pkg.xenol.eu&#34;&gt;pkg.xenol.eu&lt;/a&gt;. Feel free to use it.&lt;/p&gt;
-</description>
+      <description>I have been using FreeBSD jails ever since I started using FreeBSD on my servers. Jail can be described as a chroot on steroids with own users, process namespace and lately own virtualized network stack.
+I am using FreeBSD jails for mainly for securing and separating services. Each service runs in its own separated container on its own ZFS dataset. Each dataset is a ZFS clone from the snapshot of the template jail, which is adapted to have software I need in every jail installed (zsh, git, vim&amp;hellip;) and configured.</description>
     </item>
     
   </channel>

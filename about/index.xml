@@ -2,34 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abouts on xenol&#39;s blog</title>
-    <link>https://blog.xenol.eu/about/index.xml</link>
+    <link>https://blog.xenol.eu/about/</link>
     <description>Recent content in Abouts on xenol&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 03 Apr 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.xenol.eu/about/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://blog.xenol.eu/about/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>About</title>
-      <link>https://blog.xenol.eu/about</link>
+      <link>https://blog.xenol.eu/about/</link>
       <pubDate>Tue, 03 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.xenol.eu/about</guid>
-      <description>&lt;p&gt;My name is Adam and I enjoy playing with technology. I studied computer networks at the Faculty of Informatics and Information Technologies at Slovak University of Technology in Bratislava.&lt;/p&gt;
-
-&lt;p&gt;When I was 14, I started playing with UNIX-like operating systems and never stopped since then. In my free time, I try to contribute to various open source projects or experiment with technology. Whenever I have to code, I do all my projects in Python. When I am not playing with technology or coding, I can be found listening to music, hanging out on IRC, drinking a beer or studying history.&lt;/p&gt;
-
-&lt;p&gt;I am interested in the following areas:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;operating system internals,&lt;/li&gt;
-&lt;li&gt;computer networks &amp;amp; protocols,&lt;/li&gt;
-&lt;li&gt;security, especially cryprography,&lt;/li&gt;
-&lt;li&gt;scalability &amp;amp; distributed systems.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you enjoy chatting about the technology, feel free to contact me. I am also actively looking for new challenges!&lt;/p&gt;
-</description>
+      <guid>https://blog.xenol.eu/about/</guid>
+      <description>My name is Adam and I enjoy playing with technology. I studied computer networks at the Faculty of Informatics and Information Technologies at Slovak University of Technology in Bratislava.
+When I was 14, I started playing with UNIX-like operating systems and never stopped since then. In my free time, I try to contribute to various open source projects or experiment with technology. Whenever I have to code, I do all my projects in Python.</description>
     </item>
     
   </channel>

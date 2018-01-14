@@ -20,7 +20,7 @@
 
   
   
-  <link rel="stylesheet" href="https://blog.xenol.eu/css/hugo-octopress.css">
+  <link rel="stylesheet" href="/css/hugo-octopress.css">
 
   
   
@@ -43,7 +43,7 @@
   <meta name="author" content="xenol">
 
   
-  <meta name="generator" content="Hugo 0.18.1" />
+  <meta name="generator" content="Hugo 0.30.2" />
 
   
   
@@ -188,93 +188,99 @@ crontab entry.</p>
 <li><strong>openindiana.org</strong> publisher from <strong><a href="http://pkg.openindiana.org/hipster">http://pkg.openindiana.org/hipster</a></strong> repository (<strong>~77GB</strong> as of August 2016)</li>
 <li><strong>hipster-encumbered</strong> publisher from <strong><a href="http://pkg.openindiana.org/hipster-encumbered">http://pkg.openindiana.org/hipster-encumbered</a></strong> repository (<strong>~1GB</strong> as of August 2016)</li>
 </ul>
-<div class="highlight" style="background: #202020"><pre style="line-height: 125%"><span></span>vagrant@openindiana:/export/home/vagrant$ pkg publisher
+
+<pre><code class="language-bash">vagrant@openindiana:/export/home/vagrant$ pkg publisher
 PUBLISHER                   TYPE     STATUS P LOCATION
 openindiana.org             origin   online F http://pkg.openindiana.org/hipster/
-vagrant@openindiana:/export/home/vagrant$ pfexec pkg set-publisher <span style="color: #ed9d13">\</span>
+vagrant@openindiana:/export/home/vagrant$ pfexec pkg set-publisher \
                                             -p http://pkg.openindiana.org/hipster-encumbered
 pkg set-publisher:
-  Added publisher<span style="color: #d0d0d0">(</span>s<span style="color: #d0d0d0">)</span>: hipster-encumbered
+  Added publisher(s): hipster-encumbered
 vagrant@openindiana:/export/home/vagrant$ pkg publisher
 PUBLISHER                   TYPE     STATUS P LOCATION
 openindiana.org             origin   online F http://pkg.openindiana.org/hipster/
 hipster-encumbered          origin   online F http://pkg.openindiana.org/hipster-encumbered/
-</pre></div>
+</code></pre>
 
 <p>Please note that <strong>openindiana.org</strong> IPS publisher is preconfigured by default. If it is not present, add it:</p>
-<div class="highlight" style="background: #202020"><pre style="line-height: 125%"><span></span>pfexec pkg set-publisher -p http://pkg.openindiana.org/hipster
-</pre></div>
+
+<pre><code class="language-bash">pfexec pkg set-publisher -p http://pkg.openindiana.org/hipster
+</code></pre>
 
 <p>We need to create <strong>rpool/VARSHARE/pkg</strong> ZFS dataset as <strong>pkg/mirror</strong> expects it. I placed it on a root pool as <strong>pkg/mirror</strong> expects
 &lt;BE root pool&gt;/VARSHARE. We also enable <strong>lz4 compression</strong>
 on this dataset, so  child datasets inherit the compression setting. Now, create the dataset:</p>
-<div class="highlight" style="background: #202020"><pre style="line-height: 125%"><span></span>vagrant@openindiana:/export/home/vagrant$ pfexec zfs create -o <span style="color: #40ffff">mountpoint</span><span style="color: #d0d0d0">=</span>/var/share rpool/VARSHARE
-vagrant@openindiana:/export/home/vagrant$ pfexec zfs create -o <span style="color: #40ffff">compression</span><span style="color: #d0d0d0">=</span>lz4 rpool/VARSHARE/pkg
+
+<pre><code class="language-bash">vagrant@openindiana:/export/home/vagrant$ pfexec zfs create -o mountpoint=/var/share rpool/VARSHARE
+vagrant@openindiana:/export/home/vagrant$ pfexec zfs create -o compression=lz4 rpool/VARSHARE/pkg
 vagrant@openindiana:/export/home/vagrant$ zfs list
 NAME                         USED  AVAIL  REFER  MOUNTPOINT
-rpool                       <span style="color: #3677a9">4</span>.43G  <span style="color: #3677a9">43</span>.8G  <span style="color: #3677a9">29</span>.5K  /rpool
-rpool/ROOT                  <span style="color: #3677a9">2</span>.36G  <span style="color: #3677a9">43</span>.8G    19K  legacy
-rpool/ROOT/openindiana      <span style="color: #3677a9">2</span>.36G  <span style="color: #3677a9">43</span>.8G  <span style="color: #3677a9">2</span>.18G  /
-rpool/ROOT/openindiana/var   119M  <span style="color: #3677a9">43</span>.8G   107M  /var
-rpool/VARSHARE                38K  <span style="color: #3677a9">43</span>.8G    19K  /var/share
-rpool/VARSHARE/pkg            19K  <span style="color: #3677a9">43</span>.8G    19K  /var/share/pkg
-rpool/dump                  <span style="color: #3677a9">1</span>.00G  <span style="color: #3677a9">43</span>.8G  <span style="color: #3677a9">1</span>.00G  -
-rpool/export                <span style="color: #3677a9">65</span>.5K  <span style="color: #3677a9">43</span>.8G    19K  /export
-rpool/export/home           <span style="color: #3677a9">46</span>.5K  <span style="color: #3677a9">43</span>.8G    19K  /export/home
-rpool/export/home/vagrant   <span style="color: #3677a9">27</span>.5K  <span style="color: #3677a9">43</span>.8G  <span style="color: #3677a9">27</span>.5K  /export/home/vagrant
-rpool/swap                  <span style="color: #3677a9">1</span>.06G  <span style="color: #3677a9">44</span>.7G   117M  -
-</pre></div>
+rpool                       4.43G  43.8G  29.5K  /rpool
+rpool/ROOT                  2.36G  43.8G    19K  legacy
+rpool/ROOT/openindiana      2.36G  43.8G  2.18G  /
+rpool/ROOT/openindiana/var   119M  43.8G   107M  /var
+rpool/VARSHARE                38K  43.8G    19K  /var/share
+rpool/VARSHARE/pkg            19K  43.8G    19K  /var/share/pkg
+rpool/dump                  1.00G  43.8G  1.00G  -
+rpool/export                65.5K  43.8G    19K  /export
+rpool/export/home           46.5K  43.8G    19K  /export/home
+rpool/export/home/vagrant   27.5K  43.8G  27.5K  /export/home/vagrant
+rpool/swap                  1.06G  44.7G   117M  -
+</code></pre>
 
 <p>We continue with configuring <strong>pkg/mirror</strong> instances for every IPS publisher:</p>
-<div class="highlight" style="background: #202020"><pre style="line-height: 125%"><span></span>svccfg -s pkg/mirror add hipster
+
+<pre><code class="language-bash">svccfg -s pkg/mirror add hipster
 svccfg -s pkg/mirror:hipster addpg config application
-svccfg -s pkg/mirror:hipster setprop config/cache_dir<span style="color: #d0d0d0">=</span><span style="color: #ed9d13">&quot;/var/cache/pkg/mirror&quot;</span>
-svccfg -s pkg/mirror:hipster setprop config/crontab_period<span style="color: #d0d0d0">=</span><span style="color: #ed9d13">&#39;&quot;0 18,6 * * *&quot;&#39;</span>
-svccfg -s pkg/mirror:hipster setprop config/publishers<span style="color: #d0d0d0">=</span><span style="color: #ed9d13">&quot;openindiana.org&quot;</span>
-svccfg -s pkg/mirror:hipster setprop config/repository<span style="color: #d0d0d0">=</span><span style="color: #ed9d13">&quot;/var/share/pkg/repositories/hipster&quot;</span>
+svccfg -s pkg/mirror:hipster setprop config/cache_dir=&quot;/var/cache/pkg/mirror&quot;
+svccfg -s pkg/mirror:hipster setprop config/crontab_period='&quot;0 18,6 * * *&quot;'
+svccfg -s pkg/mirror:hipster setprop config/publishers=&quot;openindiana.org&quot;
+svccfg -s pkg/mirror:hipster setprop config/repository=&quot;/var/share/pkg/repositories/hipster&quot;
 
 svccfg -s pkg/mirror add hipster-encumbered
 svccfg -s pkg/mirror:hipster-encumbered addpg config application
-svccfg -s pkg/mirror:hipster-encumbered setprop config/cache_dir<span style="color: #d0d0d0">=</span><span style="color: #ed9d13">&quot;/var/cache/pkg/mirror&quot;</span>
-svccfg -s pkg/mirror:hipster-encumbered setprop config/crontab_period<span style="color: #d0d0d0">=</span><span style="color: #ed9d13">&#39;&quot;0 17,4 * * *&quot;&#39;</span>
-svccfg -s pkg/mirror:hipster-encumbered setprop config/publishers<span style="color: #d0d0d0">=</span>astring: <span style="color: #ed9d13">&quot;hipster-encumbered&quot;</span>
-svccfg -s pkg/mirror:hipster-encumbered setprop config/repository<span style="color: #d0d0d0">=</span><span style="color: #ed9d13">&quot;/var/share/pkg/repositories/hipster-encumbered&quot;</span>
-</pre></div>
+svccfg -s pkg/mirror:hipster-encumbered setprop config/cache_dir=&quot;/var/cache/pkg/mirror&quot;
+svccfg -s pkg/mirror:hipster-encumbered setprop config/crontab_period='&quot;0 17,4 * * *&quot;'
+svccfg -s pkg/mirror:hipster-encumbered setprop config/publishers=astring: &quot;hipster-encumbered&quot;
+svccfg -s pkg/mirror:hipster-encumbered setprop config/repository=&quot;/var/share/pkg/repositories/hipster-encumbered&quot;
+</code></pre>
 
 <p>Once SMF instances are created and configured, we need to start them and also a service called
 <strong>svc:/application/pkg/repositories-setup:default</strong>, which will create ZFS datasets:</p>
-<div class="highlight" style="background: #202020"><pre style="line-height: 125%"><span></span>vagrant@openindiana:/export/home/vagrant$ svcs -a <span style="color: #d0d0d0">|</span> grep pkg/mirror
-disabled       <span style="color: #3677a9">23</span>:34:02 svc:/application/pkg/mirror:default
+
+<pre><code class="language-bash">vagrant@openindiana:/export/home/vagrant$ svcs -a | grep pkg/mirror
+disabled       23:34:02 svc:/application/pkg/mirror:default
 -              -        svc:/application/pkg/mirror:hipster
 -              -        svc:/application/pkg/mirror:hipster-encumbered
-vagrant@openindiana:/export/home/vagrant$ svcadm <span style="color: #24909d">enable</span> svc:/application/pkg/mirror:hipster
-vagrant@openindiana:/export/home/vagrant$ svcadm <span style="color: #24909d">enable</span> svc:/application/pkg/mirror:hipster-encumbered
-vagrant@openindiana:/export/home/vagrant$ svcadm <span style="color: #24909d">enable</span> svc:/application/pkg/repositories-setup:default
+vagrant@openindiana:/export/home/vagrant$ svcadm enable svc:/application/pkg/mirror:hipster
+vagrant@openindiana:/export/home/vagrant$ svcadm enable svc:/application/pkg/mirror:hipster-encumbered
+vagrant@openindiana:/export/home/vagrant$ svcadm enable svc:/application/pkg/repositories-setup:default
 vagrant@openindiana:/export/home/vagrant$ svcs -xv
 vagrant@openindiana:/export/home/vagrant$
-</pre></div>
+</code></pre>
 
 <p>ZFS datasets for <strong>pkg/mirror</strong> instances have been created and entries were added to <strong>pkg5serv</strong>&rsquo;s crontab:</p>
-<div class="highlight" style="background: #202020"><pre style="line-height: 125%"><span></span>vagrant@openindiana:/export/home/vagrant$ zfs list
+
+<pre><code class="language-bash">vagrant@openindiana:/export/home/vagrant$ zfs list
 NAME                                                 USED  AVAIL  REFER  MOUNTPOINT
-rpool                                               <span style="color: #3677a9">4</span>.43G  <span style="color: #3677a9">43</span>.8G  <span style="color: #3677a9">29</span>.5K  /rpool
-rpool/ROOT                                          <span style="color: #3677a9">2</span>.36G  <span style="color: #3677a9">43</span>.8G    19K  legacy
-rpool/ROOT/openindiana                              <span style="color: #3677a9">2</span>.36G  <span style="color: #3677a9">43</span>.8G  <span style="color: #3677a9">2</span>.18G  /
-rpool/ROOT/openindiana/var                           119M  <span style="color: #3677a9">43</span>.8G   107M  /var
-rpool/VARSHARE                                        96K  <span style="color: #3677a9">43</span>.8G    19K  /var/share
-rpool/VARSHARE/pkg                                    77K  <span style="color: #3677a9">43</span>.8G    19K  /var/share/pkg
-rpool/VARSHARE/pkg/repositories                       58K  <span style="color: #3677a9">43</span>.8G    19K  /var/share/pkg/repositories
-rpool/VARSHARE/pkg/repositories/hipster             <span style="color: #3677a9">19</span>.5K  <span style="color: #3677a9">43</span>.8G  <span style="color: #3677a9">19</span>.5K  /var/share/pkg/repositories/hipster
-rpool/VARSHARE/pkg/repositories/hipster-encumbered  <span style="color: #3677a9">19</span>.5K  <span style="color: #3677a9">43</span>.8G  <span style="color: #3677a9">19</span>.5K  /var/share/pkg/repositories/hipster-encumbered
-rpool/dump                                          <span style="color: #3677a9">1</span>.00G  <span style="color: #3677a9">43</span>.8G  <span style="color: #3677a9">1</span>.00G  -
-rpool/export                                        <span style="color: #3677a9">65</span>.5K  <span style="color: #3677a9">43</span>.8G    19K  /export
-rpool/export/home                                   <span style="color: #3677a9">46</span>.5K  <span style="color: #3677a9">43</span>.8G    19K  /export/home
-rpool/export/home/vagrant                           <span style="color: #3677a9">27</span>.5K  <span style="color: #3677a9">43</span>.8G  <span style="color: #3677a9">27</span>.5K  /export/home/vagrant
-rpool/swap                                          <span style="color: #3677a9">1</span>.06G  <span style="color: #3677a9">44</span>.7G   117M  -
+rpool                                               4.43G  43.8G  29.5K  /rpool
+rpool/ROOT                                          2.36G  43.8G    19K  legacy
+rpool/ROOT/openindiana                              2.36G  43.8G  2.18G  /
+rpool/ROOT/openindiana/var                           119M  43.8G   107M  /var
+rpool/VARSHARE                                        96K  43.8G    19K  /var/share
+rpool/VARSHARE/pkg                                    77K  43.8G    19K  /var/share/pkg
+rpool/VARSHARE/pkg/repositories                       58K  43.8G    19K  /var/share/pkg/repositories
+rpool/VARSHARE/pkg/repositories/hipster             19.5K  43.8G  19.5K  /var/share/pkg/repositories/hipster
+rpool/VARSHARE/pkg/repositories/hipster-encumbered  19.5K  43.8G  19.5K  /var/share/pkg/repositories/hipster-encumbered
+rpool/dump                                          1.00G  43.8G  1.00G  -
+rpool/export                                        65.5K  43.8G    19K  /export
+rpool/export/home                                   46.5K  43.8G    19K  /export/home
+rpool/export/home/vagrant                           27.5K  43.8G  27.5K  /export/home/vagrant
+rpool/swap                                          1.06G  44.7G   117M  -
 pkg5srv@openindiana:~$ /usr/bin/crontab -l
-<span style="color: #3677a9">0</span> <span style="color: #3677a9">17</span>,4 * * * /usr/sbin/svcadm refresh svc:/application/pkg/mirror:hipster-encumbered
-<span style="color: #3677a9">0</span> <span style="color: #3677a9">18</span>,6 * * * /usr/sbin/svcadm refresh svc:/application/pkg/mirror:hipster
-</pre></div>
+0 17,4 * * * /usr/sbin/svcadm refresh svc:/application/pkg/mirror:hipster-encumbered
+0 18,6 * * * /usr/sbin/svcadm refresh svc:/application/pkg/mirror:hipster
+</code></pre>
 
 <p>The data will appear in <strong>/var/cache/pkg/repositories/hispter</strong> and <strong>/var/cache/pkg/repositories/hispter-encumbered</strong>
 after cron runs initial synchronization. Please, keep in mind that initial sync may take longer depending on your network
@@ -286,139 +292,145 @@ connection speed.</p>
 mirrored repository. The <strong>pkg.depot</strong> comes installed with <strong>package/pkg</strong> package and should be present on the system.
 Creating IPS repository instance is just a matter of configuring a few SMF services (replace &lt;DOMAIN&gt; with a hostname you want to use,
 I will use <strong>pkg.domain.tld</strong> in this example):</p>
-<div class="highlight" style="background: #202020"><pre style="line-height: 125%"><span></span>svccfg -s svc:/application/pkg/server add hipster
+
+<pre><code class="language-bash">svccfg -s svc:/application/pkg/server add hipster
 svccfg -s svc:/application/pkg/server:hipster addpg pkg application
-svccfg -s svc:/application/pkg/server:hipster setprop <span style="color: #ed9d13">\</span>
-                            pkg/inst_root<span style="color: #d0d0d0">=</span><span style="color: #ed9d13">&quot;/var/share/pkg/repositories/hipster&quot;</span>
-svccfg -s svc:/application/pkg/server:hipster setprop <span style="color: #ed9d13">\</span>
-                            pkg/port<span style="color: #d0d0d0">=</span><span style="color: #ed9d13">&quot;10100&quot;</span>
-svccfg -s svc:/application/pkg/server:hipster setprop <span style="color: #ed9d13">\</span>
-                            pkg/pkg_root<span style="color: #d0d0d0">=</span><span style="color: #ed9d13">&quot;/&quot;</span>
-svccfg -s svc:/application/pkg/server:hipster setprop <span style="color: #ed9d13">\</span>
-                            pkg/readonly<span style="color: #d0d0d0">=</span><span style="color: #ed9d13">&quot;true&quot;</span>
-svccfg -s svc:/application/pkg/server:hipster setprop <span style="color: #ed9d13">\</span>
-                            pkg/proxy_base<span style="color: #d0d0d0">=</span><span style="color: #ed9d13">&quot;http://&lt;DOMAIN&gt;/hipster&quot;</span>
-svccfg -s svc:/application/pkg/server:hipster setprop <span style="color: #ed9d13">\</span>
-                            pkg/address<span style="color: #d0d0d0">=</span><span style="color: #ed9d13">&quot;127.0.0.1&quot;</span>
+svccfg -s svc:/application/pkg/server:hipster setprop \
+                            pkg/inst_root=&quot;/var/share/pkg/repositories/hipster&quot;
+svccfg -s svc:/application/pkg/server:hipster setprop \
+                            pkg/port=&quot;10100&quot;
+svccfg -s svc:/application/pkg/server:hipster setprop \
+                            pkg/pkg_root=&quot;/&quot;
+svccfg -s svc:/application/pkg/server:hipster setprop \
+                            pkg/readonly=&quot;true&quot;
+svccfg -s svc:/application/pkg/server:hipster setprop \
+                            pkg/proxy_base=&quot;http://&lt;DOMAIN&gt;/hipster&quot;
+svccfg -s svc:/application/pkg/server:hipster setprop \
+                            pkg/address=&quot;127.0.0.1&quot;
 
 svccfg -s svc:/application/pkg/server add hipster-encumbered
 svccfg -s svc:/application/pkg/server:hipster-encumbered addpg pkg application
-svccfg -s svc:/application/pkg/server:hipster-encumbered setprop <span style="color: #ed9d13">\</span>
-                            pkg/inst_root<span style="color: #d0d0d0">=</span><span style="color: #ed9d13">&quot;/var/share/pkg/repositories/hipster-encumbered&quot;</span>
-svccfg -s svc:/application/pkg/server:hipster-encumbered setprop <span style="color: #ed9d13">\</span>
-                            pkg/port<span style="color: #d0d0d0">=</span><span style="color: #ed9d13">&quot;10101&quot;</span>
-svccfg -s svc:/application/pkg/server:hipster-encumbered setprop <span style="color: #ed9d13">\</span>
-                            pkg/pkg_root<span style="color: #d0d0d0">=</span><span style="color: #ed9d13">&quot;/&quot;</span>
-svccfg -s svc:/application/pkg/server:hipster-encumbered setprop <span style="color: #ed9d13">\</span>
-                            pkg/readonly<span style="color: #d0d0d0">=</span><span style="color: #ed9d13">&quot;true&quot;</span>
-svccfg -s svc:/application/pkg/server:hipster-encumbered setprop <span style="color: #ed9d13">\</span>
-                            pkg/proxy_base<span style="color: #d0d0d0">=</span><span style="color: #ed9d13">&quot;http://&lt;DOMAIN&gt;/hipster-encumbered&quot;</span>
-svccfg -s svc:/application/pkg/server:hipster-encumbered setprop <span style="color: #ed9d13">\</span>
-                            pkg/address<span style="color: #d0d0d0">=</span><span style="color: #ed9d13">&quot;127.0.0.1&quot;</span>
-</pre></div>
+svccfg -s svc:/application/pkg/server:hipster-encumbered setprop \
+                            pkg/inst_root=&quot;/var/share/pkg/repositories/hipster-encumbered&quot;
+svccfg -s svc:/application/pkg/server:hipster-encumbered setprop \
+                            pkg/port=&quot;10101&quot;
+svccfg -s svc:/application/pkg/server:hipster-encumbered setprop \
+                            pkg/pkg_root=&quot;/&quot;
+svccfg -s svc:/application/pkg/server:hipster-encumbered setprop \
+                            pkg/readonly=&quot;true&quot;
+svccfg -s svc:/application/pkg/server:hipster-encumbered setprop \
+                            pkg/proxy_base=&quot;http://&lt;DOMAIN&gt;/hipster-encumbered&quot;
+svccfg -s svc:/application/pkg/server:hipster-encumbered setprop \
+                            pkg/address=&quot;127.0.0.1&quot;
+</code></pre>
 
 <p>After <strong>pkg/server</strong> instances have been configured, ensure thay are present and start them:</p>
-<div class="highlight" style="background: #202020"><pre style="line-height: 125%"><span></span>vagrant@openindiana:/export/home/vagrant$ svcs pkg/server
+
+<pre><code class="language-bash">vagrant@openindiana:/export/home/vagrant$ svcs pkg/server
 STATE          STIME    FMRI
 disabled       Aug_05   svc:/application/pkg/server:default
 -              -        svc:/application/pkg/server:hipster
 -              -        svc:/application/pkg/server:hipster-encumbered
-vagrant@openindiana:/export/home/vagrant$ pfexec svcadm <span style="color: #24909d">enable</span> pkg/server:hipster
-vagrant@openindiana:/export/home/vagrant$ pfexec svcadm <span style="color: #24909d">enable</span> pkg/server:hipster-encumbered
+vagrant@openindiana:/export/home/vagrant$ pfexec svcadm enable pkg/server:hipster
+vagrant@openindiana:/export/home/vagrant$ pfexec svcadm enable pkg/server:hipster-encumbered
 vagrant@openindiana:/export/home/vagrant$ svcs -xv
 vagrant@openindiana:/export/home/vagrant$
-</pre></div>
+</code></pre>
 
 <p>If everything went good, two <strong>pkg.depotd</strong> instances should be running:</p>
-<div class="highlight" style="background: #202020"><pre style="line-height: 125%"><span></span>vagrant@openindiana:/export/home/vagrant$ svcs -p pkg/server
+
+<pre><code class="language-bash">vagrant@openindiana:/export/home/vagrant$ svcs -p pkg/server
 STATE          STIME    FMRI
 disabled       Aug_05   svc:/application/pkg/server:default
-online         <span style="color: #3677a9">13</span>:37:02 svc:/application/pkg/server:hipster
-               <span style="color: #3677a9">13</span>:37:02     <span style="color: #3677a9">2107</span> pkg.depotd
-online         <span style="color: #3677a9">13</span>:37:04 svc:/application/pkg/server:hipster-encumbered
-               <span style="color: #3677a9">13</span>:37:04     <span style="color: #3677a9">2131</span> pkg.depotd
-</pre></div>
+online         13:37:02 svc:/application/pkg/server:hipster
+               13:37:02     2107 pkg.depotd
+online         13:37:04 svc:/application/pkg/server:hipster-encumbered
+               13:37:04     2131 pkg.depotd
+</code></pre>
 
 <h1 id="configuring-nginx-as-a-reverse-proxy">Configuring nginx as a reverse proxy</h1>
 
 <p>Using reverse proxy with <strong>pkg.depot</strong> is essential as we can increase performance and security by proper configuration. Many reverse proxy implementations also come with caching and loadbalancing features, which we
 can use as well. Another important thing is to configure a webserver for serving static files. I chose <a href="https://www.nginx.org">nginx</a> as it excels at serving static files, reverse proxying and caching. Install the package:</p>
-<div class="highlight" style="background: #202020"><pre style="line-height: 125%"><span></span>pkg install nginx
-</pre></div>
+
+<pre><code class="language-bash">pkg install nginx
+</code></pre>
 
 <p>Once the package is installed, copy the following configuration snippet into <strong>/etc/nginx/nginx.conf</strong> (or other place where nginx can find it), so nginx can start handling requests arriving at our IPS mirror instances from the outside world. Do not forget to replace <strong>pkg.domain.tld</strong> with the actual hostname for the newly configured IPS mirror:</p>
-<div class="highlight" style="background: #202020"><pre style="line-height: 125%"><span></span><span style="color: #6ab825; font-weight: bold">server</span> <span style="color: #d0d0d0">{</span>
-  <span style="color: #6ab825; font-weight: bold">listen</span> <span style="color: #3677a9">80</span><span style="color: #d0d0d0">;</span>
-  <span style="color: #6ab825; font-weight: bold">server_name</span> <span style="color: #ed9d13">pkg.domain.tld</span><span style="color: #d0d0d0">;</span>
 
-  <span style="color: #6ab825; font-weight: bold">access_log</span> <span style="color: #ed9d13">/var/nginx/logs/pkg.domain.tld-access.log</span> <span style="color: #ed9d13">main</span><span style="color: #d0d0d0">;</span>
-  <span style="color: #6ab825; font-weight: bold">error_log</span> <span style="color: #ed9d13">/var/nginx/logs/pkg.domain.tld-error.log</span> <span style="color: #ed9d13">debug</span><span style="color: #d0d0d0">;</span>
+<pre><code class="language-nginx">server {
+  listen 80;
+  server_name pkg.domain.tld;
 
-  <span style="color: #6ab825; font-weight: bold">root</span> <span style="color: #ed9d13">/var/share/pkg/repositories</span><span style="color: #d0d0d0">;</span>
+  access_log /var/nginx/logs/pkg.domain.tld-access.log main;
+  error_log /var/nginx/logs/pkg.domain.tld-error.log debug;
 
-  <span style="color: #6ab825; font-weight: bold">location</span> <span style="color: #ed9d13">/hipster/</span> <span style="color: #d0d0d0">{</span>
+  root /var/share/pkg/repositories;
 
-    <span style="color: #6ab825; font-weight: bold">location</span> <span style="color: #d0d0d0">~</span> <span style="color: #ed9d13">^/hipster/file/0/(..)(.*)$</span> <span style="color: #d0d0d0">{</span>
-      <span style="color: #6ab825; font-weight: bold">try_files</span> <span style="color: #ed9d13">/hipster/publisher/openindiana.org/file/</span><span style="color: #40ffff">$1/$1$2</span> <span style="color: #d0d0d0">=</span><span style="color: #3677a9">404</span><span style="color: #d0d0d0">;</span>
-    <span style="color: #d0d0d0">}</span>
+  location /hipster/ {
 
-    <span style="color: #6ab825; font-weight: bold">location</span> <span style="color: #d0d0d0">~</span> <span style="color: #ed9d13">^/hipster/openindiana.org/file/1/(..)(.*)$</span> <span style="color: #d0d0d0">{</span>
-      <span style="color: #6ab825; font-weight: bold">try_files</span> <span style="color: #ed9d13">/hipster/publisher/openindiana.org/file/</span><span style="color: #40ffff">$1/$1$2</span> <span style="color: #d0d0d0">=</span><span style="color: #3677a9">404</span><span style="color: #d0d0d0">;</span>
-    <span style="color: #d0d0d0">}</span>
+    location ~ ^/hipster/file/0/(..)(.*)$ {
+      try_files /hipster/publisher/openindiana.org/file/$1/$1$2 =404;
+    }
 
-    <span style="color: #6ab825; font-weight: bold">location</span> <span style="color: #d0d0d0">~</span><span style="color: #ed9d13">^/hipster/(open|abandon|add|close)/</span> <span style="color: #d0d0d0">{</span>
-      <span style="color: #6ab825; font-weight: bold">allow</span> <span style="color: #3677a9">127</span><span style="color: #ed9d13">.0.0.0/8</span><span style="color: #d0d0d0">;</span>
-      <span style="color: #6ab825; font-weight: bold">deny</span> <span style="color: #ed9d13">all</span><span style="color: #d0d0d0">;</span>
-    <span style="color: #d0d0d0">}</span>
+    location ~ ^/hipster/openindiana.org/file/1/(..)(.*)$ {
+      try_files /hipster/publisher/openindiana.org/file/$1/$1$2 =404;
+    }
 
-    <span style="color: #6ab825; font-weight: bold">rewrite</span> <span style="color: #ed9d13">^/hipster/</span>$ <span style="color: #ed9d13">/</span> <span style="color: #ed9d13">break</span><span style="color: #d0d0d0">;</span>
-    <span style="color: #6ab825; font-weight: bold">rewrite</span> <span style="color: #ed9d13">^/hipster/(.*)</span> <span style="color: #ed9d13">/</span><span style="color: #40ffff">$1</span> <span style="color: #ed9d13">break</span><span style="color: #d0d0d0">;</span>
+    location ~^/hipster/(open|abandon|add|close)/ {
+      allow 127.0.0.0/8;
+      deny all;
+    }
 
-    <span style="color: #6ab825; font-weight: bold">proxy_pass</span> <span style="color: #ed9d13">http://127.0.0.1:10100</span><span style="color: #d0d0d0">;</span>
-    <span style="color: #6ab825; font-weight: bold">proxy_next_upstream</span> <span style="color: #ed9d13">error</span> <span style="color: #ed9d13">timeout</span> <span style="color: #ed9d13">invalid_header</span> <span style="color: #ed9d13">http_500</span> <span style="color: #ed9d13">http_502</span> <span style="color: #ed9d13">http_503</span> <span style="color: #ed9d13">http_504</span><span style="color: #d0d0d0">;</span>
-    <span style="color: #6ab825; font-weight: bold">proxy_redirect</span> <span style="color: #40ffff">off</span><span style="color: #d0d0d0">;</span>
-    <span style="color: #6ab825; font-weight: bold">proxy_buffering</span> <span style="color: #40ffff">off</span><span style="color: #d0d0d0">;</span>
-  <span style="color: #d0d0d0">}</span>
+    rewrite ^/hipster/$ / break;
+    rewrite ^/hipster/(.*) /$1 break;
 
-  <span style="color: #6ab825; font-weight: bold">location</span> <span style="color: #ed9d13">/hipster-encumbered/</span> <span style="color: #d0d0d0">{</span>
+    proxy_pass http://127.0.0.1:10100;
+    proxy_next_upstream error timeout invalid_header http_500 http_502 http_503 http_504;
+    proxy_redirect off;
+    proxy_buffering off;
+  }
 
-    <span style="color: #6ab825; font-weight: bold">location</span> <span style="color: #d0d0d0">~</span> <span style="color: #ed9d13">^/hipster-encumbered/file/0/(..)(.*)$</span> <span style="color: #d0d0d0">{</span>
-      <span style="color: #6ab825; font-weight: bold">try_files</span> <span style="color: #ed9d13">/hipster-encumbered/publisher/hipster-encumbered/file/</span><span style="color: #40ffff">$1/$1$2</span> <span style="color: #d0d0d0">=</span><span style="color: #3677a9">404</span><span style="color: #d0d0d0">;</span>
-    <span style="color: #d0d0d0">}</span>
+  location /hipster-encumbered/ {
 
-    <span style="color: #6ab825; font-weight: bold">location</span> <span style="color: #d0d0d0">~</span> <span style="color: #ed9d13">^/hipster-encumbered/hipster-encumbered/file/1/(..)(.*)$</span> <span style="color: #d0d0d0">{</span>
-      <span style="color: #6ab825; font-weight: bold">try_files</span> <span style="color: #ed9d13">/hipster-encumbered/publisher/hipster-encumbered/file/</span><span style="color: #40ffff">$1/$1$2</span> <span style="color: #d0d0d0">=</span><span style="color: #3677a9">404</span><span style="color: #d0d0d0">;</span>
-    <span style="color: #d0d0d0">}</span>
+    location ~ ^/hipster-encumbered/file/0/(..)(.*)$ {
+      try_files /hipster-encumbered/publisher/hipster-encumbered/file/$1/$1$2 =404;
+    }
 
-    <span style="color: #6ab825; font-weight: bold">location</span> <span style="color: #d0d0d0">~</span><span style="color: #ed9d13">^/hipster-encumbered/(open|abandon|add|close)/</span> <span style="color: #d0d0d0">{</span>
-      <span style="color: #6ab825; font-weight: bold">allow</span> <span style="color: #3677a9">127</span><span style="color: #ed9d13">.0.0.0/8</span><span style="color: #d0d0d0">;</span>
-      <span style="color: #6ab825; font-weight: bold">deny</span> <span style="color: #ed9d13">all</span><span style="color: #d0d0d0">;</span>
-    <span style="color: #d0d0d0">}</span>
+    location ~ ^/hipster-encumbered/hipster-encumbered/file/1/(..)(.*)$ {
+      try_files /hipster-encumbered/publisher/hipster-encumbered/file/$1/$1$2 =404;
+    }
 
-    <span style="color: #6ab825; font-weight: bold">rewrite</span> <span style="color: #ed9d13">^/hipster-encumbered/</span>$ <span style="color: #ed9d13">/</span> <span style="color: #ed9d13">break</span><span style="color: #d0d0d0">;</span>
-    <span style="color: #6ab825; font-weight: bold">rewrite</span> <span style="color: #ed9d13">^/hipster-encumbered/(.*)</span> <span style="color: #ed9d13">/</span><span style="color: #40ffff">$1</span> <span style="color: #ed9d13">break</span><span style="color: #d0d0d0">;</span>
+    location ~^/hipster-encumbered/(open|abandon|add|close)/ {
+      allow 127.0.0.0/8;
+      deny all;
+    }
 
-    <span style="color: #6ab825; font-weight: bold">proxy_pass</span> <span style="color: #ed9d13">http://127.0.0.1:10101</span><span style="color: #d0d0d0">;</span>
-    <span style="color: #6ab825; font-weight: bold">proxy_next_upstream</span> <span style="color: #ed9d13">error</span> <span style="color: #ed9d13">timeout</span> <span style="color: #ed9d13">invalid_header</span> <span style="color: #ed9d13">http_500</span> <span style="color: #ed9d13">http_502</span> <span style="color: #ed9d13">http_503</span> <span style="color: #ed9d13">http_504</span><span style="color: #d0d0d0">;</span>
-    <span style="color: #6ab825; font-weight: bold">proxy_redirect</span> <span style="color: #40ffff">off</span><span style="color: #d0d0d0">;</span>
-    <span style="color: #6ab825; font-weight: bold">proxy_buffering</span> <span style="color: #40ffff">off</span><span style="color: #d0d0d0">;</span>
-  <span style="color: #d0d0d0">}</span>
+    rewrite ^/hipster-encumbered/$ / break;
+    rewrite ^/hipster-encumbered/(.*) /$1 break;
 
-  <span style="color: #6ab825; font-weight: bold">location</span> <span style="color: #ed9d13">/</span> <span style="color: #d0d0d0">{</span>
-    <span style="color: #6ab825; font-weight: bold">return</span> <span style="color: #3677a9">301</span> <span style="color: #ed9d13">http://pkg.domain.tld/hipster/en/index.shtml</span><span style="color: #d0d0d0">;</span>
-  <span style="color: #d0d0d0">}</span>
-<span style="color: #d0d0d0">}</span>
-</pre></div>
+    proxy_pass http://127.0.0.1:10101;
+    proxy_next_upstream error timeout invalid_header http_500 http_502 http_503 http_504;
+    proxy_redirect off;
+    proxy_buffering off;
+  }
+
+  location / {
+    return 301 http://pkg.domain.tld/hipster/en/index.shtml;
+  }
+}
+</code></pre>
 
 <p>Before enabling nginx service, test if the configuration is correct and don&rsquo;t forget to check for
 service issues afterwards:</p>
-<div class="highlight" style="background: #202020"><pre style="line-height: 125%"><span></span>vagrant@openindiana:/export/home/vagrant$ pfexec nginx -t
+
+<pre><code class="language-bash">vagrant@openindiana:/export/home/vagrant$ pfexec nginx -t
 nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
-nginx: configuration file /etc/nginx/nginx.conf <span style="color: #24909d">test</span> is successful
-vagrant@openindiana:/export/home/vagrant$ svcadm <span style="color: #24909d">enable</span> nginx
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+vagrant@openindiana:/export/home/vagrant$ svcadm enable nginx
 vagrant@openindiana:/export/home/vagrant$ svcs -xv
 vagrant@openindiana:/export/home/vagrant$
-</pre></div>
+</code></pre>
 
 <p>We are now ready to serve IPS data to the outside world. In the next chapter, we will look at how
 to get maximum out of nginx capabilities.</p>
@@ -454,6 +466,28 @@ to get maximum out of nginx capabilities.</p>
       <a class="basic-alignment right" href="https://blog.xenol.eu/blog/2016/09/03/Managing-illumos-networking-with-Ansible/" title="Managing illumos networking with Ansible">Managing illumos networking with Ansible</a>
     
   </p>
+  
+    
+      <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'xenolsblog';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
   
 </footer>
 
@@ -506,6 +540,14 @@ to get maximum out of nginx capabilities.</p>
         <ul id="recent_posts">
           
             <li class="post">
+              <a href="/blog/2018/01/14/34C3-tuwat/">34C3: tuwat!</a>
+            </li>
+          
+            <li class="post">
+              <a href="/blog/2017/02/12/Ansible-modules-and-OpenIndiana/">Ansible modules and OpenIndiana</a>
+            </li>
+          
+            <li class="post">
               <a href="/blog/2017/02/11/Managing-more-illumos-networking-with-Ansible/">Managing more illumos networking with Ansible</a>
             </li>
           
@@ -515,14 +557,6 @@ to get maximum out of nginx capabilities.</p>
           
             <li class="post">
               <a href="/blog/2016/09/03/Managing-illumos-networking-with-Ansible/">Managing illumos networking with Ansible</a>
-            </li>
-          
-            <li class="post">
-              <a href="/blog/2016/08/09/Mirroring-OpenIndiana-IPS-repositories---part-1/">Mirroring OpenIndiana IPS repositories - part 1</a>
-            </li>
-          
-            <li class="post">
-              <a href="/blog/2016/07/04/Migration-from-Octopress-to-Hugo/">Migration from Octopress to Hugo</a>
             </li>
           
         </ul>
@@ -536,11 +570,15 @@ to get maximum out of nginx capabilities.</p>
 </div>
 
 <footer role="contentinfo">
-  <p>Copyright &copy; 2017 xenol - <a href="https://blog.xenol.eu/license/">License</a> -
+  <p>Copyright &copy; 2018 xenol - <a href="https://blog.xenol.eu/license/">License</a> -
   <span class="credit">Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> and <a target="_blank" href="https://github.com/parsiya/hugo-octopress/">Hugo-Octopress</a> theme.
 </p>
 
 </footer>
+
+
+
+
 
 
 <script>

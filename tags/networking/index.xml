@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Networking on xenol&#39;s blog</title>
-    <link>https://blog.xenol.eu/tags/networking/index.xml</link>
+    <link>https://blog.xenol.eu/tags/networking/</link>
     <description>Recent content in Networking on xenol&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://blog.xenol.eu/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Feb 2017 21:35:37 +0100</lastBuildDate>
+    
+	<atom:link href="https://blog.xenol.eu/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Managing more illumos networking with Ansible</title>
@@ -14,19 +17,8 @@
       <pubDate>Sat, 11 Feb 2017 21:35:37 +0100</pubDate>
       
       <guid>https://blog.xenol.eu/blog/2017/02/11/Managing-more-illumos-networking-with-Ansible/</guid>
-      <description>&lt;p&gt;On January 9th, the rest of my work on Ansible modules for managing Solaris/illumos networking was accepted into Ansible and this work will be a part of the next release. With this batch of modules almost every aspect of Solaris/illumos networking (apart from link aggregations and bridges) can be configured and managed by Ansible. The following new modules are available in Ansible:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/dladm_vlan_module.html&#34;&gt;dladm_vlan&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/dladm_linkprop_module.html&#34;&gt;dladm_linkprop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/dladm_iptun_module.html&#34;&gt;dladm_iptun&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/ipadm_addr_module.html&#34;&gt;ipadm_addr&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/ipadm_addrprop_module.html&#34;&gt;ipadm_addrprop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/ipadm_addrprop_module.html&#34;&gt;ipadm_ifprop&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In the next blog post I will show some real examples how to accomplish useful work with these modules.&lt;/p&gt;
-</description>
+      <description>On January 9th, the rest of my work on Ansible modules for managing Solaris/illumos networking was accepted into Ansible and this work will be a part of the next release. With this batch of modules almost every aspect of Solaris/illumos networking (apart from link aggregations and bridges) can be configured and managed by Ansible. The following new modules are available in Ansible:
+ dladm_vlan dladm_linkprop dladm_iptun ipadm_addr ipadm_addrprop ipadm_ifprop  In the next blog post I will show some real examples how to accomplish useful work with these modules.</description>
     </item>
     
     <item>
@@ -35,20 +27,8 @@
       <pubDate>Sat, 03 Sep 2016 12:10:21 +0200</pubDate>
       
       <guid>https://blog.xenol.eu/blog/2016/09/03/Managing-illumos-networking-with-Ansible/</guid>
-      <description>&lt;p&gt;On August 30th, my work on Ansible modules for managing Solaris/illumos networking was merged into &lt;a href=&#34;https://github.com/ansible/ansible-modules-extras/commits/devel&#34;&gt;ansible-modules-extras&lt;/a&gt; repository. This functionality will be available in the next release of Ansible. Following modules were contributed:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/dladm_etherstub_module.html&#34;&gt;dladm_etherstub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/dladm_vnic_module.html&#34;&gt;dladm_vnic&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/ipadm_if_module.html&#34;&gt;ipadm_if&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/ipadm_prop_module.html&#34;&gt;ipadm_prop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/flowadm_module.html&#34;&gt;flowadm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This also marks a major milestone for automating the deployment of Solaris/illumos zones with Ansible. There already was a module for creating/deleting zones and manipulating their state - &lt;a href=&#34;https://docs.ansible.com/ansible/solaris_zone_module.html&#34;&gt;solaris_zone&lt;/a&gt;. However, there was not a way to manage the networking aspect of zones until now.&lt;/p&gt;
-
-&lt;p&gt;In the future, I have plans to contribute more modules for Solaris/illumos networking management and also other aspects of these systems. I have collected some module ideas in the &lt;a href=&#34;https://github.com/xen0l/ansible-illumos-modules&#34;&gt;Github repository&lt;/a&gt;. If you have any module ideas, be sure to create an issue of send a PR to the repository.&lt;/p&gt;
-</description>
+      <description>On August 30th, my work on Ansible modules for managing Solaris/illumos networking was merged into ansible-modules-extras repository. This functionality will be available in the next release of Ansible. Following modules were contributed:
+ dladm_etherstub dladm_vnic ipadm_if ipadm_prop flowadm  This also marks a major milestone for automating the deployment of Solaris/illumos zones with Ansible. There already was a module for creating/deleting zones and manipulating their state - solaris_zone. However, there was not a way to manage the networking aspect of zones until now.</description>
     </item>
     
   </channel>

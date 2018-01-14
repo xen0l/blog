@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://blog.xenol.eu/blog/2018/01/14/34C3-tuwat/</loc>
+    <lastmod>2018-01-14T15:39:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.xenol.eu/blog/2017/02/12/Ansible-modules-and-OpenIndiana/</loc>
+    <lastmod>2017-02-12T21:41:17+01:00</lastmod>
+  </url>
   
   <url>
     <loc>https://blog.xenol.eu/blog/2017/02/11/Managing-more-illumos-networking-with-Ansible/</loc>
@@ -57,7 +68,7 @@
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/about</loc>
+    <loc>https://blog.xenol.eu/about/</loc>
     <lastmod>2012-04-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -89,47 +100,48 @@
   </url>
   
   <url>
+    <loc>https://blog.xenol.eu/categories/34c3/</loc>
+    <lastmod>2018-01-14T15:39:09+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.xenol.eu/about/</loc>
     <lastmod>2012-04-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/categories/ansible/</loc>
-    <lastmod>2017-02-11T21:35:37+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.xenol.eu/tags/ansible/</loc>
-    <lastmod>2017-02-11T21:35:37+01:00</lastmod>
+    <lastmod>2017-02-12T21:41:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/archives</loc>
+    <loc>https://blog.xenol.eu/categories/ansible/</loc>
+    <lastmod>2017-02-12T21:41:17+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.xenol.eu/archives/</loc>
   </url>
   
   <url>
     <loc>https://blog.xenol.eu/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.xenol.eu/categories/ccc/</loc>
-    <lastmod>2017-01-02T20:39:50+01:00</lastmod>
+    <lastmod>2012-12-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.xenol.eu/tags/ccc/</loc>
-    <lastmod>2017-01-02T20:39:50+01:00</lastmod>
+    <lastmod>2018-01-14T15:39:09+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/categories/dns/</loc>
-    <lastmod>2012-10-29T00:00:00+00:00</lastmod>
+    <loc>https://blog.xenol.eu/categories/ccc/</loc>
+    <lastmod>2018-01-14T15:39:09+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -140,7 +152,7 @@
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/categories/freebsd/</loc>
+    <loc>https://blog.xenol.eu/categories/dns/</loc>
     <lastmod>2012-10-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -152,14 +164,26 @@
   </url>
   
   <url>
+    <loc>https://blog.xenol.eu/categories/freebsd/</loc>
+    <lastmod>2012-10-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.xenol.eu/tags/hugo/</loc>
     <lastmod>2016-07-04T02:54:45+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://blog.xenol.eu/tags/illumos/</loc>
+    <lastmod>2017-02-12T21:41:17+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.xenol.eu/categories/illumos/</loc>
-    <lastmod>2017-02-11T21:35:37+01:00</lastmod>
+    <lastmod>2017-02-12T21:41:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -182,14 +206,14 @@
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/categories/openindiana/</loc>
-    <lastmod>2017-02-11T21:35:37+01:00</lastmod>
+    <loc>https://blog.xenol.eu/tags/openindiana/</loc>
+    <lastmod>2017-02-12T21:41:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.xenol.eu/tags/openindiana/</loc>
-    <lastmod>2017-02-11T21:35:37+01:00</lastmod>
+    <loc>https://blog.xenol.eu/categories/openindiana/</loc>
+    <lastmod>2017-02-12T21:41:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -201,7 +225,7 @@
   
   <url>
     <loc>https://blog.xenol.eu/post/</loc>
-    <lastmod>2017-02-11T21:35:37+01:00</lastmod>
+    <lastmod>2018-01-14T15:39:09+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -213,12 +237,13 @@
   
   <url>
     <loc>https://blog.xenol.eu/categories/sysadmin/</loc>
-    <lastmod>2017-02-11T21:35:37+01:00</lastmod>
+    <lastmod>2017-02-12T21:41:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.xenol.eu/tags/</loc>
+    <lastmod>2017-02-12T21:41:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -230,7 +255,7 @@
   
   <url>
     <loc>https://blog.xenol.eu/</loc>
-    <lastmod>2017-02-11T21:35:37+01:00</lastmod>
+    <lastmod>2018-01-14T15:39:09+01:00</lastmod>
     <priority>0</priority>
   </url>
   

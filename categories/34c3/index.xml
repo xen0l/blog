@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>34c3 on xenol&#39;s blog</title>
+    <link>https://blog.xenol.eu/categories/34c3/</link>
+    <description>Recent content in 34c3 on xenol&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Jan 2018 15:39:09 +0100</lastBuildDate>
+    
+	<atom:link href="https://blog.xenol.eu/categories/34c3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>34C3: tuwat!</title>
+      <link>https://blog.xenol.eu/blog/2018/01/14/34C3-tuwat/</link>
+      <pubDate>Sun, 14 Jan 2018 15:39:09 +0100</pubDate>
+      
+      <guid>https://blog.xenol.eu/blog/2018/01/14/34C3-tuwat/</guid>
+      <description>New location AKA Willkommen in Leipzig My first visit to 29C3 in 2012 was the year when Congress moved from Berlin to Hamburg. Bigger auditoriums, room for more people. After the last year&amp;rsquo;s problems with almost 2000 people not getting to 33C3 because of the congress hall capacity limits, CCC organizers decided to look for a new venue. They found one in the city of Leipzig and Congress Hall Leipzig.</description>
+    </item>
+    
+  </channel>
+</rss>

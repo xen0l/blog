@@ -2,12 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>xenol&#39;s blog</title>
-    <link>https://blog.xenol.eu/index.xml</link>
+    <link>https://blog.xenol.eu/</link>
     <description>Recent content on xenol&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Feb 2017 21:35:37 +0100</lastBuildDate>
-    <atom:link href="https://blog.xenol.eu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Jan 2018 15:39:09 +0100</lastBuildDate>
+    
+	<atom:link href="https://blog.xenol.eu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>34C3: tuwat!</title>
+      <link>https://blog.xenol.eu/blog/2018/01/14/34C3-tuwat/</link>
+      <pubDate>Sun, 14 Jan 2018 15:39:09 +0100</pubDate>
+      
+      <guid>https://blog.xenol.eu/blog/2018/01/14/34C3-tuwat/</guid>
+      <description>New location AKA Willkommen in Leipzig My first visit to 29C3 in 2012 was the year when Congress moved from Berlin to Hamburg. Bigger auditoriums, room for more people. After the last year&amp;rsquo;s problems with almost 2000 people not getting to 33C3 because of the congress hall capacity limits, CCC organizers decided to look for a new venue. They found one in the city of Leipzig and Congress Hall Leipzig.</description>
+    </item>
+    
+    <item>
+      <title>Ansible modules and OpenIndiana</title>
+      <link>https://blog.xenol.eu/blog/2017/02/12/Ansible-modules-and-OpenIndiana/</link>
+      <pubDate>Sun, 12 Feb 2017 21:41:17 +0100</pubDate>
+      
+      <guid>https://blog.xenol.eu/blog/2017/02/12/Ansible-modules-and-OpenIndiana/</guid>
+      <description>Preface Ansible is a great software for automating and managing systems. In this blog post I will post some examples how to use Ansible modules for accomplishing various tasks on OpenIndiana.
+Package and package repository management Install IPS packages - name: Install common packages pkg5: name: - tcpdump - tmux - shells/zsh state=present  Remove IPS packages - name: Remove tcpdump pkg5: name=tcpdump state=absent  Remove IPS publisher - name: Remove openindiana.</description>
+    </item>
     
     <item>
       <title>Managing more illumos networking with Ansible</title>
@@ -15,19 +36,8 @@
       <pubDate>Sat, 11 Feb 2017 21:35:37 +0100</pubDate>
       
       <guid>https://blog.xenol.eu/blog/2017/02/11/Managing-more-illumos-networking-with-Ansible/</guid>
-      <description>&lt;p&gt;On January 9th, the rest of my work on Ansible modules for managing Solaris/illumos networking was accepted into Ansible and this work will be a part of the next release. With this batch of modules almost every aspect of Solaris/illumos networking (apart from link aggregations and bridges) can be configured and managed by Ansible. The following new modules are available in Ansible:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/dladm_vlan_module.html&#34;&gt;dladm_vlan&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/dladm_linkprop_module.html&#34;&gt;dladm_linkprop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/dladm_iptun_module.html&#34;&gt;dladm_iptun&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/ipadm_addr_module.html&#34;&gt;ipadm_addr&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/ipadm_addrprop_module.html&#34;&gt;ipadm_addrprop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/ipadm_addrprop_module.html&#34;&gt;ipadm_ifprop&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In the next blog post I will show some real examples how to accomplish useful work with these modules.&lt;/p&gt;
-</description>
+      <description>On January 9th, the rest of my work on Ansible modules for managing Solaris/illumos networking was accepted into Ansible and this work will be a part of the next release. With this batch of modules almost every aspect of Solaris/illumos networking (apart from link aggregations and bridges) can be configured and managed by Ansible. The following new modules are available in Ansible:
+ dladm_vlan dladm_linkprop dladm_iptun ipadm_addr ipadm_addrprop ipadm_ifprop  In the next blog post I will show some real examples how to accomplish useful work with these modules.</description>
     </item>
     
     <item>
@@ -36,98 +46,8 @@
       <pubDate>Mon, 02 Jan 2017 20:39:50 +0100</pubDate>
       
       <guid>https://blog.xenol.eu/blog/2017/01/02/33C3-Works-for-me/</guid>
-      <description>&lt;p&gt;I visited 33rd Chaos Communication Congress, which took place between 27th and 30th December 2016 in &lt;a href=&#34;https://en.wikipedia.org/wiki/Congress_Center_Hamburg&#34;&gt;CCH&lt;/a&gt; in Hamburg. The motto of last year&amp;rsquo;s congress was &lt;strong&gt;Works for me&lt;/strong&gt;. This was my fifth attendance of the Chaos Communication Congress.&lt;/p&gt;
-
-&lt;p&gt;The overall atmosphere on the Congress and organization was excellent as always. However, I have to admit that the quallity of talks was worse when compared to previous years. During previous Congresses I had problems with choosing which talk to attend as there were too many of them I wanted to visit at the same time. 33C3 was different. I was kind of bored on 3rd and 4th day. Also, there were huge problems with tickets as I was able to get a ticket only in the last sale round. With such a huge interest in the Congress I thought there was going to be a lot more people when compared to previous years, but this wasn&amp;rsquo;t the case. 32C3 was much more crowded than 33C3 was (I am not complaining, but I expected a lot more people)!&lt;/p&gt;
-
-&lt;p&gt;I have visited the following talks:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Day 1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;The Figth for Encryption in 2016&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8295-the_fight_for_encryption_in_2016&#34;&gt;Video&lt;/a&gt;) - Kurt Opsahl from &lt;a href=&#34;https://www.eff.org/&#34;&gt;EFF&lt;/a&gt; gave the summary of 2016 development in the crypto ecosystem. 2016 was a year in which end-to-end encryption was deployed in all major messengers as well as attempts to weaken crypto by governments.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Bootstrapping a slightly more secure laptop&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8314-bootstraping_a_slightly_more_secure_laptop&#34;&gt;Video&lt;/a&gt;) - &lt;a href=&#34;https://trmm.net/&#34;&gt;Trammel Hudson&lt;/a&gt; spoke about his work on &lt;a href=&#34;https://trmm.net/Heads&#34;&gt;Heads&lt;/a&gt;, which is a custom secure opensource firmware for laptops and servers that want to provide a much better physical security. It is based on the Linux Kernel and Coreboot. I liked this talk very much.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Law Enforcement Are Hacking the Planet&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8018-law_enforcement_are_hacking_the_planet&#34;&gt;Video&lt;/a&gt;) - this talk was about how FBI uses exploits and the speaker spoke about Operation PACIFIER and Torpedo. The operation covered the takedown of child pornography Tor hidden service and how FBI uses malware to discover site&amp;rsquo;s visitors.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Shut up and Take My Money!&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-7969-shut_up_and_take_my_money&#34;&gt;Video&lt;/a&gt;) - this talk was a hillarious one! It describes &lt;a href=&#34;https://n26.com/&#34;&gt;N26&lt;/a&gt; Internet bank security issues. It is really worth watching this video. If you are a software developer and you want to learn how to write secure applications, it is a must watch.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Geolocation methods in mobile networks&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-7966-geolocation_methods_in_mobile_networks&#34;&gt;Video&lt;/a&gt; &lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/system/event_attachments/attachments/000/003/113/original/Slides_Geolocation_methods_in_mobile_networks.pdf&#34;&gt;Slides&lt;/a&gt;) - a good overview of various geolocation techniques in mobile networks. The talk might seem little boring, but there are a few new ideas presented as well.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Untrusting the CPU&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8014-untrusting_the_cpu&#34;&gt;Video&lt;/a&gt;) - this talk describes a proposal for a more secure CPU architecture. The idea is to move as much sensitive data as possible out of present-day CPUs. I left this talk after some time for late lunch.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Deploying TLS 1.3: the great, the good and the bad&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8348-deploying_tls_1_3_the_great_the_good_and_the_bad&#34;&gt;Video&lt;/a&gt;) - a talk by &lt;a href=&#34;https://blog.filippo.io/&#34;&gt;Filippo Valsorda&lt;/a&gt; and &lt;a href=&#34;https://crypto.dance/&#34;&gt;Nick Sullivan&lt;/a&gt; (both from Cloudflare) about the next generation of TLS. TLS 1.3 removes insecure ciphers and broken parts of older TLS versions (e.g. TLS compression), introduces new cryptographic ciphers (ChaCha20-Poly1305), digital signature algorithms (Ed25519 and Ed448), key exchange protocols (x25519 and x448), integrates use of session hash and increases performance (1-RTT handshake and initial support for 0-RTT). TLS 1.3 is still a draft and should be ready around February 2017. This talk is a must watch for everybody who deals with web application infrastructure!&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;You can -j REJECT but you can not hide: Global scanning of the IPv6 Internet&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8061-you_can_-j_reject_but_you_can_not_hide_global_scanning_of_the_ipv6_internet&#34;&gt;Video&lt;/a&gt;) - summarizes and shows how to use various scanning techniques to discover live hosts in IPv6 networks. Speaker also showed visualization of big IPv6 networks e.g. .mil. I liked this talk and it is definitely a must watch for people interested in networking and security.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Day 2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Syrian Archive&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-7909-syrian_archive&#34;&gt;Video&lt;/a&gt;) - a group of people who try to document and validate what is happening in Syrian Civil War conflict zones. They developed a tool which preserves video evidence and workflow to verify video footage.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Gone in 60 Milliseconds&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-7865-gone_in_60_milliseconds&#34;&gt;Video&lt;/a&gt;) - one of the best talks on 33c3. The speaker talked about attacking AWS Lambda-based applications which don&amp;rsquo;t run longer than few milliseconds. Even though the application runs for few milliseconds, it can still be attacked by using and leveraging cloud provider&amp;rsquo;s other technologies. I especially liked the way how he presented the talk. This is a must for anyone working with AWS Lambda!&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Recount 2016: An Uninvited Security Audit of the U. S. Presidential Election&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8074-recount_2016_an_uninvited_security_audit_of_the_u_s_presidential_election&#34;&gt;Video&lt;/a&gt;) - &lt;a href=&#34;https://twitter.com/umbernhard&#34;&gt;Matt Bernhard&lt;/a&gt; and &lt;a href=&#34;https://jhalderm.com/&#34;&gt;J. Alex Halderman&lt;/a&gt; talked about events after the U. S. presidential elections. They showed that the voting machines are very easy to hack and that somebody could have manipulated the vote easily. They also described what happened to the presidential election recounts, how they ended and what should be changed so that future U. S. elections are secure. They also showcased how crazy voting recount laws in some U.S. states are. If you are interested if the elections were hacked, check out this video.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;The Untold Story of Edward Snowden&amp;rsquo;s Escape from Hong Kong&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8416-the_untold_story_of_edward_snowden_s_escape_from_hong_kong&#34;&gt;Video&lt;/a&gt;) - this talk sheds light on what happened during 2 weeks between the moment Edward Snowden left the hotel in Hong Kong and his landing in Moscow. This talk also tells the stories of people who helped Edward Snowden and what we can do for them. In the beginning of this talk, there were some technical problems, so you can skip first 10 or 15 minutes.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;State of Internet Censorship 2016&lt;/strong&gt; (&lt;a href=&#34;https://wills.co.tt/33c3-censorship/#/&#34;&gt;Slides&lt;/a&gt;) - this talk summarizes year 2016 in Internet censorship landscape. It contains information about threats and trends in this area as well.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Intercoms Hacking&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8027-intercoms_hacking&#34;&gt;Video&lt;/a&gt;) - ever wondered how to hack intercoms? In the past, Intercoms were connected by wires, but trends and technologies used are changing. This talk will give you a nice intro to the topic and how to approach the problem. This talk was wonderful and I enjoyed it.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;ATMs how to break them to stop the fraud&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8273-atms_how_to_break_them_to_stop_the_fraud&#34;&gt;Video&lt;/a&gt;) - various ways how ATMs can be hacked, what can be done to prevent ATM hacking and nice overview of the problems.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Day 3&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Dissecting modern (3G/4G) cellular modems&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8151-dissecting_modern_3g_4g_cellular_modems&#34;&gt;Video&lt;/a&gt; &lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/system/event_attachments/attachments/000/003/151/original/Dissecting_modern_%283G_4G%29_cellular_modems.pdf&#34;&gt;Slides&lt;/a&gt;) - this talk provides a detailed look at some modern 3G/4G cellular modems and what can be found out about their internals using debug interfaces and various hacking techniques. Speakers were also talking about how they reverse engineered cellular modems and showed what they were able to achieve with hacked cellular modems.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;The Moon and European Space Exploration&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8406-the_moon_and_european_space_exploration&#34;&gt;Video&lt;/a&gt;) - The second talk in &lt;em&gt;Space&lt;/em&gt; track. Jan Wörner spoke about the European Space Agency, its purpose, how they work and what they are working on. He also gave details about &lt;a href=&#34;http://www.esa.int/About_Us/Ministerial_Council_2016/Moon_Village&#34;&gt;The Moon Village&lt;/a&gt;. I enjoyed this talk very much.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Interplanetary Colonization&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-7942-interplanetary_colonization&#34;&gt;Video&lt;/a&gt;) - Liz George and Peter Buschkamp spoke about travelling in space, colonization of other planets and gave more insight into the problems we as the species are facing on this front.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Lasers in the sky (with asteroids)&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-7927-lasers_in_the_sky_with_asteroids&#34;&gt;Video&lt;/a&gt;) - Peter Buschkamp spoke about space and airborne lasers and their practical uses.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Day 4&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Retail Surveillance / Retail Countersurveillance&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8238-retail_surveillance_retail_countersurveillance&#34;&gt;Video&lt;/a&gt;) - this talk surveys current and emerging trends and technologies used in retail surveillance. &lt;a href=&#34;https://ahprojects.com/&#34;&gt;Adam Harvey&lt;/a&gt; also spoke about face recognition and what can be gathered from such analysis.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Understanding the Snooper’s Charter&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8287-understanding_the_snooper_s_charter&#34;&gt;Video&lt;/a&gt; &lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/system/event_attachments/attachments/000/003/153/original/Presentation_-_Understanding_the_Snooper&#39;s_Charter.odp&#34;&gt;Slides&lt;/a&gt;) - the talk analyzes the &lt;a href=&#34;http://www.legislation.gov.uk/ukpga/2016/25/contents/enacted/data.htm&#34;&gt;Investigatory Powers Act&lt;/a&gt; aka Snooper&amp;rsquo;s Charter in the UK, what it means for everybody and how it affects everyday life. With this law in place, the UK became unnoticable surveillance state.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;33C3 Infrastructure Review&lt;/strong&gt; (&lt;a href=&#34;https://media.ccc.de/v/32c3-7555-32c3_infrastructure_review&#34;&gt;Video&lt;/a&gt;) - the most awaited and the most interesting talk of the day. This talk gives an overview of metrics, numbers and other aspects of the Congress. The most interesting facts were related to networking and they are shown on the picture below:&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure&gt;
-    &lt;img src=&#34;https://blog.xenol.eu/images/33c3_networking_stats.jpg&#34; title=&#34;33C3 networking statistics&#34;  /&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Talks I haven&amp;rsquo;t visited, but are interesting:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/events/8044.html&#34;&gt;&lt;strong&gt;What could possibly go wrong with &amp;lt;insert x86 instruction here&amp;gt;?&lt;/strong&gt;&lt;/a&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8044-what_could_possibly_go_wrong_with_insert_x86_instruction_here&#34;&gt;Video&lt;/a&gt; &lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/system/event_attachments/attachments/000/003/156/original/slides.pdf&#34;&gt;Slides&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/events/8127.html&#34;&gt;&lt;strong&gt;How Do I Crack Satellite and Cable Pay TV?&lt;/strong&gt;&lt;/a&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8127-how_do_i_crack_satellite_and_cable_pay_tv&#34;&gt;Video&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://media.ccc.de/v/33c3-8117-3_years_after_snowden_is_germany_fighting_state_surveillance&#34;&gt;&lt;strong&gt;3 Years After Snowden: Is Germany fighting State Surveillance?&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/events/8272.html&#34;&gt;&lt;strong&gt;On Smart Cities, Smart Energy, And Dumb Security&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/events/8069.html&#34;&gt;&lt;strong&gt;Tapping into the core&lt;/strong&gt;&lt;/a&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8069-tapping_into_the_core&#34;&gt;Video&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/events/7827.html&#34;&gt;&lt;strong&gt;On the Security and Privacy of Modern Single Sign-On in the Web&lt;/strong&gt;&lt;/a&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-7827-on_the_security_and_privacy_of_modern_single_sign-on_in_the_web&#34;&gt;Video&lt;/a&gt; &lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/system/event_attachments/attachments/000/003/132/original/on-the-security-and-privacy-of-modern-sso.pdf&#34;&gt;Slides&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/events/8142.html&#34;&gt;&lt;strong&gt;Virtual Secure Boot&lt;/strong&gt;&lt;/a&gt; (&lt;a href=&#34;https://media.ccc.de/v/33c3-8142-virtual_secure_boot&#34;&gt;Video&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Other interesting links:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://fahrplan.events.ccc.de/congress/2016/Fahrplan/&#34;&gt;Fahrplan (33C3 schedule)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://media.ccc.de/c/33c3&#34;&gt;33C3 videos on media.ccc.de&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLOcrXzpA0W82Z49Pj0v-cehuvA9qCDuX9&#34;&gt;33C3 video playlist on YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To conclude, I enjoyed 33C3 very much and I am looking forward for 34C3. See you there!&lt;/p&gt;
-</description>
+      <description>I visited 33rd Chaos Communication Congress, which took place between 27th and 30th December 2016 in CCH in Hamburg. The motto of last year&amp;rsquo;s congress was Works for me. This was my fifth attendance of the Chaos Communication Congress.
+The overall atmosphere on the Congress and organization was excellent as always. However, I have to admit that the quallity of talks was worse when compared to previous years. During previous Congresses I had problems with choosing which talk to attend as there were too many of them I wanted to visit at the same time.</description>
     </item>
     
     <item>
@@ -136,20 +56,8 @@
       <pubDate>Sat, 03 Sep 2016 12:10:21 +0200</pubDate>
       
       <guid>https://blog.xenol.eu/blog/2016/09/03/Managing-illumos-networking-with-Ansible/</guid>
-      <description>&lt;p&gt;On August 30th, my work on Ansible modules for managing Solaris/illumos networking was merged into &lt;a href=&#34;https://github.com/ansible/ansible-modules-extras/commits/devel&#34;&gt;ansible-modules-extras&lt;/a&gt; repository. This functionality will be available in the next release of Ansible. Following modules were contributed:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/dladm_etherstub_module.html&#34;&gt;dladm_etherstub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/dladm_vnic_module.html&#34;&gt;dladm_vnic&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/ipadm_if_module.html&#34;&gt;ipadm_if&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/ipadm_prop_module.html&#34;&gt;ipadm_prop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.ansible.com/ansible/flowadm_module.html&#34;&gt;flowadm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This also marks a major milestone for automating the deployment of Solaris/illumos zones with Ansible. There already was a module for creating/deleting zones and manipulating their state - &lt;a href=&#34;https://docs.ansible.com/ansible/solaris_zone_module.html&#34;&gt;solaris_zone&lt;/a&gt;. However, there was not a way to manage the networking aspect of zones until now.&lt;/p&gt;
-
-&lt;p&gt;In the future, I have plans to contribute more modules for Solaris/illumos networking management and also other aspects of these systems. I have collected some module ideas in the &lt;a href=&#34;https://github.com/xen0l/ansible-illumos-modules&#34;&gt;Github repository&lt;/a&gt;. If you have any module ideas, be sure to create an issue of send a PR to the repository.&lt;/p&gt;
-</description>
+      <description>On August 30th, my work on Ansible modules for managing Solaris/illumos networking was merged into ansible-modules-extras repository. This functionality will be available in the next release of Ansible. Following modules were contributed:
+ dladm_etherstub dladm_vnic ipadm_if ipadm_prop flowadm  This also marks a major milestone for automating the deployment of Solaris/illumos zones with Ansible. There already was a module for creating/deleting zones and manipulating their state - solaris_zone. However, there was not a way to manage the networking aspect of zones until now.</description>
     </item>
     
     <item>
@@ -158,291 +66,7 @@
       <pubDate>Tue, 09 Aug 2016 00:09:28 +0200</pubDate>
       
       <guid>https://blog.xenol.eu/blog/2016/08/09/Mirroring-OpenIndiana-IPS-repositories---part-1/</guid>
-      <description>
-
-&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;In this blog post, I will show how one can create a mirror of OpenIndiana IPS
-repositories. IPS repositories hold packages coming from multiple sources, most
-notably from &lt;a href=&#34;https://github.com/illumos/illumos-gate&#34;&gt;illumos-gate&lt;/a&gt; and
-&lt;a href=&#34;https://github.com/OpenIndiana/oi-userland&#34;&gt;oi-userland&lt;/a&gt;. Every time user runs
-&lt;strong&gt;pkg update&lt;/strong&gt; on his OpenIndiana installation, &lt;strong&gt;pkg&lt;/strong&gt;  contacts IPS repository
-to fetch catalog metadata and determines if there are any new updates available.
-If updates are available, &lt;strong&gt;pkg&lt;/strong&gt; downoalds only changed files over HTTP.
-IPS application server is written in Python and &lt;a href=&#34;http://www.cherrypy.org/&#34;&gt;CherryPy&lt;/a&gt;
-web framework. I will also describe how to configure nginx as
-a reverse proxy for IPS mirror and make it more robust. The nice thing about
-setting IPS mirror is that it is very easy to do as we have it deeply integrated
-with other illumos technologies: SMF and ZFS.&lt;/p&gt;
-
-&lt;p&gt;If unsure whetever you should create your own IPS repository mirror, consider these
-use cases:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;have a reasonable big OpenIndiana infrastructure and want to have a better control over updates&lt;/li&gt;
-&lt;li&gt;save network bandwidth&lt;/li&gt;
-&lt;li&gt;want to provide IPS repository mirror for the community&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It is enough to do steps in the first part of this blog post to get IPS mirror up and running. This
-configuration should also work on other illumos IPS distributions such as OmniOS with minimal changes.
-In the next part, I will mainly concentrate on how to increase IPS server
-performance by leveraging caching, nginx settings and deploying TLS.&lt;/p&gt;
-
-&lt;h1 id=&#34;preparation&#34;&gt;Preparation&lt;/h1&gt;
-
-&lt;p&gt;I will be using OpenIndiana hipster 2016.04 [vagrant]{&lt;a href=&#34;https://www.vagrantup.com/&#34;&gt;https://www.vagrantup.com/&lt;/a&gt;} box as my working
-environemnt. It provides me with a basic setup: base install, network configuration and access to the
-Internet. The user &lt;strong&gt;vagrant&lt;/strong&gt; has &lt;strong&gt;Primary Administrator&lt;/strong&gt; RBAC role assigned, so it can get access
-to superuser privileges. Configuring these is out of scope of this document.&lt;/p&gt;
-
-&lt;h1 id=&#34;configuring-ips-mirroring-service&#34;&gt;Configuring IPS mirroring service&lt;/h1&gt;
-
-&lt;p&gt;IPS mirroring service is provided by &lt;strong&gt;svc:/application/pkg/mirror:default&lt;/strong&gt; SMF service. This service
-will configure everything necesseary from creating ZFS datasets for every pkg/mirror instance to creating
-crontab entry.&lt;/p&gt;
-
-&lt;p&gt;We start by adding publishers, which we want to mirror from. I will mirror two publishers:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;openindiana.org&lt;/strong&gt; publisher from &lt;strong&gt;&lt;a href=&#34;http://pkg.openindiana.org/hipster&#34;&gt;http://pkg.openindiana.org/hipster&lt;/a&gt;&lt;/strong&gt; repository (&lt;strong&gt;~77GB&lt;/strong&gt; as of August 2016)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;hipster-encumbered&lt;/strong&gt; publisher from &lt;strong&gt;&lt;a href=&#34;http://pkg.openindiana.org/hipster-encumbered&#34;&gt;http://pkg.openindiana.org/hipster-encumbered&lt;/a&gt;&lt;/strong&gt; repository (&lt;strong&gt;~1GB&lt;/strong&gt; as of August 2016)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #202020&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;vagrant@openindiana:/export/home/vagrant$ pkg publisher
-PUBLISHER                   TYPE     STATUS P LOCATION
-openindiana.org             origin   online F http://pkg.openindiana.org/hipster/
-vagrant@openindiana:/export/home/vagrant$ pfexec pkg set-publisher &lt;span style=&#34;color: #ed9d13&#34;&gt;\&lt;/span&gt;
-                                            -p http://pkg.openindiana.org/hipster-encumbered
-pkg set-publisher:
-  Added publisher&lt;span style=&#34;color: #d0d0d0&#34;&gt;(&lt;/span&gt;s&lt;span style=&#34;color: #d0d0d0&#34;&gt;)&lt;/span&gt;: hipster-encumbered
-vagrant@openindiana:/export/home/vagrant$ pkg publisher
-PUBLISHER                   TYPE     STATUS P LOCATION
-openindiana.org             origin   online F http://pkg.openindiana.org/hipster/
-hipster-encumbered          origin   online F http://pkg.openindiana.org/hipster-encumbered/
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Please note that &lt;strong&gt;openindiana.org&lt;/strong&gt; IPS publisher is preconfigured by default. If it is not present, add it:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #202020&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;pfexec pkg set-publisher -p http://pkg.openindiana.org/hipster
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;We need to create &lt;strong&gt;rpool/VARSHARE/pkg&lt;/strong&gt; ZFS dataset as &lt;strong&gt;pkg/mirror&lt;/strong&gt; expects it. I placed it on a root pool as &lt;strong&gt;pkg/mirror&lt;/strong&gt; expects
-&amp;lt;BE root pool&amp;gt;/VARSHARE. We also enable &lt;strong&gt;lz4 compression&lt;/strong&gt;
-on this dataset, so  child datasets inherit the compression setting. Now, create the dataset:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #202020&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;vagrant@openindiana:/export/home/vagrant$ pfexec zfs create -o &lt;span style=&#34;color: #40ffff&#34;&gt;mountpoint&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;/var/share rpool/VARSHARE
-vagrant@openindiana:/export/home/vagrant$ pfexec zfs create -o &lt;span style=&#34;color: #40ffff&#34;&gt;compression&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;lz4 rpool/VARSHARE/pkg
-vagrant@openindiana:/export/home/vagrant$ zfs list
-NAME                         USED  AVAIL  REFER  MOUNTPOINT
-rpool                       &lt;span style=&#34;color: #3677a9&#34;&gt;4&lt;/span&gt;.43G  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G  &lt;span style=&#34;color: #3677a9&#34;&gt;29&lt;/span&gt;.5K  /rpool
-rpool/ROOT                  &lt;span style=&#34;color: #3677a9&#34;&gt;2&lt;/span&gt;.36G  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G    19K  legacy
-rpool/ROOT/openindiana      &lt;span style=&#34;color: #3677a9&#34;&gt;2&lt;/span&gt;.36G  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G  &lt;span style=&#34;color: #3677a9&#34;&gt;2&lt;/span&gt;.18G  /
-rpool/ROOT/openindiana/var   119M  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G   107M  /var
-rpool/VARSHARE                38K  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G    19K  /var/share
-rpool/VARSHARE/pkg            19K  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G    19K  /var/share/pkg
-rpool/dump                  &lt;span style=&#34;color: #3677a9&#34;&gt;1&lt;/span&gt;.00G  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G  &lt;span style=&#34;color: #3677a9&#34;&gt;1&lt;/span&gt;.00G  -
-rpool/export                &lt;span style=&#34;color: #3677a9&#34;&gt;65&lt;/span&gt;.5K  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G    19K  /export
-rpool/export/home           &lt;span style=&#34;color: #3677a9&#34;&gt;46&lt;/span&gt;.5K  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G    19K  /export/home
-rpool/export/home/vagrant   &lt;span style=&#34;color: #3677a9&#34;&gt;27&lt;/span&gt;.5K  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G  &lt;span style=&#34;color: #3677a9&#34;&gt;27&lt;/span&gt;.5K  /export/home/vagrant
-rpool/swap                  &lt;span style=&#34;color: #3677a9&#34;&gt;1&lt;/span&gt;.06G  &lt;span style=&#34;color: #3677a9&#34;&gt;44&lt;/span&gt;.7G   117M  -
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;We continue with configuring &lt;strong&gt;pkg/mirror&lt;/strong&gt; instances for every IPS publisher:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #202020&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;svccfg -s pkg/mirror add hipster
-svccfg -s pkg/mirror:hipster addpg config application
-svccfg -s pkg/mirror:hipster setprop config/cache_dir&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;quot;/var/cache/pkg/mirror&amp;quot;&lt;/span&gt;
-svccfg -s pkg/mirror:hipster setprop config/crontab_period&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;#39;&amp;quot;0 18,6 * * *&amp;quot;&amp;#39;&lt;/span&gt;
-svccfg -s pkg/mirror:hipster setprop config/publishers&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;quot;openindiana.org&amp;quot;&lt;/span&gt;
-svccfg -s pkg/mirror:hipster setprop config/repository&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;quot;/var/share/pkg/repositories/hipster&amp;quot;&lt;/span&gt;
-
-svccfg -s pkg/mirror add hipster-encumbered
-svccfg -s pkg/mirror:hipster-encumbered addpg config application
-svccfg -s pkg/mirror:hipster-encumbered setprop config/cache_dir&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;quot;/var/cache/pkg/mirror&amp;quot;&lt;/span&gt;
-svccfg -s pkg/mirror:hipster-encumbered setprop config/crontab_period&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;#39;&amp;quot;0 17,4 * * *&amp;quot;&amp;#39;&lt;/span&gt;
-svccfg -s pkg/mirror:hipster-encumbered setprop config/publishers&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;astring: &lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;quot;hipster-encumbered&amp;quot;&lt;/span&gt;
-svccfg -s pkg/mirror:hipster-encumbered setprop config/repository&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;quot;/var/share/pkg/repositories/hipster-encumbered&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Once SMF instances are created and configured, we need to start them and also a service called
-&lt;strong&gt;svc:/application/pkg/repositories-setup:default&lt;/strong&gt;, which will create ZFS datasets:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #202020&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;vagrant@openindiana:/export/home/vagrant$ svcs -a &lt;span style=&#34;color: #d0d0d0&#34;&gt;|&lt;/span&gt; grep pkg/mirror
-disabled       &lt;span style=&#34;color: #3677a9&#34;&gt;23&lt;/span&gt;:34:02 svc:/application/pkg/mirror:default
--              -        svc:/application/pkg/mirror:hipster
--              -        svc:/application/pkg/mirror:hipster-encumbered
-vagrant@openindiana:/export/home/vagrant$ svcadm &lt;span style=&#34;color: #24909d&#34;&gt;enable&lt;/span&gt; svc:/application/pkg/mirror:hipster
-vagrant@openindiana:/export/home/vagrant$ svcadm &lt;span style=&#34;color: #24909d&#34;&gt;enable&lt;/span&gt; svc:/application/pkg/mirror:hipster-encumbered
-vagrant@openindiana:/export/home/vagrant$ svcadm &lt;span style=&#34;color: #24909d&#34;&gt;enable&lt;/span&gt; svc:/application/pkg/repositories-setup:default
-vagrant@openindiana:/export/home/vagrant$ svcs -xv
-vagrant@openindiana:/export/home/vagrant$
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;ZFS datasets for &lt;strong&gt;pkg/mirror&lt;/strong&gt; instances have been created and entries were added to &lt;strong&gt;pkg5serv&lt;/strong&gt;&amp;rsquo;s crontab:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #202020&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;vagrant@openindiana:/export/home/vagrant$ zfs list
-NAME                                                 USED  AVAIL  REFER  MOUNTPOINT
-rpool                                               &lt;span style=&#34;color: #3677a9&#34;&gt;4&lt;/span&gt;.43G  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G  &lt;span style=&#34;color: #3677a9&#34;&gt;29&lt;/span&gt;.5K  /rpool
-rpool/ROOT                                          &lt;span style=&#34;color: #3677a9&#34;&gt;2&lt;/span&gt;.36G  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G    19K  legacy
-rpool/ROOT/openindiana                              &lt;span style=&#34;color: #3677a9&#34;&gt;2&lt;/span&gt;.36G  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G  &lt;span style=&#34;color: #3677a9&#34;&gt;2&lt;/span&gt;.18G  /
-rpool/ROOT/openindiana/var                           119M  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G   107M  /var
-rpool/VARSHARE                                        96K  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G    19K  /var/share
-rpool/VARSHARE/pkg                                    77K  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G    19K  /var/share/pkg
-rpool/VARSHARE/pkg/repositories                       58K  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G    19K  /var/share/pkg/repositories
-rpool/VARSHARE/pkg/repositories/hipster             &lt;span style=&#34;color: #3677a9&#34;&gt;19&lt;/span&gt;.5K  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G  &lt;span style=&#34;color: #3677a9&#34;&gt;19&lt;/span&gt;.5K  /var/share/pkg/repositories/hipster
-rpool/VARSHARE/pkg/repositories/hipster-encumbered  &lt;span style=&#34;color: #3677a9&#34;&gt;19&lt;/span&gt;.5K  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G  &lt;span style=&#34;color: #3677a9&#34;&gt;19&lt;/span&gt;.5K  /var/share/pkg/repositories/hipster-encumbered
-rpool/dump                                          &lt;span style=&#34;color: #3677a9&#34;&gt;1&lt;/span&gt;.00G  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G  &lt;span style=&#34;color: #3677a9&#34;&gt;1&lt;/span&gt;.00G  -
-rpool/export                                        &lt;span style=&#34;color: #3677a9&#34;&gt;65&lt;/span&gt;.5K  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G    19K  /export
-rpool/export/home                                   &lt;span style=&#34;color: #3677a9&#34;&gt;46&lt;/span&gt;.5K  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G    19K  /export/home
-rpool/export/home/vagrant                           &lt;span style=&#34;color: #3677a9&#34;&gt;27&lt;/span&gt;.5K  &lt;span style=&#34;color: #3677a9&#34;&gt;43&lt;/span&gt;.8G  &lt;span style=&#34;color: #3677a9&#34;&gt;27&lt;/span&gt;.5K  /export/home/vagrant
-rpool/swap                                          &lt;span style=&#34;color: #3677a9&#34;&gt;1&lt;/span&gt;.06G  &lt;span style=&#34;color: #3677a9&#34;&gt;44&lt;/span&gt;.7G   117M  -
-pkg5srv@openindiana:~$ /usr/bin/crontab -l
-&lt;span style=&#34;color: #3677a9&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color: #3677a9&#34;&gt;17&lt;/span&gt;,4 * * * /usr/sbin/svcadm refresh svc:/application/pkg/mirror:hipster-encumbered
-&lt;span style=&#34;color: #3677a9&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color: #3677a9&#34;&gt;18&lt;/span&gt;,6 * * * /usr/sbin/svcadm refresh svc:/application/pkg/mirror:hipster
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;The data will appear in &lt;strong&gt;/var/cache/pkg/repositories/hispter&lt;/strong&gt; and &lt;strong&gt;/var/cache/pkg/repositories/hispter-encumbered&lt;/strong&gt;
-after cron runs initial synchronization. Please, keep in mind that initial sync may take longer depending on your network
-connection speed.&lt;/p&gt;
-
-&lt;h1 id=&#34;serving-the-data&#34;&gt;Serving the data&lt;/h1&gt;
-
-&lt;p&gt;Once the data is mirrored, we need to serve it to users. This is accomplished by creating &lt;strong&gt;pkg.depot&lt;/strong&gt; instance for every
-mirrored repository. The &lt;strong&gt;pkg.depot&lt;/strong&gt; comes installed with &lt;strong&gt;package/pkg&lt;/strong&gt; package and should be present on the system.
-Creating IPS repository instance is just a matter of configuring a few SMF services (replace &amp;lt;DOMAIN&amp;gt; with a hostname you want to use,
-I will use &lt;strong&gt;pkg.domain.tld&lt;/strong&gt; in this example):&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #202020&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;svccfg -s svc:/application/pkg/server add hipster
-svccfg -s svc:/application/pkg/server:hipster addpg pkg application
-svccfg -s svc:/application/pkg/server:hipster setprop &lt;span style=&#34;color: #ed9d13&#34;&gt;\&lt;/span&gt;
-                            pkg/inst_root&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;quot;/var/share/pkg/repositories/hipster&amp;quot;&lt;/span&gt;
-svccfg -s svc:/application/pkg/server:hipster setprop &lt;span style=&#34;color: #ed9d13&#34;&gt;\&lt;/span&gt;
-                            pkg/port&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;quot;10100&amp;quot;&lt;/span&gt;
-svccfg -s svc:/application/pkg/server:hipster setprop &lt;span style=&#34;color: #ed9d13&#34;&gt;\&lt;/span&gt;
-                            pkg/pkg_root&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;quot;/&amp;quot;&lt;/span&gt;
-svccfg -s svc:/application/pkg/server:hipster setprop &lt;span style=&#34;color: #ed9d13&#34;&gt;\&lt;/span&gt;
-                            pkg/readonly&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;quot;true&amp;quot;&lt;/span&gt;
-svccfg -s svc:/application/pkg/server:hipster setprop &lt;span style=&#34;color: #ed9d13&#34;&gt;\&lt;/span&gt;
-                            pkg/proxy_base&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;quot;http://&amp;lt;DOMAIN&amp;gt;/hipster&amp;quot;&lt;/span&gt;
-svccfg -s svc:/application/pkg/server:hipster setprop &lt;span style=&#34;color: #ed9d13&#34;&gt;\&lt;/span&gt;
-                            pkg/address&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;quot;127.0.0.1&amp;quot;&lt;/span&gt;
-
-svccfg -s svc:/application/pkg/server add hipster-encumbered
-svccfg -s svc:/application/pkg/server:hipster-encumbered addpg pkg application
-svccfg -s svc:/application/pkg/server:hipster-encumbered setprop &lt;span style=&#34;color: #ed9d13&#34;&gt;\&lt;/span&gt;
-                            pkg/inst_root&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;quot;/var/share/pkg/repositories/hipster-encumbered&amp;quot;&lt;/span&gt;
-svccfg -s svc:/application/pkg/server:hipster-encumbered setprop &lt;span style=&#34;color: #ed9d13&#34;&gt;\&lt;/span&gt;
-                            pkg/port&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;quot;10101&amp;quot;&lt;/span&gt;
-svccfg -s svc:/application/pkg/server:hipster-encumbered setprop &lt;span style=&#34;color: #ed9d13&#34;&gt;\&lt;/span&gt;
-                            pkg/pkg_root&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;quot;/&amp;quot;&lt;/span&gt;
-svccfg -s svc:/application/pkg/server:hipster-encumbered setprop &lt;span style=&#34;color: #ed9d13&#34;&gt;\&lt;/span&gt;
-                            pkg/readonly&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;quot;true&amp;quot;&lt;/span&gt;
-svccfg -s svc:/application/pkg/server:hipster-encumbered setprop &lt;span style=&#34;color: #ed9d13&#34;&gt;\&lt;/span&gt;
-                            pkg/proxy_base&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;quot;http://&amp;lt;DOMAIN&amp;gt;/hipster-encumbered&amp;quot;&lt;/span&gt;
-svccfg -s svc:/application/pkg/server:hipster-encumbered setprop &lt;span style=&#34;color: #ed9d13&#34;&gt;\&lt;/span&gt;
-                            pkg/address&lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;&amp;quot;127.0.0.1&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;After &lt;strong&gt;pkg/server&lt;/strong&gt; instances have been configured, ensure thay are present and start them:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #202020&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;vagrant@openindiana:/export/home/vagrant$ svcs pkg/server
-STATE          STIME    FMRI
-disabled       Aug_05   svc:/application/pkg/server:default
--              -        svc:/application/pkg/server:hipster
--              -        svc:/application/pkg/server:hipster-encumbered
-vagrant@openindiana:/export/home/vagrant$ pfexec svcadm &lt;span style=&#34;color: #24909d&#34;&gt;enable&lt;/span&gt; pkg/server:hipster
-vagrant@openindiana:/export/home/vagrant$ pfexec svcadm &lt;span style=&#34;color: #24909d&#34;&gt;enable&lt;/span&gt; pkg/server:hipster-encumbered
-vagrant@openindiana:/export/home/vagrant$ svcs -xv
-vagrant@openindiana:/export/home/vagrant$
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;If everything went good, two &lt;strong&gt;pkg.depotd&lt;/strong&gt; instances should be running:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #202020&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;vagrant@openindiana:/export/home/vagrant$ svcs -p pkg/server
-STATE          STIME    FMRI
-disabled       Aug_05   svc:/application/pkg/server:default
-online         &lt;span style=&#34;color: #3677a9&#34;&gt;13&lt;/span&gt;:37:02 svc:/application/pkg/server:hipster
-               &lt;span style=&#34;color: #3677a9&#34;&gt;13&lt;/span&gt;:37:02     &lt;span style=&#34;color: #3677a9&#34;&gt;2107&lt;/span&gt; pkg.depotd
-online         &lt;span style=&#34;color: #3677a9&#34;&gt;13&lt;/span&gt;:37:04 svc:/application/pkg/server:hipster-encumbered
-               &lt;span style=&#34;color: #3677a9&#34;&gt;13&lt;/span&gt;:37:04     &lt;span style=&#34;color: #3677a9&#34;&gt;2131&lt;/span&gt; pkg.depotd
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h1 id=&#34;configuring-nginx-as-a-reverse-proxy&#34;&gt;Configuring nginx as a reverse proxy&lt;/h1&gt;
-
-&lt;p&gt;Using reverse proxy with &lt;strong&gt;pkg.depot&lt;/strong&gt; is essential as we can increase performance and security by proper configuration. Many reverse proxy implementations also come with caching and loadbalancing features, which we
-can use as well. Another important thing is to configure a webserver for serving static files. I chose &lt;a href=&#34;https://www.nginx.org&#34;&gt;nginx&lt;/a&gt; as it excels at serving static files, reverse proxying and caching. Install the package:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #202020&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;pkg install nginx
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Once the package is installed, copy the following configuration snippet into &lt;strong&gt;/etc/nginx/nginx.conf&lt;/strong&gt; (or other place where nginx can find it), so nginx can start handling requests arriving at our IPS mirror instances from the outside world. Do not forget to replace &lt;strong&gt;pkg.domain.tld&lt;/strong&gt; with the actual hostname for the newly configured IPS mirror:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #202020&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;server&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;{&lt;/span&gt;
-  &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;listen&lt;/span&gt; &lt;span style=&#34;color: #3677a9&#34;&gt;80&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-  &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;server_name&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;pkg.domain.tld&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-
-  &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;access_log&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;/var/nginx/logs/pkg.domain.tld-access.log&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-  &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;error_log&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;/var/nginx/logs/pkg.domain.tld-error.log&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;debug&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-
-  &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;root&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;/var/share/pkg/repositories&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-
-  &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;location&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;/hipster/&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;{&lt;/span&gt;
-
-    &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;location&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;~&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;^/hipster/file/0/(..)(.*)$&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;{&lt;/span&gt;
-      &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;try_files&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;/hipster/publisher/openindiana.org/file/&lt;/span&gt;&lt;span style=&#34;color: #40ffff&#34;&gt;$1/$1$2&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #3677a9&#34;&gt;404&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color: #d0d0d0&#34;&gt;}&lt;/span&gt;
-
-    &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;location&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;~&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;^/hipster/openindiana.org/file/1/(..)(.*)$&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;{&lt;/span&gt;
-      &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;try_files&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;/hipster/publisher/openindiana.org/file/&lt;/span&gt;&lt;span style=&#34;color: #40ffff&#34;&gt;$1/$1$2&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #3677a9&#34;&gt;404&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color: #d0d0d0&#34;&gt;}&lt;/span&gt;
-
-    &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;location&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;~&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;^/hipster/(open|abandon|add|close)/&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;{&lt;/span&gt;
-      &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;allow&lt;/span&gt; &lt;span style=&#34;color: #3677a9&#34;&gt;127&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;.0.0.0/8&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-      &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;deny&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;all&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color: #d0d0d0&#34;&gt;}&lt;/span&gt;
-
-    &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;rewrite&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;^/hipster/&lt;/span&gt;$ &lt;span style=&#34;color: #ed9d13&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;break&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;rewrite&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;^/hipster/(.*)&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #40ffff&#34;&gt;$1&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;break&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-
-    &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;proxy_pass&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;http://127.0.0.1:10100&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;proxy_next_upstream&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;error&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;timeout&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;invalid_header&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;http_500&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;http_502&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;http_503&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;http_504&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;proxy_redirect&lt;/span&gt; &lt;span style=&#34;color: #40ffff&#34;&gt;off&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;proxy_buffering&lt;/span&gt; &lt;span style=&#34;color: #40ffff&#34;&gt;off&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-  &lt;span style=&#34;color: #d0d0d0&#34;&gt;}&lt;/span&gt;
-
-  &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;location&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;/hipster-encumbered/&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;{&lt;/span&gt;
-
-    &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;location&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;~&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;^/hipster-encumbered/file/0/(..)(.*)$&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;{&lt;/span&gt;
-      &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;try_files&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;/hipster-encumbered/publisher/hipster-encumbered/file/&lt;/span&gt;&lt;span style=&#34;color: #40ffff&#34;&gt;$1/$1$2&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #3677a9&#34;&gt;404&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color: #d0d0d0&#34;&gt;}&lt;/span&gt;
-
-    &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;location&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;~&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;^/hipster-encumbered/hipster-encumbered/file/1/(..)(.*)$&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;{&lt;/span&gt;
-      &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;try_files&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;/hipster-encumbered/publisher/hipster-encumbered/file/&lt;/span&gt;&lt;span style=&#34;color: #40ffff&#34;&gt;$1/$1$2&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #3677a9&#34;&gt;404&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color: #d0d0d0&#34;&gt;}&lt;/span&gt;
-
-    &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;location&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;~&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;^/hipster-encumbered/(open|abandon|add|close)/&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;{&lt;/span&gt;
-      &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;allow&lt;/span&gt; &lt;span style=&#34;color: #3677a9&#34;&gt;127&lt;/span&gt;&lt;span style=&#34;color: #ed9d13&#34;&gt;.0.0.0/8&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-      &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;deny&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;all&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color: #d0d0d0&#34;&gt;}&lt;/span&gt;
-
-    &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;rewrite&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;^/hipster-encumbered/&lt;/span&gt;$ &lt;span style=&#34;color: #ed9d13&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;break&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;rewrite&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;^/hipster-encumbered/(.*)&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #40ffff&#34;&gt;$1&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;break&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-
-    &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;proxy_pass&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;http://127.0.0.1:10101&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;proxy_next_upstream&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;error&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;timeout&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;invalid_header&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;http_500&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;http_502&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;http_503&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;http_504&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;proxy_redirect&lt;/span&gt; &lt;span style=&#34;color: #40ffff&#34;&gt;off&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;proxy_buffering&lt;/span&gt; &lt;span style=&#34;color: #40ffff&#34;&gt;off&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-  &lt;span style=&#34;color: #d0d0d0&#34;&gt;}&lt;/span&gt;
-
-  &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;location&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color: #d0d0d0&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color: #6ab825; font-weight: bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color: #3677a9&#34;&gt;301&lt;/span&gt; &lt;span style=&#34;color: #ed9d13&#34;&gt;http://pkg.domain.tld/hipster/en/index.shtml&lt;/span&gt;&lt;span style=&#34;color: #d0d0d0&#34;&gt;;&lt;/span&gt;
-  &lt;span style=&#34;color: #d0d0d0&#34;&gt;}&lt;/span&gt;
-&lt;span style=&#34;color: #d0d0d0&#34;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Before enabling nginx service, test if the configuration is correct and don&amp;rsquo;t forget to check for
-service issues afterwards:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #202020&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;vagrant@openindiana:/export/home/vagrant$ pfexec nginx -t
-nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
-nginx: configuration file /etc/nginx/nginx.conf &lt;span style=&#34;color: #24909d&#34;&gt;test&lt;/span&gt; is successful
-vagrant@openindiana:/export/home/vagrant$ svcadm &lt;span style=&#34;color: #24909d&#34;&gt;enable&lt;/span&gt; nginx
-vagrant@openindiana:/export/home/vagrant$ svcs -xv
-vagrant@openindiana:/export/home/vagrant$
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;We are now ready to serve IPS data to the outside world. In the next chapter, we will look at how
-to get maximum out of nginx capabilities.&lt;/p&gt;
-</description>
+      <description>Introduction In this blog post, I will show how one can create a mirror of OpenIndiana IPS repositories. IPS repositories hold packages coming from multiple sources, most notably from illumos-gate and oi-userland. Every time user runs pkg update on his OpenIndiana installation, pkg contacts IPS repository to fetch catalog metadata and determines if there are any new updates available. If updates are available, pkg downoalds only changed files over HTTP.</description>
     </item>
     
     <item>
@@ -451,14 +75,7 @@ to get maximum out of nginx capabilities.&lt;/p&gt;
       <pubDate>Mon, 04 Jul 2016 02:54:45 +0200</pubDate>
       
       <guid>https://blog.xenol.eu/blog/2016/07/04/Migration-from-Octopress-to-Hugo/</guid>
-      <description>&lt;p&gt;After a while, my blog finally received love it deserved. The biggest change is
-that I migrated the blog from Octopress to &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, which is a
-fast static site generator written in Go. The overall feeling stayed the same,
-but the blog maintenance is much easier for me. I am still finding my way around Hugo,
-but so far it works nicely. Another change is that this site is being hosted on
-Github Pages. So, as the website was refreshed, we might concentrate more
-on blogging. Happy reading!&lt;/p&gt;
-</description>
+      <description>After a while, my blog finally received love it deserved. The biggest change is that I migrated the blog from Octopress to Hugo, which is a fast static site generator written in Go. The overall feeling stayed the same, but the blog maintenance is much easier for me. I am still finding my way around Hugo, but so far it works nicely. Another change is that this site is being hosted on Github Pages.</description>
     </item>
     
     <item>
@@ -467,19 +84,9 @@ on blogging. Happy reading!&lt;/p&gt;
       <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
       
       <guid>https://blog.xenol.eu/2012/12/31/29c3-finale/</guid>
-      <description>&lt;p&gt;I arrived at CCH in the afternoon and headed directly for &lt;strong&gt;NOC Review&lt;/strong&gt; talk. Guys did really wonderful job, although the Wifi was a problem. I really liked some network facts:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;~70 access points, great signal coverage&lt;/li&gt;
-&lt;li&gt;3059 concurrent wireless clients connected during peaks&lt;/li&gt;
-&lt;li&gt;traffic usage of 8.2 Gbps&lt;/li&gt;
-&lt;li&gt;40% of traffic being IPv6&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Video can be found &lt;a href=&#34;http://ftp.uni-kl.de/CCC/29C3/mp4-h264-HQ/29c3-5404-en-noc_review_h264.mp4&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The 29C3 was really nice experience and I will definitely return back to 30C3. Another nice thing was that event of this size was run entirely by the volunteers. I would like to take part in helping as a Chaos Angel or directly as a speaker next year. We will see what will 2013 bring.&lt;/p&gt;
-</description>
+      <description>I arrived at CCH in the afternoon and headed directly for NOC Review talk. Guys did really wonderful job, although the Wifi was a problem. I really liked some network facts:
+ ~70 access points, great signal coverage 3059 concurrent wireless clients connected during peaks traffic usage of 8.2 Gbps 40% of traffic being IPv6  Video can be found here.
+The 29C3 was really nice experience and I will definitely return back to 30C3.</description>
     </item>
     
     <item>
@@ -488,12 +95,7 @@ on blogging. Happy reading!&lt;/p&gt;
       <pubDate>Sun, 30 Dec 2012 00:00:00 +0000</pubDate>
       
       <guid>https://blog.xenol.eu/2012/12/30/29c3-day-three/</guid>
-      <description>&lt;p&gt;Third day of the Congress was filled with some number of interesting talks I visited. I started with a talk, in which I was interested the most - &lt;strong&gt;An Overview of Secure Name Resolution - DNSSEC, DNSCurve and Namecoin&lt;/strong&gt;. Speaker gave great introduction into DNSSEC and also talked about its deployment rate. He also spoke DNSSEC&amp;rsquo;s use in amplification attacks and suitable countermeasures. DNSCurve and Namecoin was discussed as well. From this talk, it is clear that DNSSEC is the way forward. Video will be available shortly.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Security Evaluation of Russian GOST Cipher&lt;/strong&gt; gave nice overview of Russian GOST cipher and it&amp;rsquo;s history. In theory, GOST should be secure for 200 more years. I am a bit sceptic as in the last two years there were found around 20+ possible attacks on GOST. Speaker talked about them and described the steps how to attack. Video will be available shortly.&lt;/p&gt;
-
-&lt;p&gt;Another great talk by Daniel J. Bernstein was titled &lt;strong&gt;Hash-flooding DoS reloaded: attacks and defenses&lt;/strong&gt;. Dan explained hash tables and described anatomy of the hash flooding attacks in detail. Martin Boßlet demonstrated vulnerability on languages using MurmurHash as a hashing function. He used Ruby and Java for demonstrating purposes. Martin spoke about better alternatives - &lt;a href=&#34;https://code.google.com/p/cityhash/&#34;&gt;CityHash&lt;/a&gt; by Google. However, he demonstrated that it is worse than MurmurHash family of hash functions. &lt;a href=&#34;https://131002.net/siphash/&#34;&gt;SipHash&lt;/a&gt; was introduced as a simple, yet secure alternative. Video will be available shortly.&lt;/p&gt;
-</description>
+      <description>Third day of the Congress was filled with some number of interesting talks I visited. I started with a talk, in which I was interested the most - An Overview of Secure Name Resolution - DNSSEC, DNSCurve and Namecoin. Speaker gave great introduction into DNSSEC and also talked about its deployment rate. He also spoke DNSSEC&amp;rsquo;s use in amplification attacks and suitable countermeasures. DNSCurve and Namecoin was discussed as well. From this talk, it is clear that DNSSEC is the way forward.</description>
     </item>
     
     <item>
@@ -502,14 +104,7 @@ on blogging. Happy reading!&lt;/p&gt;
       <pubDate>Sat, 29 Dec 2012 00:00:00 +0000</pubDate>
       
       <guid>https://blog.xenol.eu/2012/12/29/29c3-day-two/</guid>
-      <description>&lt;p&gt;I started this day with visiting talk by Axel Arnbak titled &lt;strong&gt;Certificate Authority Collapse&lt;/strong&gt;. Axel talked about the current model being completely broken (nothing new in the security community) and that the change is needed. He described the DigiNotar incident. The European Union wants to address this issue by &lt;a href=&#34;http://ec.europa.eu/information_society/policy/esignature/eu_legislation/regulation/index_en.htm&#34;&gt;regulations&lt;/a&gt;, which do more harm than good. If the CA model is broken, it should be fixed technically and not by law. Video can be found &lt;a href=&#34;http://ftp.uni-kl.de/CCC/29C3/mp4-h264-HQ/29c3-5319-en-certificate_authority_collapse_h264.mp4&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;After lunch, I went and saw &lt;strong&gt;Lightning talks&lt;/strong&gt; block. I liked the talk about a &lt;a href=&#34;rhizomatica.org&#34;&gt;project&lt;/a&gt; building community GSM and mesh networks in remote areas in Mexico.&lt;/p&gt;
-
-&lt;p&gt;Another great talk of the day was &lt;strong&gt;FactHacks - RSA factorization in the real world&lt;/strong&gt; by Daniel J. Bernstein, Nadia Heninger and Tanja Lange. Speakers gave a quick introduction to RSA cryptosystem and some facts about its factorization. Dan also showed several &lt;a href=&#34;facthacks.cr.yp.to&#34;&gt;algorithms&lt;/a&gt; for factoring primes. There was practical example on how  we can search for private keys on the Internet, complete missing parts of it and speakers generally advised to &lt;strong&gt;stop using 1024-bits RSA keys&lt;/strong&gt;. I switched to ECDSA few months ago and you should do it as well. If your SSH server doesn&amp;rsquo;t support ECDSA (OpenSSH &amp;lt;5.7), then stick to 2048 bit or 4096 bit private key size. Video can be found &lt;a href=&#34;http://ftp.uni-kl.de/CCC/29C3/mp4-h264-HQ/29c3-5275-en-facthacks_h264.mp4&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The final talk I visited was about &lt;strong&gt;Stylometry and Online Underground Markets&lt;/strong&gt;, which was about the usage of stylometry to identify and gaining a better understanding of how do underground market work. Video should be available shortly.&lt;/p&gt;
-</description>
+      <description>I started this day with visiting talk by Axel Arnbak titled Certificate Authority Collapse. Axel talked about the current model being completely broken (nothing new in the security community) and that the change is needed. He described the DigiNotar incident. The European Union wants to address this issue by regulations, which do more harm than good. If the CA model is broken, it should be fixed technically and not by law.</description>
     </item>
     
     <item>
@@ -518,16 +113,9 @@ on blogging. Happy reading!&lt;/p&gt;
       <pubDate>Fri, 28 Dec 2012 00:00:00 +0000</pubDate>
       
       <guid>https://blog.xenol.eu/2012/12/28/29c3-day-one/</guid>
-      <description>&lt;p&gt;29c3 is my first Congress I visited. It returned to Hamburg after 8 years of being held in Berlin and is located at the Conference Center Hamburg (CCH). First day&amp;rsquo;s talk were mostly non-technical ones.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Not my department&lt;/strong&gt; by Jacob Appelbaum proposed that people should develop more software like Tor or similiar tools.&lt;/p&gt;
-
-&lt;p&gt;The second talk titled &lt;strong&gt;Enemies of the State: What Happens When Telling the Truth about Secret US Government Power Becomes a Crime&lt;/strong&gt; was about breaking the US constitution by the US goverment and the rise of spying practices after 11th September 2001 covered as the fight against the terrorism. Speakers talked about ways how NSA wants to monitor people and store everything they can about them. They also suggested that people should care more about their privacy. After all, anonymity and privacy are the basic right of the every human being on the planet. This talk was given by ex-employees of NSA and US DoJ.&lt;/p&gt;
-
-&lt;p&gt;The last talk I visited was about the mitigation of timing side channels by Sebastian Schinzel. He proposed several new countermeasures and wrote set of tools, which should detect timing side channels vulnerabilities. More info can be found on his &lt;a href=&#34;http://www.seecurity.org/29c3/&#34;&gt;website&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;After the last talk, I returned to the hostel and drunk mate with Juraj. Rest of the group joined us later and several polish hackers came as well. Discussions were mostly security-related.&lt;/p&gt;
-</description>
+      <description>29c3 is my first Congress I visited. It returned to Hamburg after 8 years of being held in Berlin and is located at the Conference Center Hamburg (CCH). First day&amp;rsquo;s talk were mostly non-technical ones.
+Not my department by Jacob Appelbaum proposed that people should develop more software like Tor or similiar tools.
+The second talk titled Enemies of the State: What Happens When Telling the Truth about Secret US Government Power Becomes a Crime was about breaking the US constitution by the US goverment and the rise of spying practices after 11th September 2001 covered as the fight against the terrorism.</description>
     </item>
     
     <item>
@@ -536,16 +124,8 @@ on blogging. Happy reading!&lt;/p&gt;
       <pubDate>Mon, 29 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://blog.xenol.eu/2012/10/29/dnssec-automatization-with-opendnssec/</guid>
-      <description>&lt;p&gt;DNSSEC is an amazing piece of technology. DNSSEC data is digitally signed. The validating DNS server can check if the data it receives is identical to those on the authoritative DNS server. This helps us mitigate DNS cache poisoning.&lt;/p&gt;
-
-&lt;p&gt;I have signed my domain back in January 2012, signing my zone by hand. However, I forgot to resign my zone and the zone signature expired making it unresolvable. This made me wonder how could I automatize the whole process. I read about &lt;a href=&#34;https://www.opendnssec.org&#34;&gt;OpenDNSSEC&lt;/a&gt;. OpenDNSSEC is a wonderful piece of software, which automates the DNSSEC zone managements. OpenDNSSEC is used by several NICs around the world to manage their TLD zones. I didn&amp;rsquo;t try OpenDNSSEC at first as I found it to be too complex and not suitable for a single zone. I tried BIND 9.9 DNSSEC inline-signing, instead. It worked, but I was unhappy with it. Inline signing in BIND converts manually maintained zone into a dynamic one and signs it. All DNSSEC changes are made to the journal file format, which I dislike working with. As I wasn&amp;rsquo;t satisfied with this solution, I gave OpenDNSSEC a try.&lt;/p&gt;
-
-&lt;p&gt;I deployed OpenDNSSEC on my personal FreeBSD server. The configuration didn&amp;rsquo;t take more than 15 minutes thanks to the excellent official &lt;a href=&#34;https://wiki.opendnssec.org/display/DOCS/OpenDNSSEC+Documentation+Home&#34;&gt;documentation&lt;/a&gt;. Once, I started the OpenDNSSEC service, it generated both KSK and ZSK for my zone. I published &lt;a href=&#34;https://tools.ietf.org/rfc/rfc3658.txt&#34;&gt;DS record&lt;/a&gt; via my registrar&amp;rsquo;s web management portal. I am using RSASHA256 cipher for both KSK and ZSK. I wanted to use ECDSA, but my registrar doesn&amp;rsquo;t support it yet. I hope this will change in the near future. Any DNSSEC-related operations are now made automatically without any manual intervertion. Whenever I add new DNS records into my zone, I just call ods-signer to resign my zone. The zone resigning will be scheduled and the new records will be published alongside with their signatures. I love automatic things!&lt;/p&gt;
-
-&lt;p&gt;My zone also contains &lt;a href=&#34;https://tools.ietf.org/html/rfc4255&#34;&gt;SSHFP&lt;/a&gt; records with my SSH server fingerprints and I am now able to finally make use of OpenSSH client&amp;rsquo;s VerifyHostKeyDNS feature. I tried out &lt;a href=&#34;https://tools.ietf.org/html/rfc4025&#34;&gt;IPSECKEY&lt;/a&gt; record. It worked with racoon. More on how to configure racoon to get IPSec peer&amp;rsquo;s certificate from the DNS can be found in racoon.conf(5). Lastly, I am very interested in &lt;a href=&#34;https://tools.ietf.org/html/rfc6698&#34;&gt;DANE&lt;/a&gt; and TLSA resource record. I think that this will be the biggest feature of DNSSEC in the upcoming years because DANE makes commercial CAs obsolete. Why should I pay for certificates, when I can generate one and just publish it in the DNS? This is very nice feature, but it&amp;rsquo;s dependent on a wider DNSSEC adoption, which isn&amp;rsquo;t happening massively. I hope this will change pretty soon.&lt;/p&gt;
-
-&lt;p&gt;I wrote simple howto about running OpenDNSSEC with BIND on FreeBSD. I published it on my &lt;a href=&#34;http://wiki.xenol.eu/doku.php?id=freebsd_bind_opendnssec&#34;&gt;wiki&lt;/a&gt; and I hope it will help somebody. Feedback is welcome. I am also planning to package both SoftHSM and OpenDNSSEC for &lt;a href=&#34;http://www.openindiana.org&#34;&gt;OpenIndiana&lt;/a&gt;, once I am done with other tasks I am working on. However, I do not expect this to happen during this month. More realistic date is December.&lt;/p&gt;
-</description>
+      <description>DNSSEC is an amazing piece of technology. DNSSEC data is digitally signed. The validating DNS server can check if the data it receives is identical to those on the authoritative DNS server. This helps us mitigate DNS cache poisoning.
+I have signed my domain back in January 2012, signing my zone by hand. However, I forgot to resign my zone and the zone signature expired making it unresolvable. This made me wonder how could I automatize the whole process.</description>
     </item>
     
     <item>
@@ -554,43 +134,17 @@ on blogging. Happy reading!&lt;/p&gt;
       <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
       
       <guid>https://blog.xenol.eu/2012/06/01/passed-rhce-exam/</guid>
-      <description>
-
-&lt;p&gt;I took and passed both Red Hat Certified System Administrator (RHCSA) and Red Hat Certified Engineer (RHCE) exams. The certification is valid for 3 years. After that you have to either retake RHCE exam or pass other higher level Red Hat certification in order to prolong certification validity. RHCSA exam took 2.5 hours and RHCE 2 hours. I was nearly done after 1 hour and used the remaining time for checking.&lt;/p&gt;
-
-&lt;h3 id=&#34;my-tips-for-examination-pass&#34;&gt;My tips for examination pass:&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;No STRESS&lt;/strong&gt;. There is no need for it as topics covered in both exams are pretty basic and anyone with Linux systems administration experience will pass it.&lt;/li&gt;
-&lt;li&gt;Use &lt;strong&gt;GUI tools&lt;/strong&gt; everytime possible. They &lt;strong&gt;save time&lt;/strong&gt;, which you might need for checking other stuff.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Reboot&lt;/strong&gt; the virtual machine at least once to check if every needed service will autostart.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I was told that results would be known in 3 US business days&amp;rsquo; time. However, I received email with results in several hours after I took the exam and even examiner was suprised how fast the results arrived. The whole process was a very good experience.&lt;/p&gt;
-</description>
+      <description>I took and passed both Red Hat Certified System Administrator (RHCSA) and Red Hat Certified Engineer (RHCE) exams. The certification is valid for 3 years. After that you have to either retake RHCE exam or pass other higher level Red Hat certification in order to prolong certification validity. RHCSA exam took 2.5 hours and RHCE 2 hours. I was nearly done after 1 hour and used the remaining time for checking.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://blog.xenol.eu/about</link>
+      <link>https://blog.xenol.eu/about/</link>
       <pubDate>Tue, 03 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.xenol.eu/about</guid>
-      <description>&lt;p&gt;My name is Adam and I enjoy playing with technology. I studied computer networks at the Faculty of Informatics and Information Technologies at Slovak University of Technology in Bratislava.&lt;/p&gt;
-
-&lt;p&gt;When I was 14, I started playing with UNIX-like operating systems and never stopped since then. In my free time, I try to contribute to various open source projects or experiment with technology. Whenever I have to code, I do all my projects in Python. When I am not playing with technology or coding, I can be found listening to music, hanging out on IRC, drinking a beer or studying history.&lt;/p&gt;
-
-&lt;p&gt;I am interested in the following areas:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;operating system internals,&lt;/li&gt;
-&lt;li&gt;computer networks &amp;amp; protocols,&lt;/li&gt;
-&lt;li&gt;security, especially cryprography,&lt;/li&gt;
-&lt;li&gt;scalability &amp;amp; distributed systems.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you enjoy chatting about the technology, feel free to contact me. I am also actively looking for new challenges!&lt;/p&gt;
-</description>
+      <guid>https://blog.xenol.eu/about/</guid>
+      <description>My name is Adam and I enjoy playing with technology. I studied computer networks at the Faculty of Informatics and Information Technologies at Slovak University of Technology in Bratislava.
+When I was 14, I started playing with UNIX-like operating systems and never stopped since then. In my free time, I try to contribute to various open source projects or experiment with technology. Whenever I have to code, I do all my projects in Python.</description>
     </item>
     
     <item>
@@ -599,14 +153,7 @@ on blogging. Happy reading!&lt;/p&gt;
       <pubDate>Sat, 11 Feb 2012 00:00:00 +0000</pubDate>
       
       <guid>https://blog.xenol.eu/2012/02/11/openindiana-involvement/</guid>
-      <description>&lt;p&gt;I have been watching OpenSolaris development for a long time. As a technology fan, I really like all the cool features OpenSolaris offers: ZFS filesystem capabilities, service management with SMF, dynamic tracing and application debugging with DTrace, container-based virtualization with Solaris zones, network virtualization with Crossbow, safe system upgrades and downtime minimalization via Boot Environments and integratiom of all these features together makes it perfect operating system for a server. However, OpenSolaris is dead and it continues to live as &lt;a href=&#34;http://www.openindiana.org&#34;&gt;OpenIndiana&lt;/a&gt;, which is a &lt;a href=&#34;http://www.illumos.org&#34;&gt;Illumos&lt;/a&gt;-based derivate. Illumos is an open source project providing Solaris and OpenSolaris kernel and driver source code. OpenIndiana aims to be a direct continuation of the OpenSolaris operating system.&lt;/p&gt;
-
-&lt;p&gt;As a fan and satisfied user of &lt;a href=&#34;http://www.zabbix.com&#34;&gt;Zabbix&lt;/a&gt; monitoring software, I decided to port, package and maintain Zabbix monitoring suite for OpenIndiana. Zabbix agent already made it to the package repository. Zabbix server and possibly proxy will follow in upcoming months. I am also planning to maintain other software I am actively using e.g tor, php-fpm and DNS related software.&lt;/p&gt;
-
-&lt;p&gt;In January I have set up first Slovak OpenIndiana mirror, which is running at &lt;a href=&#34;http://dlc-1.sk.openindiana.org/&#34;&gt;dlc-1.sk.openindiana.org&lt;/a&gt; and is reachable via both IPv4 and IPv6. Big thanks goes to my employer, &lt;a href=&#34;http://www.digmia.com&#34;&gt;Digmia&lt;/a&gt;, which provided hardware and network bandwidth.&lt;/p&gt;
-
-&lt;p&gt;In the future, I would like to get more involved in helping with OpenIndiana infrastructure tasks, maintaining some software and possibly OpenIndiana documentation project and helping with OpenIndiana handbook, which should be a complete user guide to the OpenIndiana operating system.&lt;/p&gt;
-</description>
+      <description>I have been watching OpenSolaris development for a long time. As a technology fan, I really like all the cool features OpenSolaris offers: ZFS filesystem capabilities, service management with SMF, dynamic tracing and application debugging with DTrace, container-based virtualization with Solaris zones, network virtualization with Crossbow, safe system upgrades and downtime minimalization via Boot Environments and integratiom of all these features together makes it perfect operating system for a server. However, OpenSolaris is dead and it continues to live as OpenIndiana, which is a Illumos-based derivate.</description>
     </item>
     
     <item>
@@ -615,12 +162,8 @@ on blogging. Happy reading!&lt;/p&gt;
       <pubDate>Sat, 04 Feb 2012 00:00:00 +0000</pubDate>
       
       <guid>https://blog.xenol.eu/2012/02/04/easy-freebsd-jail-management-with-zfs-and-pkgng/</guid>
-      <description>&lt;p&gt;I have been using FreeBSD jails ever since I started using FreeBSD on my servers. Jail can be described as a chroot on steroids with own users, process namespace and lately own virtualized network stack.&lt;/p&gt;
-
-&lt;p&gt;I am using FreeBSD jails for mainly for securing and separating services. Each service runs in its own separated container on its own ZFS dataset. Each dataset is a ZFS clone from the snapshot of the template jail, which is adapted to have software I need in every jail installed (zsh, git, vim&amp;hellip;) and configured. Running FreeBSD jails on separate ZFS datasets is very flexible because we can setup different per-jail mount options, use compression and snapshot each jail separately. Software updates are fine for small amount of jails, while updating software in hundreds of jails can be a scaring experience. This is past with &lt;a href=&#34;https://github.com/pkgng/pkgng&#34;&gt;pkgng&lt;/a&gt;. pkgng is a new project, which brings new binary package manager. It is very easy to build packages from ports, create and serving package repository and updating.&lt;/p&gt;
-
-&lt;p&gt;With this setup, I can deploy new jail under 2 minutes as all I have to do is a ZFS snapshot cloning and adding jail configuration into host /etc/rc.conf and thanks to ZFS cloning capabilties we are saving some disk space, too. I wrote a simple &lt;a href=&#34;http://wiki.xenol.eu/doku.php?id=zfs_pkgng_jail&#34;&gt;howto&lt;/a&gt; on my personal wiki. I have also setup package repository for my needs at &lt;a href=&#34;http://pkg.xenol.eu&#34;&gt;pkg.xenol.eu&lt;/a&gt;. Feel free to use it.&lt;/p&gt;
-</description>
+      <description>I have been using FreeBSD jails ever since I started using FreeBSD on my servers. Jail can be described as a chroot on steroids with own users, process namespace and lately own virtualized network stack.
+I am using FreeBSD jails for mainly for securing and separating services. Each service runs in its own separated container on its own ZFS dataset. Each dataset is a ZFS clone from the snapshot of the template jail, which is adapted to have software I need in every jail installed (zsh, git, vim&amp;hellip;) and configured.</description>
     </item>
     
     <item>
@@ -629,13 +172,17 @@ on blogging. Happy reading!&lt;/p&gt;
       <pubDate>Fri, 06 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>https://blog.xenol.eu/2012/01/06/welcome/</guid>
-      <description>&lt;p&gt;Welcome to my personal blog! I had an idea of creating personal blog for a very long time. However, I was always lazy to do so.&lt;/p&gt;
-
-&lt;p&gt;When I was looking for some blogging engine, I realized that none of the major ones suited me. So I started to experiment with various setups and then I discovered &lt;a href=&#34;https://github.com/mojombo/jekyll&#34;&gt;jekyll&lt;/a&gt;, which is static blog generator. I like the idea of having a blog completely stored in version control of my choice and served as static pages.
-Later I found &lt;a href=&#34;http://octopress.org/&#34;&gt;Octopress&lt;/a&gt;, which can be described as ``jekyll on steroids&amp;rdquo;. It is much easier to deploy, it integrates many 3rd party plugins for Twitter, Disquis comments, Google Analytics and other services. It uses HTML 5 template and interface is optimized for viewing on mobile phones. It has everything modern blogging platform should have.&lt;/p&gt;
-
-&lt;p&gt;So again welcome to my blog and happy reading.&lt;/p&gt;
-</description>
+      <description>Welcome to my personal blog! I had an idea of creating personal blog for a very long time. However, I was always lazy to do so.
+When I was looking for some blogging engine, I realized that none of the major ones suited me. So I started to experiment with various setups and then I discovered jekyll, which is static blog generator. I like the idea of having a blog completely stored in version control of my choice and served as static pages.</description>
+    </item>
+    
+    <item>
+      <title>Archives</title>
+      <link>https://blog.xenol.eu/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.xenol.eu/archives/</guid>
+      <description></description>
     </item>
     
   </channel>
