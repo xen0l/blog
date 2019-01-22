@@ -6,29 +6,10 @@
     <description>Recent content in Posts on xenol&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jan 2018 15:39:09 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 11 Feb 2017 21:35:37 +0100</lastBuildDate>
     
 	<atom:link href="https://blog.xenol.eu/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>34C3: tuwat!</title>
-      <link>https://blog.xenol.eu/blog/2018/01/14/34C3-tuwat/</link>
-      <pubDate>Sun, 14 Jan 2018 15:39:09 +0100</pubDate>
-      
-      <guid>https://blog.xenol.eu/blog/2018/01/14/34C3-tuwat/</guid>
-      <description>New location AKA Willkommen in Leipzig My first visit to 29C3 in 2012 was the year when Congress moved from Berlin to Hamburg. Bigger auditoriums, room for more people. After the last year&amp;rsquo;s problems with almost 2000 people not getting to 33C3 because of the congress hall capacity limits, CCC organizers decided to look for a new venue. They found one in the city of Leipzig and Congress Hall Leipzig.</description>
-    </item>
-    
-    <item>
-      <title>Ansible modules and OpenIndiana</title>
-      <link>https://blog.xenol.eu/blog/2017/02/12/Ansible-modules-and-OpenIndiana/</link>
-      <pubDate>Sun, 12 Feb 2017 21:41:17 +0100</pubDate>
-      
-      <guid>https://blog.xenol.eu/blog/2017/02/12/Ansible-modules-and-OpenIndiana/</guid>
-      <description>Preface Ansible is a great software for automating and managing systems. In this blog post I will post some examples how to use Ansible modules for accomplishing various tasks on OpenIndiana.
-Package and package repository management Install IPS packages - name: Install common packages pkg5: name: - tcpdump - tmux - shells/zsh state=present  Remove IPS packages - name: Remove tcpdump pkg5: name=tcpdump state=absent  Remove IPS publisher - name: Remove openindiana.</description>
-    </item>
     
     <item>
       <title>Managing more illumos networking with Ansible</title>
