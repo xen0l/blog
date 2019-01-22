@@ -14,7 +14,7 @@ The overall atmosphere on the Congress and organization was excellent as always.
 
 I have visited the following talks:
 
-**Day 1**
+## **Day 1**
 
 * **The Figth for Encryption in 2016** ([Video](https://media.ccc.de/v/33c3-8295-the_fight_for_encryption_in_2016)) - Kurt Opsahl from [EFF](https://www.eff.org/) gave the summary of 2016 development in the crypto ecosystem. 2016 was a year in which end-to-end encryption was deployed in all major messengers as well as attempts to weaken crypto by governments.
 
@@ -32,7 +32,7 @@ I have visited the following talks:
 
 * **You can -j REJECT but you can not hide: Global scanning of the IPv6 Internet** ([Video](https://media.ccc.de/v/33c3-8061-you_can_-j_reject_but_you_can_not_hide_global_scanning_of_the_ipv6_internet)) - summarizes and shows how to use various scanning techniques to discover live hosts in IPv6 networks. Speaker also showed visualization of big IPv6 networks e.g. .mil. I liked this talk and it is definitely a must watch for people interested in networking and security.
 
-**Day 2**
+## **Day 2**
 
 * **Syrian Archive** ([Video](https://media.ccc.de/v/33c3-7909-syrian_archive)) - a group of people who try to document and validate what is happening in Syrian Civil War conflict zones. They developed a tool which preserves video evidence and workflow to verify video footage.
 
@@ -48,7 +48,7 @@ I have visited the following talks:
 
 * **ATMs how to break them to stop the fraud** ([Video](https://media.ccc.de/v/33c3-8273-atms_how_to_break_them_to_stop_the_fraud)) - various ways how ATMs can be hacked, what can be done to prevent ATM hacking and nice overview of the problems.
 
-**Day 3**
+## **Day 3**
 
 * **Dissecting modern (3G/4G) cellular modems** ([Video](https://media.ccc.de/v/33c3-8151-dissecting_modern_3g_4g_cellular_modems) [Slides](https://fahrplan.events.ccc.de/congress/2016/Fahrplan/system/event_attachments/attachments/000/003/151/original/Dissecting_modern_%283G_4G%29_cellular_modems.pdf)) - this talk provides a detailed look at some modern 3G/4G cellular modems and what can be found out about their internals using debug interfaces and various hacking techniques. Speakers were also talking about how they reverse engineered cellular modems and showed what they were able to achieve with hacked cellular modems.
 
@@ -58,7 +58,7 @@ I have visited the following talks:
 
 * **Lasers in the sky (with asteroids)** ([Video](https://media.ccc.de/v/33c3-7927-lasers_in_the_sky_with_asteroids)) - Peter Buschkamp spoke about space and airborne lasers and their practical uses.
 
-**Day 4**
+## **Day 4**
 
 * **Retail Surveillance / Retail Countersurveillance** ([Video](https://media.ccc.de/v/33c3-8238-retail_surveillance_retail_countersurveillance)) - this talk surveys current and emerging trends and technologies used in retail surveillance. [Adam Harvey](https://ahprojects.com/) also spoke about face recognition and what can be gathered from such analysis.
 
