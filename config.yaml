@@ -6,6 +6,11 @@ metadataformat: yaml
 
 theme: octopress
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 paginate: 6
 
 permalinks:
