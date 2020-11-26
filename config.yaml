@@ -79,7 +79,7 @@ params:
   # text of the Continue Reading label - if not set, it will default to "Read On &rarr;"
   # &rarr; == right arrow, but it gets messed up in the string so it is added to hugo-octopress/layouts/index.html manually
   # this can be modified in hugo-octopress/layouts/index.html
-  continueReading: "Continue reading"
+  continueReadingText: "Continue reading &rarr;"
 
   # disqus - simply enter your disqus - using the template from https://gohugo.io/extras/comments/ at /hugo-octopress/layouts/partials/disqus.html that disables disqus when running on localhost (if you are testing it offline remember to comment out the if in the template that checks for localhost)
   # the template is injected into the pages in /hugo-octopress/layouts/partials/post-footer.html which is in every post (and not non-post pages like license.html)
@@ -104,8 +104,8 @@ params:
   tableOfContents: false
 
   # 404.html header and text -both support markdown
-  notFoundHeader: "There's nothing here"
-  notFoundText: "Please either go back or use the navigation/sidebar menus."
+  notfoundHeader: "There's nothing here"
+  notfoundText: "Please either go back or use the navigation/sidebar menus."
 
   # Set to true to hide ReadingTime on posts
   disableReadingTime: false
