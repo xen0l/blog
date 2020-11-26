@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aws on xenol&#39;s blog</title>
+    <link>https://blog.xenol.eu/categories/aws/</link>
+    <description>Recent content in aws on xenol&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Aug 2020 18:30:00 +0000</lastBuildDate><atom:link href="https://blog.xenol.eu/categories/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The day when I stopped worrying about exposed SSH ports! - WoSECxGlovo (EN)</title>
+      <link>https://blog.xenol.eu/talk/2020/08/20/The-day-when-I-stopped-worrying-about-exposed-SSH-ports-WoSECxGlovo-EN/</link>
+      <pubDate>Thu, 20 Aug 2020 18:30:00 +0000</pubDate>
+      
+      <guid>https://blog.xenol.eu/talk/2020/08/20/The-day-when-I-stopped-worrying-about-exposed-SSH-ports-WoSECxGlovo-EN/</guid>
+      <description>Link: https://youtu.be/OAJItJgvf4Q?t=310
+ </description>
+    </item>
+    
+  </channel>
+</rss>
