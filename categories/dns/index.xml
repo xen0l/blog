@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dns on xenol&#39;s blog</title>
-    <link>https://blog.xenol.eu/categories/dns/</link>
-    <description>Recent content in Dns on xenol&#39;s blog</description>
+    <title>DNS on xenol&#39;s blog</title>
+    <link>https://blog.xenol.eu/categories/DNS/</link>
+    <description>Recent content in DNS on xenol&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Oct 2012 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.xenol.eu/categories/dns/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 29 Oct 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.xenol.eu/categories/DNS/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DNSSEC automatization with OpenDNSSEC</title>
       <link>https://blog.xenol.eu/2012/10/29/dnssec-automatization-with-opendnssec/</link>

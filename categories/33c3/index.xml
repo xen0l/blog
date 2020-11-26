@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>33c3 on xenol&#39;s blog</title>
-    <link>https://blog.xenol.eu/categories/33c3/</link>
-    <description>Recent content in 33c3 on xenol&#39;s blog</description>
+    <title>33C3 on xenol&#39;s blog</title>
+    <link>https://blog.xenol.eu/categories/33C3/</link>
+    <description>Recent content in 33C3 on xenol&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Jan 2017 20:39:50 +0100</lastBuildDate>
-    
-	<atom:link href="https://blog.xenol.eu/categories/33c3/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 02 Jan 2017 20:39:50 +0100</lastBuildDate><atom:link href="https://blog.xenol.eu/categories/33C3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>33C3: Works for me</title>
       <link>https://blog.xenol.eu/blog/2017/01/02/33C3-Works-for-me/</link>

@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Openindiana on xenol&#39;s blog</title>
-    <link>https://blog.xenol.eu/tags/openindiana/</link>
-    <description>Recent content in Openindiana on xenol&#39;s blog</description>
+    <title>OpenIndiana on xenol&#39;s blog</title>
+    <link>https://blog.xenol.eu/tags/OpenIndiana/</link>
+    <description>Recent content in OpenIndiana on xenol&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Feb 2017 21:35:37 +0100</lastBuildDate>
-    
-	<atom:link href="https://blog.xenol.eu/tags/openindiana/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 11 Feb 2017 21:35:37 +0100</lastBuildDate><atom:link href="https://blog.xenol.eu/tags/OpenIndiana/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Managing more illumos networking with Ansible</title>
       <link>https://blog.xenol.eu/blog/2017/02/11/Managing-more-illumos-networking-with-Ansible/</link>
@@ -33,11 +29,11 @@
     
     <item>
       <title>Mirroring OpenIndiana IPS repositories - part 1</title>
-      <link>https://blog.xenol.eu/blog/2016/08/09/Mirroring-OpenIndiana-IPS-repositories---part-1/</link>
+      <link>https://blog.xenol.eu/blog/2016/08/09/Mirroring-OpenIndiana-IPS-repositories-part-1/</link>
       <pubDate>Tue, 09 Aug 2016 00:09:28 +0200</pubDate>
       
-      <guid>https://blog.xenol.eu/blog/2016/08/09/Mirroring-OpenIndiana-IPS-repositories---part-1/</guid>
-      <description>Introduction In this blog post, I will show how one can create a mirror of OpenIndiana IPS repositories. IPS repositories hold packages coming from multiple sources, most notably from illumos-gate and oi-userland. Every time user runs pkg update on his OpenIndiana installation, pkg contacts IPS repository to fetch catalog metadata and determines if there are any new updates available. If updates are available, pkg downoalds only changed files over HTTP.</description>
+      <guid>https://blog.xenol.eu/blog/2016/08/09/Mirroring-OpenIndiana-IPS-repositories-part-1/</guid>
+      <description>Introduction In this blog post, I will show how one can create a mirror of OpenIndiana IPS repositories. IPS repositories hold packages coming from multiple sources, most notably from illumos-gate and oi-userland. Every time user runs pkg update on his OpenIndiana installation, pkg contacts IPS repository to fetch catalog metadata and determines if there are any new updates available. If updates are available, pkg downoalds only changed files over HTTP. IPS application server is written in Python and CherryPy web framework.</description>
     </item>
     
     <item>

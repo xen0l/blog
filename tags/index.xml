@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on xenol&#39;s blog</title>
@@ -6,13 +6,18 @@
     <description>Recent content in Tags on xenol&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Feb 2017 21:35:37 +0100</lastBuildDate>
-    
-	<atom:link href="https://blog.xenol.eu/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 22 Jan 2019 15:39:09 +0100</lastBuildDate><atom:link href="https://blog.xenol.eu/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CCC</title>
+      <link>https://blog.xenol.eu/tags/CCC/</link>
+      <pubDate>Tue, 22 Jan 2019 15:39:09 +0100</pubDate>
+      
+      <guid>https://blog.xenol.eu/tags/CCC/</guid>
+      <description></description>
+    </item>
     
     <item>
-      <title>Ansible</title>
+      <title>ansible</title>
       <link>https://blog.xenol.eu/tags/ansible/</link>
       <pubDate>Sat, 11 Feb 2017 21:35:37 +0100</pubDate>
       
@@ -21,61 +26,7 @@
     </item>
     
     <item>
-      <title>Ccc</title>
-      <link>https://blog.xenol.eu/tags/ccc/</link>
-      <pubDate>Tue, 22 Jan 2019 15:39:09 +0100</pubDate>
-      
-      <guid>https://blog.xenol.eu/tags/ccc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dns</title>
-      <link>https://blog.xenol.eu/tags/dns/</link>
-      <pubDate>Mon, 29 Oct 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.xenol.eu/tags/dns/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Freebsd</title>
-      <link>https://blog.xenol.eu/tags/freebsd/</link>
-      <pubDate>Mon, 29 Oct 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.xenol.eu/tags/freebsd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://blog.xenol.eu/tags/hugo/</link>
-      <pubDate>Mon, 04 Jul 2016 02:54:45 +0200</pubDate>
-      
-      <guid>https://blog.xenol.eu/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ips</title>
-      <link>https://blog.xenol.eu/tags/ips/</link>
-      <pubDate>Tue, 09 Aug 2016 00:09:28 +0200</pubDate>
-      
-      <guid>https://blog.xenol.eu/tags/ips/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jail</title>
-      <link>https://blog.xenol.eu/tags/jail/</link>
-      <pubDate>Sat, 04 Feb 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.xenol.eu/tags/jail/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Networking</title>
+      <title>networking</title>
       <link>https://blog.xenol.eu/tags/networking/</link>
       <pubDate>Sat, 11 Feb 2017 21:35:37 +0100</pubDate>
       
@@ -84,16 +35,52 @@
     </item>
     
     <item>
-      <title>Openindiana</title>
-      <link>https://blog.xenol.eu/tags/openindiana/</link>
+      <title>OpenIndiana</title>
+      <link>https://blog.xenol.eu/tags/OpenIndiana/</link>
       <pubDate>Sat, 11 Feb 2017 21:35:37 +0100</pubDate>
       
-      <guid>https://blog.xenol.eu/tags/openindiana/</guid>
+      <guid>https://blog.xenol.eu/tags/OpenIndiana/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Security</title>
+      <title>IPS</title>
+      <link>https://blog.xenol.eu/tags/IPS/</link>
+      <pubDate>Tue, 09 Aug 2016 00:09:28 +0200</pubDate>
+      
+      <guid>https://blog.xenol.eu/tags/IPS/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://blog.xenol.eu/tags/Hugo/</link>
+      <pubDate>Mon, 04 Jul 2016 02:54:45 +0200</pubDate>
+      
+      <guid>https://blog.xenol.eu/tags/Hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DNS</title>
+      <link>https://blog.xenol.eu/tags/DNS/</link>
+      <pubDate>Mon, 29 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.xenol.eu/tags/DNS/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FreeBSD</title>
+      <link>https://blog.xenol.eu/tags/FreeBSD/</link>
+      <pubDate>Mon, 29 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.xenol.eu/tags/FreeBSD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
       <link>https://blog.xenol.eu/tags/security/</link>
       <pubDate>Mon, 29 Oct 2012 00:00:00 +0000</pubDate>
       
@@ -102,11 +89,20 @@
     </item>
     
     <item>
-      <title>Zfs</title>
-      <link>https://blog.xenol.eu/tags/zfs/</link>
+      <title>jail</title>
+      <link>https://blog.xenol.eu/tags/jail/</link>
       <pubDate>Sat, 04 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.xenol.eu/tags/zfs/</guid>
+      <guid>https://blog.xenol.eu/tags/jail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ZFS</title>
+      <link>https://blog.xenol.eu/tags/ZFS/</link>
+      <pubDate>Sat, 04 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.xenol.eu/tags/ZFS/</guid>
       <description></description>
     </item>
     

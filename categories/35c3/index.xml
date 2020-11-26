@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>35c3 on xenol&#39;s blog</title>
-    <link>https://blog.xenol.eu/categories/35c3/</link>
-    <description>Recent content in 35c3 on xenol&#39;s blog</description>
+    <title>35C3 on xenol&#39;s blog</title>
+    <link>https://blog.xenol.eu/categories/35C3/</link>
+    <description>Recent content in 35C3 on xenol&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Jan 2019 15:39:09 +0100</lastBuildDate>
-    
-	<atom:link href="https://blog.xenol.eu/categories/35c3/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 22 Jan 2019 15:39:09 +0100</lastBuildDate><atom:link href="https://blog.xenol.eu/categories/35C3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Refreshing Memories: report from 35c3</title>
       <link>https://blog.xenol.eu/blog/2019/01/22/Refreshing-Memories-report-from-35c3/</link>
       <pubDate>Tue, 22 Jan 2019 15:39:09 +0100</pubDate>
       
       <guid>https://blog.xenol.eu/blog/2019/01/22/Refreshing-Memories-report-from-35c3/</guid>
-      <description>This blog post will summarize my experience attending 35th Chaos Communication Congress AKA 35c3, which took place between 27th and 30th December 2018 in Leipzig, Germany. The Congress hosts a variety of talks, assemblies and serves as a meeting point for thousands of people from the security and hackerspace communities. Moreover, the Congress covers many other different topics ranging from arts &amp;amp; culture, technology, hobby projects as well as politics.</description>
+      <description>This blog post will summarize my experience attending 35th Chaos Communication Congress AKA 35c3, which took place between 27th and 30th December 2018 in Leipzig, Germany. The Congress hosts a variety of talks, assemblies and serves as a meeting point for thousands of people from the security and hackerspace communities. Moreover, the Congress covers many other different topics ranging from arts &amp;amp; culture, technology, hobby projects as well as politics. In this post, I will be mainly focusing on the security and technical talks of the conference.</description>
     </item>
     
   </channel>
