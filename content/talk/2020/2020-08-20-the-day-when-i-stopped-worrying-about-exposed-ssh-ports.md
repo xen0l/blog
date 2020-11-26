@@ -2,6 +2,11 @@
 comments: false
 date: 2020-08-20T18:30:00Z
 title: The day when I stopped worrying about exposed SSH ports! - WoSECxGlovo (EN)
+categories:
+  - security
+  - python
+  - tooling
+  - aws
 ---
 
 Link: https://youtu.be/OAJItJgvf4Q?t=310

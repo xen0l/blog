@@ -2,7 +2,13 @@
 comments: false
 date: 2019-10-05T00:00:00Z
 title: Security tooling for Pythonistas - Python Meetup BA (SK)
+categories:
+  - security
+  - python
+  - tooling
 ---
+
+Link: https://photos.app.goo.gl/LAiWr275gH22kn3W6
 
 <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
 <div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;"
