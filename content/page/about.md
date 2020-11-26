@@ -2,7 +2,7 @@
 title: About
 url: /about
 date: 2012-04-03T00:00:00Z
-comments: true
+comments: false
 ---
 
 My name is Adam and I enjoy playing with technology. I studied computer networks at the Faculty of Informatics and Information Technologies at Slovak University of Technology in Bratislava.
