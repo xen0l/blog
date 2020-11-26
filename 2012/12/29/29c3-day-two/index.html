@@ -58,36 +58,59 @@
 
 
 <nav role="navigation">
+<fieldset class="mobile-nav">
+  
+  <select onchange="location = this.value;">
+    <option value="">Navigate…</option>
+      
+        <option value="https://blog.xenol.eu/">» Blog</option>
+      
+        <option value="https://blog.xenol.eu/talks">» Talks</option>
+      
+        <option value="https://blog.xenol.eu/archives">» Archives</option>
+      
+        <option value="https://blog.xenol.eu/about">» About</option>
+      
+  </select>
+</fieldset>
+
 
 <ul class="main-navigation">
   
   
+    
       <li><a href="https://blog.xenol.eu/" title="Blog">Blog</a></li>
+    
   
-      <li><a href="https://blog.xenol.eu/talks" title="Talks">Talks</a></li>
+    
+      <li><a href="https://blog.xenol.eu/talks" title="Talks" >Talks</a></li>
+    
   
-      <li><a href="https://blog.xenol.eu/archives" title="Archives">Archives</a></li>
+    
+      <li><a href="https://blog.xenol.eu/archives" title="Archives" >Archives</a></li>
+    
   
-      <li><a href="https://blog.xenol.eu/about" title="About">About</a></li>
+    
+      <li><a href="https://blog.xenol.eu/about" title="About" >About</a></li>
+    
   
 </ul>
-
 
 <ul class="subscription">
-  <a href="https://blog.xenol.eu/index.xml" target="_blank" type="application/rss+xml" title="RSS"><i class="fa fa-rss-square fa-lg"></i></a>
-
   
+    
+        <a href="https://blog.xenol.eu/index.xml" target="_blank" type="application/rss+xml" title="RSS"><i class="fa fa-rss-square fa-lg"></i></a>
+    
   
-
 </ul>
 
 
-<form action="https://www.google.com/search" method="get" target="_blank">
-  <fieldset role="search">
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-    <input type="hidden" name="q" value="site:https://blog.xenol.eu/" />
-  </fieldset>
-</form>
+  <form action="https://www.google.com/search" method="get" target="_blank">
+    <fieldset role="search">
+      <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+      <input type="hidden" name="q" value="site:https://blog.xenol.eu/" />
+    </fieldset>
+  </form>
 
 </nav>
 
@@ -119,8 +142,6 @@
         <div class="entry-content">
           
           
-          
-            <nav id="TableOfContents"></nav>
           
           <p>I started this day with visiting talk by Axel Arnbak titled <strong>Certificate Authority Collapse</strong>. Axel talked about the current model being completely broken (nothing new in the security community) and that the change is needed. He described the DigiNotar incident. The European Union wants to address this issue by <a href="http://ec.europa.eu/information_society/policy/esignature/eu_legislation/regulation/index_en.htm">regulations</a>, which do more harm than good. If the CA model is broken, it should be fixed technically and not by law. Video can be found <a href="http://ftp.uni-kl.de/CCC/29C3/mp4-h264-HQ/29c3-5319-en-certificate_authority_collapse_h264.mp4">here</a>.</p>
 <p>After lunch, I went and saw <strong>Lightning talks</strong> block. I liked the talk about a <a href="rhizomatica.org">project</a> building community GSM and mesh networks in remote areas in Mexico.</p>
