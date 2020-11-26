@@ -6,10 +6,16 @@ metadataformat: yaml
 
 theme: octopress
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 paginate: 6
 
 permalinks:
   post: /blog/:year/:month/:day/:title/
+  talk: /talk/:year/:month/:day/:title/
 
 indexes:
   tag: tags
@@ -19,6 +25,9 @@ menu:
   main:
     - name: "Blog"
       url: "/"
+      weight: 5
+    - name: "Talks"
+      url: "/talks"
       weight: 10
     - name: "Archives"
       url: "/archives"
@@ -37,13 +46,13 @@ params:
   sidebarRecentLimit: 5
 
   # search engine parameter in the navigation menu
-  search_engine_url: "https://www.google.com/search"
+  searchEngineUrl: "https://www.google.com/search"
 
   # sidebar customization - passed to markdownify
-  sidebar_header: ""
+  sidebarHeader: ""
 
   # sidebar text supports markdown
-  sidebar_text: ""
+  sidebarText: ""
 
   # social
   github: "https://github.com/xen0l/"
@@ -54,8 +63,8 @@ params:
 
   # sidebar menu
   # if true will add a sidebar menu between sidebar text and recent posts
-  sidebar_menu_enabled: false
-  sidebar_menu_header: "Sidebar Links"
+  sidebarMenuEnabled: false
+  sidebarMenuHeader: "Sidebar Links"
 
   # if false, all of posts' content will appear on front page (and in pagination) - not recommended
   # be sure to use the  delimiter
@@ -70,7 +79,7 @@ params:
   # text of the Continue Reading label - if not set, it will default to "Read On &rarr;"
   # &rarr; == right arrow, but it gets messed up in the string so it is added to hugo-octopress/layouts/index.html manually
   # this can be modified in hugo-octopress/layouts/index.html
-  continue_reading: "Continue reading"
+  continueReadingText: "Continue reading &rarr;"
 
   # disqus - simply enter your disqus - using the template from https://gohugo.io/extras/comments/ at /hugo-octopress/layouts/partials/disqus.html that disables disqus when running on localhost (if you are testing it offline remember to comment out the if in the template that checks for localhost)
   # the template is injected into the pages in /hugo-octopress/layouts/partials/post-footer.html which is in every post (and not non-post pages like license.html)
@@ -95,8 +104,8 @@ params:
   tableOfContents: false
 
   # 404.html header and text -both support markdown
-  notfound_header: "There's nothing here"
-  notfound_text: "Please either go back or use the navigation/sidebar menus."
+  notfoundHeader: "There's nothing here"
+  notfoundText: "Please either go back or use the navigation/sidebar menus."
 
   # Set to true to hide ReadingTime on posts
   disableReadingTime: false
