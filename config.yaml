@@ -10,6 +10,7 @@ paginate: 6
 
 permalinks:
   post: /blog/:year/:month/:day/:title/
+  talk: /talk/:year/:month/:day/:title/
 
 indexes:
   tag: tags
@@ -19,6 +20,9 @@ menu:
   main:
     - name: "Blog"
       url: "/"
+      weight: 5
+    - name: "Talks"
+      url: "/talks"
       weight: 10
     - name: "Archives"
       url: "/archives"
